@@ -27,8 +27,6 @@ export function SupportSummaryCard({
   const hasMoneySupport =
     annualTotal > 0 || monthlyTotal > 0 || lumpSumTotal > 0;
 
-  const cashTotal = monthlyTotal + lumpSumTotal;
-
   return (
     <div className="space-y-6">
       <div className="text-center">
@@ -85,12 +83,12 @@ export function SupportSummaryCard({
               <span className="text-xs md:text-sm font-medium">現金給付</span>
             </div>
             <p className="text-2xl md:text-3xl font-bold text-blue-700 tracking-tight">
-              {cashTotal > 0 ? formatCurrency(cashTotal) : "—"}
-              {cashTotal > 0 && <span className="text-sm md:text-base ml-1">円</span>}
-            </p>
-            <p className="text-xs text-blue-600 mt-2">
-              月額支援 + 一時金
-            </p>
+              {lumpSumTotal > 0 ? formatCurrency(lumpSumTotal) : "—"}
+              {lumpSumTotal > 0 && <span className="text-sm md:text-base ml-1">円</span>}
+              </p>
+              <p className="text-xs text-blue-600 mt-2">
+                出産時などの一時金
+                </p>
           </CardContent>
         </Card>
 
