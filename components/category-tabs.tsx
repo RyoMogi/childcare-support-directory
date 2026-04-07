@@ -1,7 +1,7 @@
 "use client";
 
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Banknote, BadgePercent, Clock3, BookOpen } from "lucide-react";
+import { Banknote, Ticket, Clock3, BookOpen } from "lucide-react";
 
 export type CategoryFilter = "all" | "cash" | "cost" | "time" | "learning";
 
@@ -24,7 +24,7 @@ const categoryOptions: {
   {
     value: "cost",
     label: "助成・無償化",
-    icon: <BadgePercent className="h-4 w-4" />,
+    icon: <Ticket className="h-4 w-4" />,
   },
   {
     value: "time",

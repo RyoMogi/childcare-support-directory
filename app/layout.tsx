@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: '子育て支援制度検索',
-  description: '居住地を入力して、お住まいの国・都道府県の子育て支援制度を検索できます',
+  title: 'もらえる・使える支援ナビ｜結婚・出産・子育ての支援を一括確認',
+  description: '結婚・出産・子育てに関する国・自治体の支援制度をまとめて確認。あなたが使える支援をすぐに見つけられます。',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -83,8 +83,8 @@ export function ProgramCard({ program }: ProgramCardProps) {
           <h3 className="font-bold text-lg leading-tight text-balance">
             {program.title}
           </h3>
-          <Badge variant="outline" className={`${levelInfo.className} shrink-0 text-xs`}>
-            <LevelIcon className="mr-1 h-3 w-3" />
+          <Badge variant="outline" className={`${levelInfo.className} shrink-0 text-sm`}>
+            <LevelIcon className="mr-1 h-4 w-4" />
             {levelInfo.label}
           </Badge>
         </div>

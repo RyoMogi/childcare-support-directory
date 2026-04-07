@@ -38,7 +38,7 @@ export function SupportSummaryCard({
           <span className="font-bold text-foreground text-xl md:text-2xl">
             {programCount}
           </span>{" "}
-          件あります
+          件
         </p>
       </div>
 
@@ -47,14 +47,14 @@ export function SupportSummaryCard({
           <CardContent className="pt-8 pb-8 text-center">
             <div className="flex items-center justify-center gap-2 text-emerald-600 mb-3">
               <TrendingUp className="h-5 w-5" />
-              <span className="text-sm md:text-base font-medium">年間支援額</span>
+              <span className="text-sm md:text-base font-medium">年間</span>
             </div>
             <p className="text-4xl md:text-6xl font-bold text-emerald-600 tracking-tight">
               約 {formatCurrency(annualTotal)}
               <span className="text-2xl md:text-4xl ml-1">円</span>
             </p>
             <p className="text-sm md:text-base text-emerald-700 mt-3">
-              の支援対象です
+              が継続的に支給されます
             </p>
           </CardContent>
         </Card>
@@ -63,7 +63,7 @@ export function SupportSummaryCard({
           <CardContent className="pt-8 pb-8 text-center">
             <div className="flex items-center justify-center gap-2 text-slate-500 mb-3">
               <TrendingUp className="h-5 w-5" />
-              <span className="text-sm md:text-base font-medium">年間支援額</span>
+              <span className="text-sm md:text-base font-medium">年間の継続現金給付額</span>
             </div>
             <p className="text-lg md:text-xl font-medium text-slate-600">
               金額情報は準備中です
@@ -80,14 +80,14 @@ export function SupportSummaryCard({
           <CardContent className="pt-5 pb-5">
             <div className="flex items-center gap-2 text-blue-600 mb-2">
               <Banknote className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">現金給付</span>
+              <span className="text-xs md:text-sm font-medium">一時金</span>
             </div>
             <p className="text-2xl md:text-3xl font-bold text-blue-700 tracking-tight">
               {lumpSumTotal > 0 ? formatCurrency(lumpSumTotal) : "—"}
               {lumpSumTotal > 0 && <span className="text-sm md:text-base ml-1">円</span>}
               </p>
               <p className="text-xs text-blue-600 mt-2">
-                出産時などの一時金
+                出産時など特定条件で支給される一時金
                 </p>
           </CardContent>
         </Card>

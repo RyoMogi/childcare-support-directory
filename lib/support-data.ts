@@ -95,9 +95,11 @@ export const programGroups: ProgramGroup[] = [
   municipality: "国",
   category: "time",
   title: "育児休業・関連制度",
-  shortValue: "育休、産後パパ育休、看護休暇、時短勤務が使える",
-  feeSummary: "休む・時短にする制度本体（給付は別カード）",
-  flowSummary: "勤務先へ申出 → 承認 → 休業・時短開始",
+  shortValue: "育休、パパ育休、関連給付までまとめて確認できる",
+  feeSummary: "育休中は給付・非課税・社会保険料免除により手取りの約8割相当になるケースあり",
+  benefitRateNote:
+    "育児休業給付金は原則67%（181日目以降50%）ですが、非課税で社会保険料も免除されるため、実質的には手取りの約8割相当になることがあります。",
+  flowSummary: "勤務先へ申出 → 休業開始 → 勤務先経由で給付申請",
   timingText: "出生直後〜子が2歳ごろまで制度ごとに利用可",
   conditionText: "雇用労働者が対象／制度ごとに子の年齢や申出期限が異なる",
   programs: [
@@ -114,36 +116,9 @@ export const programGroups: ProgramGroup[] = [
       url: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/plus/",
     },
     {
-      title: "子の看護等休暇",
-      url: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/nursing/",
+      title: "育児休業給付金",
+      url: "https://www.mhlw.go.jp/content/11600000/001461102.pdf",
     },
-    {
-      title: "短時間勤務制度",
-      url: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/shortworking/",
-    },
-  ],
-  displayOrder: 20,
-},
-  {
-  id: "national-childcare-leave-benefits",
-  level: "national",
-  municipality: "国",
-  category: "cash",
-  title: "育休関連の給付",
-
-  shortValue: "手取りの約80〜90%をカバー",
-
-  feeSummary: "育休中は手取りの約8〜9割（給付67%＋非課税＋社会保険免除）",
-
-  benefitRateNote: "額面は67%（181日後50%）だが、非課税＋保険料免除により手取りベースでは約80〜90%相当",
-
-  flowSummary: "勤務先経由で申請 → ハローワーク → 本人口座へ支給",
-
-  timingText: "出生直後〜育休中〜時短勤務中",
-
-  conditionText: "雇用保険加入者が対象／取得日数・賃金など条件あり",
-
-  programs: [
     {
       title: "出生時育児休業給付金",
       url: "https://jsite.mhlw.go.jp/kanagawa-hellowork/content/contents/001340093.pdf",
@@ -152,17 +127,52 @@ export const programGroups: ProgramGroup[] = [
       title: "出生後休業支援給付金",
       url: "https://www.mhlw.go.jp/content/11600000/001372778.pdf",
     },
+  ],
+  displayOrder: 20,
+},
+{
+  id: "national-short-working",
+  level: "national",
+  municipality: "国",
+  category: "time",
+  title: "短時間勤務制度",
+  shortValue: "3歳未満の子がいる場合、短時間勤務が使える",
+  feeSummary: "時短勤務中は条件により給付を受けられる場合あり",
+  benefitRateNote:
+    "2歳未満の子を養育する一定の雇用保険加入者は、育児時短就業給付金の対象になる場合があります。",
+  flowSummary: "勤務先へ申出 → 制度利用開始",
+  timingText: "3歳未満の子を養育中",
+  conditionText: "一定の労働者が対象／業務によっては代替措置の場合あり",
+  programs: [
+    {
+      title: "短時間勤務制度",
+      url: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/shortworking/",
+    },
     {
       title: "育児時短就業給付金",
       url: "https://www.mhlw.go.jp/content/11600000/001394846.pdf",
     },
+  ],
+  displayOrder: 25,
+},
+{
+  id: "national-child-nursing-leave",
+  level: "national",
+  municipality: "国",
+  category: "time",
+  title: "子の看護等休暇",
+  shortValue: "子どもの看護・行事で休暇が取れる",
+  feeSummary: "年5日（子2人以上で10日）／時間単位取得可",
+  flowSummary: "勤務先へ申出（緊急時は事後でも可）",
+  timingText: "小学3年生修了まで",
+  conditionText: "病気・予防接種・学校行事などで取得可能",
+  programs: [
     {
-      title: "育児休業給付金",
-      url: "https://www.mhlw.go.jp/content/11600000/001461102.pdf",
+      title: "子の看護等休暇",
+      url: "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/nursing/",
     },
   ],
-
-  displayOrder: 30,
+  displayOrder: 26,
 },
   {
   id: "national-birth-support",
@@ -211,7 +221,7 @@ export const programGroups: ProgramGroup[] = [
   id: "national-education-support",
   level: "national",
   municipality: "国",
-  category: "cash",
+  category: "cost",
   title: "高校生向け教育費支援",
   shortValue: "高校授業料と授業料以外の教育費を支援",
   feeSummary: "授業料支援＋給付金あり（制度・学校種で上限が異なる）",

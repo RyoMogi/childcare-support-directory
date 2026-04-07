@@ -22,18 +22,26 @@ export function ShareButtons({
 }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
 
-  const shareText = annualTotal > 0
-    ? `${prefecture}${municipality ? ` ${municipality}` : ""}で年間約${formatCurrency(annualTotal)}円の子育て支援が受けられることがわかりました！知らないと損するかも...`
-    : `${prefecture}${municipality ? ` ${municipality}` : ""}の子育て支援制度を調べました！`;
+  const shareText =
+    annualTotal > 0
+      ? `${prefecture}${municipality ? ` ${municipality}` : ""}で年間約${formatCurrency(
+          annualTotal
+        )}円の子育て支援が受けられることがわかりました！知らないと損するかも...`
+      : `${prefecture}${municipality ? ` ${municipality}` : ""}の子育て支援制度を調べました！`;
+
   const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 
   const handleTwitterShare = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      shareText
+    )}&url=${encodeURIComponent(shareUrl)}`;
     window.open(twitterUrl, "_blank", "noopener,noreferrer");
   };
 
   const handleLineShare = () => {
-    const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
+    const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(
+      shareUrl
+    )}&text=${encodeURIComponent(shareText)}`;
     window.open(lineUrl, "_blank", "noopener,noreferrer");
   };
 
@@ -49,13 +57,20 @@ export function ShareButtons({
 
   return (
     <Card className="bg-slate-50 border-slate-200">
-      <CardContent className="py-4">
-        <div className="flex flex-col items-center gap-3">
-          <div className="flex items-center gap-2 text-sm">
-            <Users className="h-4 w-4 text-muted-foreground" />
-            <span className="text-muted-foreground">この支援、知らない人が多いです。</span>
-            <span className="font-medium">家族や友人にシェア</span>
+      <CardContent className="py-5">
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center text-center">
+            <div className="flex items-center gap-2 text-emerald-600">
+              <Users className="h-5 w-5" />
+              <span className="text-base md:text-lg font-semibold">
+                これらの支援、知らない人が多いです
+              </span>
+            </div>
+            <p className="mt-1 text-sm text-muted-foreground">
+              家族や友人にシェア
+            </p>
           </div>
+
           <div className="flex flex-wrap justify-center gap-2">
             <Button
               variant="outline"
@@ -68,6 +83,7 @@ export function ShareButtons({
               </svg>
               X
             </Button>
+
             <Button
               variant="outline"
               size="sm"
@@ -79,6 +95,7 @@ export function ShareButtons({
               </svg>
               LINE
             </Button>
+
             <Button
               variant="outline"
               size="sm"

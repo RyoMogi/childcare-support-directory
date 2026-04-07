@@ -99,9 +99,9 @@ const handleChildAgeChange = (index: number, value: number) => {
               <Baby className="h-5 w-5 text-emerald-600" />
             </div>
             <div>
-              <h1 className="text-lg font-bold">子育て支援ナビ</h1>
+              <h1 className="text-lg font-bold">もらえる・使える支援ナビ</h1>
               <p className="text-xs text-muted-foreground">
-                あなたが受けられる支援を見つける
+                結婚・出産・子育てに関する支援をまとめて確認
               </p>
             </div>
           </div>
@@ -118,7 +118,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-balance leading-tight">
               あなたの場合、
               <br className="sm:hidden" />
-              <span className="text-emerald-600">いくら</span>支援を受けられる？
+              <span className="text-emerald-600">どんな</span>支援を受けられる？
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto text-pretty">
               居住地と子どもの情報を入力するだけで、
