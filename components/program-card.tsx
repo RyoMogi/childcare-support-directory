@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import type { ProgramGroup } from "@/lib/support-data";
 import {
   Building2,
@@ -74,7 +74,6 @@ export function ProgramCard({ program }: ProgramCardProps) {
   const levelInfo = getLevelInfo(program.level);
   const categoryStyle = getCategoryStyle(program.category);
   const LevelIcon = levelInfo.icon;
-  const firstLink = program.programs[0];
 
   return (
     <Card className={`h-full border-l-4 ${categoryStyle.border} transition-shadow hover:shadow-lg`}>
@@ -144,30 +143,22 @@ export function ProgramCard({ program }: ProgramCardProps) {
             <p className="text-xs font-medium text-primary">含まれる制度</p>
           </div>
           <ul className="space-y-1">
-            {program.programs.slice(0, 3).map((item) => (
-              <li key={item.title} className="text-sm leading-relaxed">
-                ・{item.title}
+            {program.programs.map((item) => (
+              <li key={item.title}>
+                <Button asChild variant="link" className="h-auto justify-start p-0 text-left text-sm">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.title}
+                    <ExternalLink className="ml-1 h-3.5 w-3.5 shrink-0" />
+                  </a>
+                </Button>
               </li>
             ))}
-            {program.programs.length > 3 && (
-              <li className="text-sm text-muted-foreground">
-                ほか {program.programs.length - 3} 件
-              </li>
-            )}
           </ul>
         </div>
+        <p className="text-xs leading-relaxed text-muted-foreground">
+          年齢から関連する可能性を表示しています。所得・就労状況などの条件は公式サイトでご確認ください。
+        </p>
       </CardContent>
-
-      {firstLink && (
-        <CardFooter className="pt-0">
-          <Button asChild variant="outline" className="w-full">
-            <a href={firstLink.url} target="_blank" rel="noopener noreferrer">
-              詳細を見る
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
-        </CardFooter>
-      )}
     </Card>
   );
 }

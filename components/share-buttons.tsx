@@ -7,7 +7,6 @@ import { useState } from "react";
 
 interface ShareButtonsProps {
   prefecture: string;
-  municipality: string;
   annualTotal: number;
 }
 
@@ -17,17 +16,16 @@ function formatCurrency(amount: number): string {
 
 export function ShareButtons({
   prefecture,
-  municipality,
   annualTotal,
 }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
 
   const shareText =
     annualTotal > 0
-      ? `${prefecture}${municipality ? ` ${municipality}` : ""}で年間約${formatCurrency(
+      ? `${prefecture}で年間約${formatCurrency(
           annualTotal
-        )}円の子育て支援が受けられることがわかりました！知らないと損するかも...`
-      : `${prefecture}${municipality ? ` ${municipality}` : ""}の子育て支援制度を調べました！`;
+        )}円の現金給付を受けられる可能性がありました。子育て支援ナビで確認できます。`
+      : `${prefecture}の子育て支援制度を調べました。`;
 
   const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 

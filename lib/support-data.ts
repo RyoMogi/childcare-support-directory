@@ -17,6 +17,9 @@ export interface ProgramGroup {
   conditionText?: string;
   displayOrder?: number;
   benefitRateNote?: string;
+  minChildAge?: number;
+  maxChildAge?: number;
+  betaVisible?: boolean;
 
   monthlyAmount?: number;
   annualAmount?: number;
@@ -42,7 +45,7 @@ export const prefectures = [
 function calculateChildAllowanceMonthly(childrenAges: number[]): number {
   const eligibleChildren = childrenAges
     .filter((age) => age >= 0 && age <= 18)
-    .sort((a, b) => a - b);
+    .sort((a, b) => b - a);
 
   return eligibleChildren.reduce((sum, age, index) => {
     const childOrder = index + 1;
@@ -78,6 +81,9 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "出生・転入後15日以内に市区町村へ申請",
   timingText: "0歳〜18歳到達後最初の3月31日まで",
   conditionText: "児童を養育している方が対象／公務員は勤務先に申請",
+  benefitRateNote: "第3子以降の数え方には、保護者が生計費を負担している22歳年度末までの兄姉等が含まれる場合があります。この試算は入力された0〜18歳の子どものみで計算しています。",
+  minChildAge: 0,
+  maxChildAge: 18,
   calculateMonthlyAmount: calculateChildAllowanceMonthly,
   calculateAnnualAmount: (childrenAges) =>
     calculateChildAllowanceMonthly(childrenAges) * 12,
@@ -102,6 +108,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "勤務先へ申出 → 休業開始 → 勤務先経由で給付申請",
   timingText: "出生直後〜子が2歳ごろまで制度ごとに利用可",
   conditionText: "雇用労働者が対象／制度ごとに子の年齢や申出期限が異なる",
+  minChildAge: 0,
+  maxChildAge: 1,
   programs: [
     {
       title: "育児休業",
@@ -143,6 +151,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "勤務先へ申出 → 制度利用開始",
   timingText: "3歳未満の子を養育中",
   conditionText: "一定の労働者が対象／業務によっては代替措置の場合あり",
+  minChildAge: 0,
+  maxChildAge: 2,
   programs: [
     {
       title: "短時間勤務制度",
@@ -166,6 +176,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "勤務先へ申出（緊急時は事後でも可）",
   timingText: "小学3年生修了まで",
   conditionText: "病気・予防接種・学校行事などで取得可能",
+  minChildAge: 0,
+  maxChildAge: 9,
   programs: [
     {
       title: "子の看護等休暇",
@@ -185,6 +197,7 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "市区町村窓口で申請 → 面談・相談 → 給付",
   timingText: "妊娠確認後から申請可／出産前後に段階的に給付",
   conditionText: "公的医療保険加入者や妊婦が対象／妊婦支援給付は住民票のある市区町村で申請",
+  betaVisible: false,
   lumpSumAmount: 600000,
   programs: [
     {
@@ -209,6 +222,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "施設利用＋必要に応じて市町村で認定申請",
   timingText: "2019年10月開始／就学前まで",
   conditionText: "3〜5歳は全世帯、0〜2歳は住民税非課税世帯が中心／一部は保育の必要性認定が必要",
+  minChildAge: 0,
+  maxChildAge: 5,
   programs: [
     {
       title: "幼児教育・保育の無償化",
@@ -228,6 +243,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "学校経由または都道府県制度に沿って申請",
   timingText: "高校等在学中",
   conditionText: "国内在住の高校生等が対象／制度ごとに学校種や世帯年収要件あり",
+  minChildAge: 15,
+  maxChildAge: 18,
   programs: [
     {
       title: "高等学校等就学支援金",
@@ -279,6 +296,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "新規申請 → 審査 → 年3回支給",
   timingText: "0歳〜18歳到達後最初の3月31日まで",
   conditionText: "都内在住の0〜18歳の子どもが対象／所得制限なし",
+  minChildAge: 0,
+  maxChildAge: 18,
   calculateMonthlyAmount: calculate018SupportMonthly,
   calculateAnnualAmount: (childrenAges) =>
     calculate018SupportMonthly(childrenAges) * 12,
@@ -301,6 +320,7 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "対象医療を受ける → 証明書や領収書を準備 → 電子申請",
   timingText: "治療・出産後に申請期限あり",
   conditionText: "都内在住要件や年齢要件あり／制度ごとに対象が異なる",
+  betaVisible: false,
   programs: [
     {
       title: "不妊検査等助成",
@@ -336,6 +356,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "対象施設を利用 → 区市町村で制度適用",
   timingText: "令和7年9月以降",
   conditionText: "認可保育所等を利用する世帯が対象／年齢・所得によらず対象",
+  minChildAge: 0,
+  maxChildAge: 5,
   programs: [
     {
       title: "保育料等の無償化",
@@ -349,17 +371,15 @@ export const programGroups: ProgramGroup[] = [
   level: "prefecture",
   municipality: "東京都",
   category: "cost",
-  title: "住宅支援",
-  shortValue: "結婚予定者や子育て世帯向けに住宅申込を優遇",
+  title: "子育て世帯向け住宅支援",
+  shortValue: "子育て世帯向けに都営住宅の申込を優遇",
   feeSummary: "優先申込、優遇抽選、所得基準緩和あり",
   flowSummary: "募集確認 → 条件に応じて申込 → 抽選・審査",
   timingText: "定期募集・毎月募集あり",
-  conditionText: "結婚予定者、若年夫婦、子育て世帯、ひとり親、多子世帯などが対象",
+  conditionText: "子育て世帯、ひとり親、多子世帯などが対象／募集ごとに要件あり",
+  minChildAge: 0,
+  maxChildAge: 18,
   programs: [
-    {
-      title: "結婚予定者のためのJKK住宅の提供",
-      url: "https://www.to-kousya.or.jp/chintai/ouen/yuusen/konyaku/index.html",
-    },
     {
       title: "都営住宅における子育て支援",
       url: "https://www.juutakuseisaku.metro.tokyo.lg.jp/toei_jutaku/kanri/bosyu/265toei5",
@@ -378,6 +398,8 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "学校で申請 → 審査 → 減免適用",
   timingText: "2024年度から実施",
   conditionText: "生計維持者が都内在住／所得制限なし／申請必要",
+  minChildAge: 18,
+  maxChildAge: 18,
   programs: [
     {
       title: "都立大学等の新たな授業料減免制度",
@@ -394,6 +416,23 @@ export function getProgramsByPrefecture(prefecture: string): ProgramGroup[] {
     (program) =>
       program.level === "national" || program.municipality === prefecture
   );
+}
+
+// 子どもの年齢から、東京都ベータ版で関連する制度を絞り込む
+export function getProgramsForFamily(
+  prefecture: string,
+  childrenAges: number[]
+): ProgramGroup[] {
+  return getProgramsByPrefecture(prefecture).filter((program) => {
+    if (program.betaVisible === false) return false;
+    if (program.minChildAge === undefined || program.maxChildAge === undefined) {
+      return true;
+    }
+
+    return childrenAges.some(
+      (age) => age >= program.minChildAge! && age <= program.maxChildAge!
+    );
+  });
 }
 
 // UIカテゴリでフィルタリング

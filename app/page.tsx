@@ -7,14 +7,14 @@ import { SearchResults } from "@/components/search-results";
 import { SupportSummaryCard } from "@/components/support-summary";
 import { ShareButtons } from "@/components/share-buttons";
 import {
-  getProgramsByPrefecture,
+  getProgramsForFamily,
   filterByCategory,
   type ProgramGroup,
 } from "@/lib/support-data";
 import { Baby, Coins } from "lucide-react";
 
 export default function Home() {
-  const [prefecture, setPrefecture] = useState("");
+  const prefecture = "東京都";
   const [childCount, setChildCount] = useState(0);
   const [childrenAges, setChildrenAges] = useState<number[]>([]);
   const [searched, setSearched] = useState(false);
@@ -25,6 +25,8 @@ export default function Home() {
   const handleChildCountChange = (value: number) => {
   setChildCount(value);
   setChildrenAges(Array.from({ length: value }, (_, i) => childrenAges[i] ?? -1));
+  setSearched(false);
+  setResults(null);
 };
 
 const handleChildAgeChange = (index: number, value: number) => {
@@ -33,17 +35,19 @@ const handleChildAgeChange = (index: number, value: number) => {
     next[index] = value;
     return next;
   });
+  setSearched(false);
+  setResults(null);
 };
 
   const handleSearch = () => {
   const hasValidChildren =
     childCount > 0 &&
     childrenAges.length === childCount &&
-    childrenAges.every((age) => age >= 0);
+    childrenAges.every((age) => age >= 0 && age <= 18);
 
-  if (!prefecture || !hasValidChildren) return;
+  if (!hasValidChildren) return;
 
-  const searchResults = getProgramsByPrefecture(prefecture);
+  const searchResults = getProgramsForFamily(prefecture, childrenAges);
   setResults(searchResults);
   setSearched(true);
 };
@@ -70,23 +74,17 @@ const handleChildAgeChange = (index: number, value: number) => {
     return sum + (p.annualAmount ?? 0);
   }, 0);
 
-  const lumpSumTotal = results.reduce((sum, p) => {
-    if (p.calculateLumpSumAmount) {
-      return sum + p.calculateLumpSumAmount(childrenAges);
-    }
-    return sum + (p.lumpSumAmount ?? 0);
-  }, 0);
-
   const timeCount = results.filter((p) => p.category === "time").length;
   const supportCount = results.filter((p) => p.category === "cost").length;
+  const learningCount = results.filter((p) => p.category === "learning").length;
 
   return {
     annualTotal,
     monthlyTotal,
-    lumpSumTotal,
     programCount: results.length,
     timeCount,
     supportCount,
+    learningCount,
   };
 }, [results, childrenAges]);
 
@@ -101,7 +99,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             <div>
               <h1 className="text-lg font-bold">もらえる・使える支援ナビ</h1>
               <p className="text-xs text-muted-foreground">
-                結婚・出産・子育てに関する支援をまとめて確認
+                東京都と国の子育て支援をまとめて確認
               </p>
             </div>
           </div>
@@ -113,26 +111,24 @@ const handleChildAgeChange = (index: number, value: number) => {
           <section className="text-center mb-8">
             <div className="inline-flex items-center gap-2 text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full mb-6">
               <Coins className="h-4 w-4" />
-              <span className="text-sm font-medium">申請しないともらえません</span>
+              <span className="text-sm font-medium">東京都版を先行公開中</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-balance leading-tight">
-              あなたの場合、
+              子どもの年齢から、
               <br className="sm:hidden" />
-              <span className="text-emerald-600">どんな</span>支援を受けられる？
+              <span className="text-emerald-600">使えるかもしれない</span>支援を確認
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto text-pretty">
-              居住地と子どもの情報を入力するだけで、
-              あなたが対象の子育て支援制度がすぐにわかります。
+              東京都に住む、子どもがいる家庭向けです。
+              人数と年齢から、国と東京都の関連制度を絞り込みます。
             </p>
           </section>
         )}
 
         <section className="mb-4">
           <LocationForm
-            prefecture={prefecture}
             childCount={childCount}
             childrenAges={childrenAges}
-            onPrefectureChange={setPrefecture}
             onChildCountChange={handleChildCountChange}
             onChildAgeChange={handleChildAgeChange}
             onSearch={handleSearch}
@@ -145,10 +141,10 @@ const handleChildAgeChange = (index: number, value: number) => {
               <SupportSummaryCard
                 annualTotal={summary.annualTotal}
                 monthlyTotal={summary.monthlyTotal}
-                lumpSumTotal={summary.lumpSumTotal}
                 programCount={summary.programCount}
                 timeCount={summary.timeCount}
                 supportCount={summary.supportCount}
+                learningCount={summary.learningCount}
               />
             </section>
 
@@ -163,7 +159,7 @@ const handleChildAgeChange = (index: number, value: number) => {
               <div className="text-center mb-4">
                 <h2 className="text-xl font-bold mb-2">制度の詳細</h2>
                 <p className="text-sm text-muted-foreground mb-4">
-                  カードをタップして申請方法を確認しましょう
+                  条件を確認し、公式サイトから手続きへ進めます
                 </p>
               </div>
               <CategoryTabs
@@ -185,11 +181,10 @@ const handleChildAgeChange = (index: number, value: number) => {
                 <Coins className="h-10 w-10 text-emerald-400" />
               </div>
               <h3 className="text-lg font-medium mb-2">
-                まずは居住地を選択してください
+                子どもの人数と年齢を入力してください
               </h3>
               <p className="text-sm text-muted-foreground text-pretty">
-                上のフォームで情報を入力し、
-                「支援額を確認する」ボタンをクリックしてください。
+                年齢に関連する国・東京都の制度を表示します。
               </p>
             </div>
           </section>
@@ -200,8 +195,9 @@ const handleChildAgeChange = (index: number, value: number) => {
         <div className="container mx-auto px-4 py-6">
           <div className="text-center text-sm text-muted-foreground">
             <p className="mb-2">
-              ※ 掲載情報は参考情報です。詳細は必ず公式サイトをご確認ください。
+              ※ 掲載情報と金額は参考です。所得・就労・在住期間などの条件は、必ず公式サイトでご確認ください。
             </p>
+            <p className="mb-2">情報確認日：2026年9月20日</p>
             <p>
               &copy; {new Date().getFullYear()} 子育て支援ナビ
             </p>

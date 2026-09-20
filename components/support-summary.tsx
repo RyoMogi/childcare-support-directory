@@ -1,15 +1,15 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Banknote, BadgePercent, Clock3, BookOpen } from "lucide-react";
+import { TrendingUp, BadgePercent, Clock3, BookOpen } from "lucide-react";
 
 interface SupportSummaryProps {
   annualTotal: number;
   monthlyTotal: number;
-  lumpSumTotal: number;
   programCount: number;
   timeCount?: number;
   supportCount?: number;
+  learningCount?: number;
 }
 
 function formatCurrency(amount: number): string {
@@ -19,22 +19,21 @@ function formatCurrency(amount: number): string {
 export function SupportSummaryCard({
   annualTotal,
   monthlyTotal,
-  lumpSumTotal,
   programCount,
   timeCount = 0,
   supportCount = 0,
+  learningCount = 0,
 }: SupportSummaryProps) {
-  const hasMoneySupport =
-    annualTotal > 0 || monthlyTotal > 0 || lumpSumTotal > 0;
+  const hasMoneySupport = annualTotal > 0 || monthlyTotal > 0;
 
   return (
     <div className="space-y-6">
       <div className="text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-          あなたの支援まとめ
+          関連する支援まとめ
         </h2>
         <p className="text-base md:text-lg text-muted-foreground">
-          対象となる制度は{" "}
+          利用できる可能性がある制度は{" "}
           <span className="font-bold text-foreground text-xl md:text-2xl">
             {programCount}
           </span>{" "}
@@ -47,14 +46,14 @@ export function SupportSummaryCard({
           <CardContent className="pt-8 pb-8 text-center">
             <div className="flex items-center justify-center gap-2 text-emerald-600 mb-3">
               <TrendingUp className="h-5 w-5" />
-              <span className="text-sm md:text-base font-medium">年間</span>
+              <span className="text-sm md:text-base font-medium">主な現金給付の年間参考額</span>
             </div>
             <p className="text-4xl md:text-6xl font-bold text-emerald-600 tracking-tight">
               約 {formatCurrency(annualTotal)}
               <span className="text-2xl md:text-4xl ml-1">円</span>
             </p>
             <p className="text-sm md:text-base text-emerald-700 mt-3">
-              が継続的に支給されます
+              年齢のみで計算した目安です
             </p>
           </CardContent>
         </Card>
@@ -75,23 +74,7 @@ export function SupportSummaryCard({
         </Card>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card className="bg-blue-50 border-blue-200 shadow-sm">
-          <CardContent className="pt-5 pb-5">
-            <div className="flex items-center gap-2 text-blue-600 mb-2">
-              <Banknote className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">一時金</span>
-            </div>
-            <p className="text-2xl md:text-3xl font-bold text-blue-700 tracking-tight">
-              {lumpSumTotal > 0 ? formatCurrency(lumpSumTotal) : "—"}
-              {lumpSumTotal > 0 && <span className="text-sm md:text-base ml-1">円</span>}
-              </p>
-              <p className="text-xs text-blue-600 mt-2">
-                出産時など特定条件で支給される一時金
-                </p>
-          </CardContent>
-        </Card>
-
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card className="bg-rose-50 border-rose-200 shadow-sm">
           <CardContent className="pt-5 pb-5">
             <div className="flex items-center gap-2 text-rose-600 mb-2">
@@ -128,21 +111,21 @@ export function SupportSummaryCard({
           <CardContent className="pt-5 pb-5">
             <div className="flex items-center gap-2 text-amber-600 mb-2">
               <BookOpen className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">準備・学び</span>
+              <span className="text-xs md:text-sm font-medium">相談・学び</span>
             </div>
             <p className="text-2xl md:text-3xl font-bold text-amber-700 tracking-tight">
-              0
+              {learningCount}
               <span className="text-sm md:text-base ml-1">件</span>
             </p>
             <p className="text-xs text-amber-600 mt-2">
-              講座・相談・プレコンなど
+              講座・相談など
             </p>
           </CardContent>
         </Card>
       </div>
 
       <p className="text-xs text-muted-foreground text-center">
-        ※ 金額は概算です。詳細は各制度の公式サイトをご確認ください。
+        ※ 年齢以外の条件は反映していません。金額・対象可否は各制度の公式サイトをご確認ください。
       </p>
     </div>
   );

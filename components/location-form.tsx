@@ -10,53 +10,37 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { prefectures } from "@/lib/support-data";
-import { Sparkles } from "lucide-react";
+import { MapPin, Sparkles } from "lucide-react";
 
 interface LocationFormProps {
-  prefecture: string;
   childCount: number;
   childrenAges: number[];
-  onPrefectureChange: (value: string) => void;
   onChildCountChange: (value: number) => void;
   onChildAgeChange: (index: number, value: number) => void;
   onSearch: () => void;
 }
 
 export function LocationForm({
-  prefecture,
   childCount,
   childrenAges,
-  onPrefectureChange,
   onChildCountChange,
   onChildAgeChange,
   onSearch,
 }: LocationFormProps) {
   const isValid =
-    prefecture !== "" &&
     childCount > 0 &&
     childrenAges.length === childCount &&
-    childrenAges.every((age) => age >= 0);
+    childrenAges.every((age) => age >= 0 && age <= 18);
 
   return (
     <div className="w-full max-w-2xl mx-auto">
       <div className="bg-card rounded-2xl p-6 md:p-8 shadow-sm border space-y-5">
         <div className="space-y-2">
-          <Label htmlFor="prefecture" className="text-sm font-medium">
-            都道府県
-          </Label>
-          <Select value={prefecture} onValueChange={onPrefectureChange}>
-            <SelectTrigger id="prefecture" className="w-full bg-background h-11">
-              <SelectValue placeholder="選択してください" />
-            </SelectTrigger>
-            <SelectContent>
-              {prefectures.map((pref) => (
-                <SelectItem key={pref} value={pref}>
-                  {pref}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <Label className="text-sm font-medium">お住まいの地域</Label>
+          <div className="flex h-11 items-center gap-2 rounded-md border bg-emerald-50 px-3 text-sm font-medium text-emerald-800">
+            <MapPin className="h-4 w-4" />
+            東京都（先行公開）
+          </div>
         </div>
 
         <div className="space-y-2">
