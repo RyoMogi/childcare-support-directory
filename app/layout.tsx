@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'もらえる・使える支援ナビ｜東京都の子育て支援を確認',
-  description: '子どもの人数と年齢から、国と東京都の利用できる可能性がある子育て支援制度をまとめて確認できます。',
+  title: 'もらえる・使える支援ナビ｜東京・東北の子育て支援を確認',
+  description: '子どもの人数と年齢から、国と東京・東北6県の利用できる可能性がある子育て支援制度をまとめて確認できます。',
   generator: 'v0.app',
   icons: {
     icon: [

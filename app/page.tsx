@@ -14,13 +14,19 @@ import {
 import { Baby, Coins } from "lucide-react";
 
 export default function Home() {
-  const prefecture = "東京都";
+  const [prefecture, setPrefecture] = useState("");
   const [childCount, setChildCount] = useState(0);
   const [childrenAges, setChildrenAges] = useState<number[]>([]);
   const [searched, setSearched] = useState(false);
   const [results, setResults] = useState<ProgramGroup[] | null>(null);
 
   const [selectedCategories, setSelectedCategories] = useState<CategoryFilter[]>(["all"]);
+
+  const handlePrefectureChange = (value: string) => {
+    setPrefecture(value);
+    setSearched(false);
+    setResults(null);
+  };
 
   const handleChildCountChange = (value: number) => {
   setChildCount(value);
@@ -45,7 +51,7 @@ const handleChildAgeChange = (index: number, value: number) => {
     childrenAges.length === childCount &&
     childrenAges.every((age) => age >= 0 && age <= 18);
 
-  if (!hasValidChildren) return;
+  if (!prefecture || !hasValidChildren) return;
 
   const searchResults = getProgramsForFamily(prefecture, childrenAges);
   setResults(searchResults);
@@ -99,7 +105,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             <div>
               <h1 className="text-lg font-bold">もらえる・使える支援ナビ</h1>
               <p className="text-xs text-muted-foreground">
-                東京都と国の子育て支援をまとめて確認
+                国と対象地域の子育て支援をまとめて確認
               </p>
             </div>
           </div>
@@ -111,7 +117,7 @@ const handleChildAgeChange = (index: number, value: number) => {
           <section className="text-center mb-8">
             <div className="inline-flex items-center gap-2 text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full mb-6">
               <Coins className="h-4 w-4" />
-              <span className="text-sm font-medium">東京都版を先行公開中</span>
+              <span className="text-sm font-medium">東京・東北6県の情報を公開中</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-balance leading-tight">
               子どもの年齢から、
@@ -119,16 +125,18 @@ const handleChildAgeChange = (index: number, value: number) => {
               <span className="text-emerald-600">使えるかもしれない</span>支援を確認
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto text-pretty">
-              東京都に住む、子どもがいる家庭向けです。
-              人数と年齢から、国と東京都の関連制度を絞り込みます。
+              対象地域に住む、子どもがいる家庭向けです。
+              お住まいの都県と子どもの年齢から、国・都県の関連制度を絞り込みます。
             </p>
           </section>
         )}
 
         <section className="mb-4">
           <LocationForm
+            prefecture={prefecture}
             childCount={childCount}
             childrenAges={childrenAges}
+            onPrefectureChange={handlePrefectureChange}
             onChildCountChange={handleChildCountChange}
             onChildAgeChange={handleChildAgeChange}
             onSearch={handleSearch}
@@ -181,10 +189,10 @@ const handleChildAgeChange = (index: number, value: number) => {
                 <Coins className="h-10 w-10 text-emerald-400" />
               </div>
               <h3 className="text-lg font-medium mb-2">
-                子どもの人数と年齢を入力してください
+                お住まいの都県と子どもの情報を入力してください
               </h3>
               <p className="text-sm text-muted-foreground text-pretty">
-                年齢に関連する国・東京都の制度を表示します。
+                選んだ地域で利用できる可能性がある制度を表示します。
               </p>
             </div>
           </section>

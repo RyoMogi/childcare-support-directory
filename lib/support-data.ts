@@ -42,6 +42,17 @@ export const prefectures = [
   "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
 ];
 
+// 現在、都県独自の制度を公開している地域
+export const availablePrefectures = [
+  "青森県",
+  "岩手県",
+  "宮城県",
+  "秋田県",
+  "山形県",
+  "福島県",
+  "東京都",
+];
+
 function calculateChildAllowanceMonthly(childrenAges: number[]): number {
   const eligibleChildren = childrenAges
     .filter((age) => age >= 0 && age <= 18)
@@ -272,6 +283,7 @@ export const programGroups: ProgramGroup[] = [
   flowSummary: "治療終了 → 書類準備 → 保健福祉事務所へ申請",
   timingText: "治療終了後3か月以内が原則",
   conditionText: "佐賀県在住の夫婦のいずれか／保険診療の生殖補助医療＋先進医療が対象",
+  betaVisible: false,
   lumpSumAmount: 50000,
   programs: [
     {
@@ -281,6 +293,261 @@ export const programGroups: ProgramGroup[] = [
   ],
   displayOrder: 10,
 },
+
+  // ======================
+  // 青森県
+  // ======================
+  {
+    id: "aomori-childcare-passport",
+    level: "prefecture",
+    municipality: "青森県",
+    category: "cost",
+    title: "あおもり子育て応援パスポート",
+    shortValue: "協賛店で割引や子育て向けサービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "Webで交付申請 → パスポートを協賛店で提示",
+    timingText: "18歳未満の子どもがいる家庭",
+    conditionText: "青森県内在住／店舗により子どもの同伴などが必要",
+    minChildAge: 0,
+    maxChildAge: 17,
+    programs: [
+      {
+        title: "あおもり子育て応援パスポート",
+        url: "https://kosodate.pref.aomori.jp/about/",
+      },
+    ],
+    displayOrder: 10,
+  },
+  {
+    id: "aomori-newborn-hearing-test",
+    level: "prefecture",
+    municipality: "青森県",
+    category: "cost",
+    title: "新生児聴覚検査",
+    shortValue: "赤ちゃんのきこえを早期に確認",
+    feeSummary: "費用負担・助成はお住まいの市町村に確認",
+    flowSummary: "出産医療機関または市町村に確認 → 検査",
+    timingText: "出生後まもなく",
+    conditionText: "新生児が対象／検査・助成の扱いは地域や医療機関で異なる",
+    minChildAge: 0,
+    maxChildAge: 0,
+    programs: [
+      {
+        title: "青森県の新生児聴覚検査・難聴児支援",
+        url: "https://www.pref.aomori.lg.jp/soshiki/kenko/syofuku/nanchozisien.html",
+      },
+    ],
+    displayOrder: 20,
+  },
+
+  // ======================
+  // 岩手県
+  // ======================
+  {
+    id: "iwate-babysitter-discount",
+    level: "prefecture",
+    municipality: "岩手県",
+    category: "time",
+    title: "ベビーシッター派遣事業",
+    shortValue: "勤務先を通じてベビーシッター割引券を利用",
+    feeSummary: "通常分は1枚2,200円、対象児童1人1日2枚まで（勤務先等の条件あり）",
+    flowSummary: "勤務先が制度導入 → 割引券を申請 → 対象サービスを利用",
+    timingText: "対象年齢・利用事由は制度要件を確認",
+    conditionText: "割引券を導入する事業主等に雇用される労働者が対象",
+    minChildAge: 0,
+    maxChildAge: 9,
+    programs: [
+      {
+        title: "ベビーシッター派遣事業",
+        url: "https://www.pref.iwate.jp/kurashikankyou/kosodate/shien/1069934/index.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 宮城県
+  // ======================
+  {
+    id: "miyagi-childcare-passport",
+    level: "prefecture",
+    municipality: "宮城県",
+    category: "cost",
+    title: "みやぎ子育て支援パスポート",
+    shortValue: "協賛店で割引や子育て向けサービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "Webまたはアプリで登録 → 協賛店で提示",
+    timingText: "18歳以下の子どもがいる家庭",
+    conditionText: "宮城県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "みやぎ子育て支援パスポート",
+        url: "https://www.pref.miyagi.jp/site/kosodate/passport.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+  {
+    id: "miyagi-childcare-loan",
+    level: "prefecture",
+    municipality: "宮城県",
+    category: "cost",
+    title: "みやぎっこ応援ローン",
+    shortValue: "子育て資金を優遇金利で借りられる",
+    feeSummary: "融資額は最大500万円／金利・条件は取扱金融機関ごとに異なる",
+    flowSummary: "取扱金融機関へ相談・申込み → 審査",
+    timingText: "22歳以下の子どもを扶養する世帯（一定の例外あり）",
+    conditionText: "宮城県内在住、安定収入など金融機関の融資基準あり",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "みやぎ子育て世帯支援総合融資「みやぎっこ応援ローン」",
+        url: "https://www.pref.miyagi.jp/site/kosodate/support-miyagikko-loan.html",
+      },
+    ],
+    displayOrder: 20,
+  },
+
+  // ======================
+  // 秋田県
+  // ======================
+  {
+    id: "akita-childcare-card",
+    level: "prefecture",
+    municipality: "秋田県",
+    category: "cost",
+    title: "あきた子育てふれあいカード",
+    shortValue: "協賛店で割引などの優待サービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "アプリまたは窓口で交付 → 協賛店で提示",
+    timingText: "中学3年生以下の子どもがいる家庭",
+    conditionText: "秋田県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 15,
+    programs: [
+      {
+        title: "あきた子育てふれあいカード",
+        url: "https://common3.pref.akita.lg.jp/kosodate/yutai-info/about",
+      },
+    ],
+    displayOrder: 10,
+  },
+  {
+    id: "akita-childcare-fee-support",
+    level: "prefecture",
+    municipality: "秋田県",
+    category: "cost",
+    title: "保育料等の助成（すこやか子育て支援事業）",
+    shortValue: "保育料や副食費の負担を軽減",
+    feeSummary: "世帯・子どもの状況に応じて保育料等の一部または全額を助成",
+    flowSummary: "お住まいの市町村で対象・申請方法を確認",
+    timingText: "就学前の子どもが保育所等を利用中",
+    conditionText: "所得やきょうだい数などの要件あり／助成内容は市町村で異なる",
+    minChildAge: 0,
+    maxChildAge: 5,
+    programs: [
+      {
+        title: "すこやか子育て支援事業",
+        url: "https://www.pref.akita.lg.jp/pages/archive/28393",
+      },
+    ],
+    displayOrder: 20,
+  },
+
+  // ======================
+  // 山形県
+  // ======================
+  {
+    id: "yamagata-childcare-passport",
+    level: "prefecture",
+    municipality: "山形県",
+    category: "cost",
+    title: "やまがた子育て応援パスポート",
+    shortValue: "協賛店で割引や子育て向けサービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "Webまたは窓口で交付 → 協賛店で提示",
+    timingText: "18歳未満の子どもがいる家庭",
+    conditionText: "山形県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 17,
+    programs: [
+      {
+        title: "やまがた子育て応援パスポート",
+        url: "https://www.pref.yamagata.jp/010001/kenfuku/kosodate/kosodatepass.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+  {
+    id: "yamagata-baby-hot-station",
+    level: "prefecture",
+    municipality: "山形県",
+    category: "time",
+    title: "赤ちゃんほっと♡ステーション",
+    shortValue: "外出先で授乳やおむつ替えができる",
+    feeSummary: "登録施設のスペースを無料で利用",
+    flowSummary: "県内の登録施設を検索 → 施設で利用",
+    timingText: "赤ちゃんや小さな子どもとの外出時",
+    conditionText: "授乳やおむつ替えが必要な親子が対象／設備は施設ごとに異なる",
+    minChildAge: 0,
+    maxChildAge: 3,
+    programs: [
+      {
+        title: "赤ちゃんほっと♡ステーション",
+        url: "https://www.pref.yamagata.jp/010001/r4baby-hotto-station.html",
+      },
+    ],
+    displayOrder: 20,
+  },
+
+  // ======================
+  // 福島県
+  // ======================
+  {
+    id: "fukushima-famitan-card",
+    level: "prefecture",
+    municipality: "福島県",
+    category: "cost",
+    title: "ファミたんカード",
+    shortValue: "協賛店で割引や子育て向けサービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "Webまたは窓口で交付 → 協賛店で提示",
+    timingText: "18歳到達後最初の3月31日までの子どもがいる家庭",
+    conditionText: "福島県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "ファミたんカード（子育て応援パスポート）",
+        url: "https://www.pref.fukushima.lg.jp/sec/21055a/famitan.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+  {
+    id: "fukushima-childcare-parking",
+    level: "prefecture",
+    municipality: "福島県",
+    category: "time",
+    title: "子育て応援駐車場",
+    shortValue: "小さな子ども連れで優先駐車スペースを利用",
+    feeSummary: "県内登録施設の対象駐車区画を利用",
+    flowSummary: "対象施設と利用条件を確認 → 対象区画を利用",
+    timingText: "小さな子どもと一緒に外出するとき",
+    conditionText: "対象となる子どもの年齢や利用方法は施設の案内を確認",
+    minChildAge: 0,
+    maxChildAge: 5,
+    programs: [
+      {
+        title: "子育て応援駐車場",
+        url: "https://www.pref.fukushima.lg.jp/sec/21055a/kosodate-ouen.html",
+      },
+    ],
+    displayOrder: 20,
+  },
 
   // ======================
 // 東京都
@@ -464,7 +731,7 @@ export function getProgramsByPrefecture(prefecture: string): ProgramGroup[] {
   );
 }
 
-// 子どもの年齢から、東京都ベータ版で関連する制度を絞り込む
+// 子どもの年齢から、公開対象地域で関連する制度を絞り込む
 export function getProgramsForFamily(
   prefecture: string,
   childrenAges: number[]
