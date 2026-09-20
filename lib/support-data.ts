@@ -50,7 +50,13 @@ export const availablePrefectures = [
   "秋田県",
   "山形県",
   "福島県",
+  "茨城県",
+  "栃木県",
+  "群馬県",
+  "埼玉県",
+  "千葉県",
   "東京都",
+  "神奈川県",
 ];
 
 function calculateChildAllowanceMonthly(childrenAges: number[]): number {
@@ -547,6 +553,156 @@ export const programGroups: ProgramGroup[] = [
       },
     ],
     displayOrder: 20,
+  },
+
+  // ======================
+  // 茨城県
+  // ======================
+  {
+    id: "ibaraki-kids-club",
+    level: "prefecture",
+    municipality: "茨城県",
+    category: "cost",
+    title: "いばらきKids Club",
+    shortValue: "協賛店で割引や子育て向けサービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "市町村窓口または電子申請で取得 → 協賛店で提示",
+    timingText: "18歳以下の子どもがいる家庭",
+    conditionText: "茨城県内在住／店舗により子どもの同伴などが必要",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "いばらきKids Club（いばらき子育て家庭優待制度）",
+        url: "https://www.kids.pref.ibaraki.jp/kids/guide/",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 栃木県
+  // ======================
+  {
+    id: "tochigi-smile-card",
+    level: "prefecture",
+    municipality: "栃木県",
+    category: "cost",
+    title: "とちぎ笑顔つぎつぎカード",
+    shortValue: "協賛店・施設で割引や特典を利用",
+    feeSummary: "割引・特典内容は協賛店・施設ごとに異なる",
+    flowSummary: "市町窓口または栃木県LINEで取得 → 協賛店で提示",
+    timingText: "18歳になった後、最初の3月31日まで",
+    conditionText: "栃木県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "とちぎ笑顔つぎつぎカード",
+        url: "https://tocopo.pref.tochigi.lg.jp/card/",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 群馬県
+  // ======================
+  {
+    id: "gunma-guchoki-passport",
+    level: "prefecture",
+    municipality: "群馬県",
+    category: "cost",
+    title: "ぐーちょきパスポート",
+    shortValue: "協賛店で割引やプレゼントなどの優待を利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "県・市町村窓口または郵送で取得 → 協賛店で提示",
+    timingText: "18歳になった年度の3月31日まで",
+    conditionText: "群馬県内在住、または子どもが県内に通学・通園する家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "ぐーちょきパスポート",
+        url: "https://smilelife.pref.gunma.jp/childrearing/passport/guchoki/",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 埼玉県
+  // ======================
+  {
+    id: "saitama-papamama-support-shop",
+    level: "prefecture",
+    municipality: "埼玉県",
+    category: "cost",
+    title: "パパ・ママ応援ショップ",
+    shortValue: "協賛店で割引などの優待サービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "LINE版または紙の優待カードを取得 → 協賛店で提示",
+    timingText: "18歳になった後、最初の3月31日まで",
+    conditionText: "埼玉県内の対象家庭が利用可／店舗ごとに利用条件あり",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "パパ・ママ応援ショップ（利用者向けFAQ）",
+        url: "https://www.pref.saitama.lg.jp/a0607/ouen/papamamafaq-user.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 千葉県
+  // ======================
+  {
+    id: "chiba-chipass",
+    level: "prefecture",
+    municipality: "千葉県",
+    category: "cost",
+    title: "子育て応援カード「チーパス」",
+    shortValue: "協賛店で割引などの子育て応援サービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "市町村窓口またはアプリで取得 → 協賛店で提示",
+    timingText: "18歳になった後、最初の3月31日まで",
+    conditionText: "千葉県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "チーパス・スマイル",
+        url: "https://chi-pass-smile.pref.chiba.lg.jp/Web/chipass/WP1401.aspx",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 神奈川県
+  // ======================
+  {
+    id: "kanagawa-childcare-passport",
+    level: "prefecture",
+    municipality: "神奈川県",
+    category: "cost",
+    title: "かながわ子育て応援パスポート",
+    shortValue: "協力施設で割引や設備などのサービスを利用",
+    feeSummary: "割引・特典・利用できる設備は協力施設ごとに異なる",
+    flowSummary: "公式案内から利用登録 → 登録証を協力施設で提示",
+    timingText: "12歳になった後、最初の3月31日まで",
+    conditionText: "神奈川県内在住の対象家庭が利用可",
+    minChildAge: 0,
+    maxChildAge: 12,
+    programs: [
+      {
+        title: "神奈川県の子育て支援案内",
+        url: "https://www.pref.kanagawa.jp/docs/sy8/kosodateshien.html",
+      },
+    ],
+    displayOrder: 10,
   },
 
   // ======================
