@@ -57,6 +57,15 @@ export const availablePrefectures = [
   "千葉県",
   "東京都",
   "神奈川県",
+  "新潟県",
+  "富山県",
+  "石川県",
+  "福井県",
+  "山梨県",
+  "長野県",
+  "岐阜県",
+  "静岡県",
+  "愛知県",
 ];
 
 function calculateChildAllowanceMonthly(childrenAges: number[]): number {
@@ -703,6 +712,254 @@ export const programGroups: ProgramGroup[] = [
       },
     ],
     displayOrder: 10,
+  },
+
+  // ======================
+  // 新潟県
+  // ======================
+  {
+    id: "niigata-tokikko-club",
+    level: "prefecture",
+    municipality: "新潟県",
+    category: "cost",
+    title: "トキっ子くらぶ",
+    shortValue: "協賛店で割引やポイントなどの優待を利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "専用サイトから申込み → 会員証を協賛店で提示",
+    timingText: "18歳未満の子どもがいる家庭",
+    conditionText: "新潟県内在住の子育て家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 17,
+    programs: [
+      {
+        title: "子育て家庭への優待サービス制度",
+        url: "https://www.pref.niigata.lg.jp/sec/kodomokatei/1356829388630.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 富山県
+  // ======================
+  {
+    id: "toyama-digital-points",
+    level: "prefecture",
+    municipality: "富山県",
+    category: "cash",
+    title: "とみいくデジタルポイント",
+    shortValue: "1歳半を迎えた子ども1人につき3万円分を付与",
+    feeSummary: "県内の指定子育て支援サービスで使える3万円分のポイント",
+    flowSummary: "市町村から届く案内を確認 → 2つの対象アプリから申請",
+    timingText: "子どもが1歳半を迎える時期",
+    conditionText: "富山県在住の対象児童がいる家庭／出生順は不問",
+    minChildAge: 1,
+    maxChildAge: 1,
+    lumpSumAmount: 30000,
+    programs: [
+      {
+        title: "とみいくデジタルポイント",
+        url: "https://kosodate-toyama.jp/child_rearing/effort.php",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 石川県
+  // ======================
+  {
+    id: "ishikawa-premium-passport",
+    level: "prefecture",
+    municipality: "石川県",
+    category: "cost",
+    title: "プレミアム・パスポート",
+    shortValue: "協賛店で割引やプレゼントなどの特典を利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "専用サイトで登録 → スマートフォンのパスポートを提示",
+    timingText: "18歳になった後、最初の3月31日まで",
+    conditionText: "石川県内在住で18歳未満の子どもがいる家庭が対象",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "プレミアム・パスポート",
+        url: "https://i-prepass.i-oyacomi.net/prepass/",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 福井県
+  // ======================
+  {
+    id: "fukui-fukuiku-passport",
+    level: "prefecture",
+    municipality: "福井県",
+    category: "cost",
+    title: "ふく育パスポート",
+    shortValue: "協賛店で割引などの優待サービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "専用フォームで無料登録 → スマートフォンで提示",
+    timingText: "18歳になった後、最初の3月31日まで",
+    conditionText: "福井県内在住の子育て家庭が対象／1世帯2件まで登録可",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "ふく育パスポート",
+        url: "https://www.fuku-iku.jp/about-passport.php",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 山梨県
+  // ======================
+  {
+    id: "yamanashi-childcare-card",
+    level: "prefecture",
+    municipality: "山梨県",
+    category: "cost",
+    title: "やまなし子育て応援カード",
+    shortValue: "協賛店で割引などの特典を利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "市町村窓口で交付 → 協賛店で提示",
+    timingText: "18歳以下の子どもがいる家庭",
+    conditionText: "対象確認のため健康保険証などの提示が必要",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "やまなし子育て応援カード事業",
+        url: "https://www.pref.yamanashi.jp/kosodate/oouennkard.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 長野県
+  // ======================
+  {
+    id: "nagano-childcare-passport",
+    level: "prefecture",
+    municipality: "長野県",
+    category: "cost",
+    title: "ながの子育て家庭優待パスポート",
+    shortValue: "協賛店で割引などの優待サービスを利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "市町村から配布されたカードまたはLINE版を協賛店で提示",
+    timingText: "18歳になる年度の3月31日まで",
+    conditionText: "長野県内の対象家庭が利用可／県内全市町村が参加",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "ながの子育て家庭優待パスポート",
+        url: "https://www.cheerful-nagano.com/child/passport-detail/",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 岐阜県
+  // ======================
+  {
+    id: "gifu-gifukko-card",
+    level: "prefecture",
+    municipality: "岐阜県",
+    category: "cost",
+    title: "ぎふっこカード",
+    shortValue: "協賛店で割引やポイント加算などの特典を利用",
+    feeSummary: "割引・特典内容は協賛店ごとに異なる",
+    flowSummary: "市町村窓口・県窓口または郵送で交付 → 協賛店で提示",
+    timingText: "18歳未満の子どもがいる家庭",
+    conditionText: "岐阜県内在住の子育て家庭が対象／多子世帯向けカードあり",
+    minChildAge: 0,
+    maxChildAge: 17,
+    programs: [
+      {
+        title: "ぎふっこカード",
+        url: "https://www.kosodate.pref.gifu.lg.jp/?act=card_about",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 静岡県
+  // ======================
+  {
+    id: "shizuoka-childcare-card",
+    level: "prefecture",
+    municipality: "静岡県",
+    category: "cost",
+    title: "しずおか子育て優待カード",
+    shortValue: "協賛店・施設で子育て応援サービスを利用",
+    feeSummary: "割引・特典内容は協賛店・施設ごとに異なる",
+    flowSummary: "市町窓口で交付またはアプリに登録 → 協賛店で提示",
+    timingText: "18歳未満の子どもがいる家庭",
+    conditionText: "原則として対象の子どもを同伴して利用",
+    minChildAge: 0,
+    maxChildAge: 17,
+    programs: [
+      {
+        title: "しずおか子育て優待カード",
+        url: "https://www.fujisancco.pref.shizuoka.jp/shizuokakennotorikumi/yutaicard.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+
+  // ======================
+  // 愛知県
+  // ======================
+  {
+    id: "aichi-childcare-support-payment",
+    level: "prefecture",
+    municipality: "愛知県",
+    category: "cash",
+    title: "愛知県子育て応援給付金",
+    shortValue: "対象健診を受けた子ども1人につき5万円を給付",
+    feeSummary: "1歳6か月児健診または3歳児健診ごとに5万円",
+    flowSummary: "対象健診を受診 → 6か月以内に電子申請または郵送",
+    timingText: "1歳6か月児健診・3歳児健診の受診後",
+    conditionText: "児童扶養手当受給世帯または住民税均等割非課税世帯が対象",
+    minChildAge: 1,
+    maxChildAge: 3,
+    lumpSumAmount: 50000,
+    programs: [
+      {
+        title: "愛知県子育て応援給付金",
+        url: "https://www.pref.aichi.jp/soshiki/kosodate/ouenkyuufukin.html",
+      },
+    ],
+    displayOrder: 10,
+  },
+  {
+    id: "aichi-hagumin-card",
+    level: "prefecture",
+    municipality: "愛知県",
+    category: "cost",
+    title: "はぐみんカード",
+    shortValue: "協力店舗で割引や特典サービスを利用",
+    feeSummary: "割引・特典内容は協力店舗ごとに異なる",
+    flowSummary: "利用者登録 → デジタルカードまたは紙カードを提示",
+    timingText: "18歳になった後、最初の3月31日まで",
+    conditionText: "愛知県内在住の子育て家庭が対象／名古屋市は「ぴよか」を利用",
+    minChildAge: 0,
+    maxChildAge: 18,
+    programs: [
+      {
+        title: "はぐみんカードの利用方法",
+        url: "https://hagumin-net.pref.aichi.jp/card/user/index.html",
+      },
+    ],
+    displayOrder: 20,
   },
 
   // ======================

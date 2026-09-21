@@ -117,7 +117,7 @@ const handleChildAgeChange = (index: number, value: number) => {
           <section className="text-center mb-8">
             <div className="inline-flex items-center gap-2 text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full mb-6">
               <Coins className="h-4 w-4" />
-              <span className="text-sm font-medium">東北6県・関東7都県の情報を公開中</span>
+              <span className="text-sm font-medium">東北・関東・中部の22都県を公開中</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-balance leading-tight">
               子どもの年齢から、
@@ -205,7 +205,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             <p className="mb-2">
               ※ 掲載情報と金額は参考です。所得・就労・在住期間などの条件は、必ず公式サイトでご確認ください。
             </p>
-            <p className="mb-2">情報確認日：2026年9月20日</p>
+            <p className="mb-2">情報確認日：2026年9月21日</p>
             <p>
               &copy; {new Date().getFullYear()} 子育て支援ナビ
             </p>
