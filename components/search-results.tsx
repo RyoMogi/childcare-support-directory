@@ -76,8 +76,8 @@ export function SearchResults({ results }: SearchResultsProps) {
       />
 
       <ResultSection
-        title="助成・無償化"
-        description="費用負担を軽くする助成や無償化"
+        title="割引・助成・無償化"
+        description="優待や助成など、費用負担を軽くする支援"
         icon={<BadgePercent className="h-5 w-5 text-blue-600" />}
         programs={costPrograms}
         colorClass="bg-blue-100"

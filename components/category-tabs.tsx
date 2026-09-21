@@ -23,7 +23,7 @@ const categoryOptions: {
   },
   {
     value: "cost",
-    label: "助成・無償化",
+    label: "割引・助成・無償化",
     icon: <Ticket className="h-4 w-4" />,
   },
   {

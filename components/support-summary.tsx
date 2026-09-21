@@ -79,14 +79,14 @@ export function SupportSummaryCard({
           <CardContent className="pt-5 pb-5">
             <div className="flex items-center gap-2 text-rose-600 mb-2">
               <BadgePercent className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">助成・無償化</span>
+              <span className="text-xs md:text-sm font-medium">割引・助成・無償化</span>
             </div>
             <p className="text-2xl md:text-3xl font-bold text-rose-700 tracking-tight">
               {supportCount}
               <span className="text-sm md:text-base ml-1">件</span>
             </p>
             <p className="text-xs text-rose-600 mt-2">
-              医療費・保育料・授業料など
+              お店の優待・保育料・授業料など
             </p>
           </CardContent>
         </Card>

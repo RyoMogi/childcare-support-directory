@@ -43,7 +43,7 @@ export function LocationForm({
       <div className="bg-card rounded-2xl p-6 md:p-8 shadow-sm border space-y-5">
         <div className="space-y-2">
           <Label htmlFor="prefecture" className="text-sm font-medium">
-            お住まいの都県
+            お住まいの都道府県
           </Label>
           <Select value={prefecture} onValueChange={onPrefectureChange}>
             <SelectTrigger id="prefecture" className="w-full bg-background h-11">

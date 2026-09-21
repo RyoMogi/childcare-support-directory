@@ -117,7 +117,7 @@ const handleChildAgeChange = (index: number, value: number) => {
           <section className="text-center mb-8">
             <div className="inline-flex items-center gap-2 text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full mb-6">
               <Coins className="h-4 w-4" />
-              <span className="text-sm font-medium">東北・関東・中部の22都県を公開中</span>
+              <span className="text-sm font-medium">全国47都道府県の情報を公開中</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-balance leading-tight">
               子どもの年齢から、
@@ -126,7 +126,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto text-pretty">
               対象地域に住む、子どもがいる家庭向けです。
-              お住まいの都県と子どもの年齢から、国・都県の関連制度を絞り込みます。
+              お住まいの都道府県と子どもの年齢から、国・自治体の関連制度を絞り込みます。
             </p>
           </section>
         )}
@@ -189,7 +189,7 @@ const handleChildAgeChange = (index: number, value: number) => {
                 <Coins className="h-10 w-10 text-emerald-400" />
               </div>
               <h3 className="text-lg font-medium mb-2">
-                お住まいの都県と子どもの情報を入力してください
+                お住まいの都道府県と子どもの情報を入力してください
               </h3>
               <p className="text-sm text-muted-foreground text-pretty">
                 選んだ地域で利用できる可能性がある制度を表示します。

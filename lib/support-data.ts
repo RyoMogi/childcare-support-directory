@@ -19,6 +19,7 @@ export interface ProgramGroup {
   benefitRateNote?: string;
   minChildAge?: number;
   maxChildAge?: number;
+  minChildren?: number;
   betaVisible?: boolean;
 
   monthlyAmount?: number;
@@ -42,31 +43,8 @@ export const prefectures = [
   "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
 ];
 
-// 現在、都県独自の制度を公開している地域
-export const availablePrefectures = [
-  "青森県",
-  "岩手県",
-  "宮城県",
-  "秋田県",
-  "山形県",
-  "福島県",
-  "茨城県",
-  "栃木県",
-  "群馬県",
-  "埼玉県",
-  "千葉県",
-  "東京都",
-  "神奈川県",
-  "新潟県",
-  "富山県",
-  "石川県",
-  "福井県",
-  "山梨県",
-  "長野県",
-  "岐阜県",
-  "静岡県",
-  "愛知県",
-];
+// 子育て家庭向けの制度を掲載している地域
+export const availablePrefectures = prefectures;
 
 function calculateChildAllowanceMonthly(childrenAges: number[]): number {
   const eligibleChildren = childrenAges
@@ -91,6 +69,150 @@ function calculateChildAllowanceMonthly(childrenAges: number[]): number {
 function calculate018SupportMonthly(childrenAges: number[]): number {
   return childrenAges.filter((age) => age >= 0 && age <= 18).length * 5000;
 }
+
+// 各自治体の子育て家庭向け優待制度。特典内容は店舗ごとに変わるため金額は試算しない。
+const regionalPassportPrograms: ProgramGroup[] = [
+  {
+    id: "hokkaido-dosanko-benefits", municipality: "北海道", title: "どさんこ・子育て特典制度",
+    maxChildAge: 18, flowSummary: "お住まいの市町村で特典カードを受け取り → 協賛店で提示",
+    url: "https://www.pref.hokkaido.lg.jp/hf/kms/100/dosanko/",
+  },
+  {
+    id: "mie-childcare-coupon", municipality: "三重県", title: "子育て家庭応援クーポン",
+    maxChildAge: 17, flowSummary: "アプリなどでクーポンを取得 → 協賛店で提示",
+    url: "https://www.pref.mie.lg.jp/D1KODOMO/000177550.htm",
+  },
+  {
+    id: "shiga-omi-childcare-card", municipality: "滋賀県", title: "淡海子育て応援カード",
+    maxChildAge: 17, flowSummary: "ハグナビしがなどから申請 → 協賛店で提示",
+    url: "https://www.pref.shiga.lg.jp/ippan/kosodatekyouiku/kosodate/332306.html",
+  },
+  {
+    id: "kyoto-childcare-passport", municipality: "京都府", title: "きょうと子育て応援パスポート",
+    maxChildAge: 17, flowSummary: "アプリ「まもっぷ」または窓口で取得 → 協賛店で提示",
+    url: "https://www.pref.kyoto.jp/kosodateouen/1183513999674.html",
+  },
+  {
+    id: "osaka-maido-card", municipality: "大阪府", title: "まいど子でもカード",
+    maxChildAge: 17, flowSummary: "公式サイトで無料登録 → 協賛店で提示",
+    url: "https://www.pref.osaka.lg.jp/o090135/kosodateshien/maidokodemo/index.html",
+  },
+  {
+    id: "hyogo-childcare-shops", municipality: "兵庫県", title: "ひょうご子育て応援の店",
+    maxChildAge: 17, flowSummary: "公式サイトで会員登録 → パスポートを協賛店で提示",
+    url: "https://web.pref.hyogo.lg.jp/kk17/ouennnomise.html",
+  },
+  {
+    id: "nara-childcare-supporters", municipality: "奈良県", title: "なら子育て応援団",
+    maxChildAge: 18, flowSummary: "奈良スーパーアプリで子育て世帯認定を申請 → ロゴマークを提示",
+    url: "https://www.pref.nara.lg.jp/n053/20395.html",
+  },
+  {
+    id: "wakayama-childcare-passport", municipality: "和歌山県", title: "わかやま子育て支援パスポート",
+    maxChildAge: 17, flowSummary: "公式サイトから申請 → 協賛店で提示",
+    url: "https://wakayama-kosodate.com/pass",
+  },
+  {
+    id: "tottori-childcare-passport", municipality: "鳥取県", title: "とっとり子育て応援パスポート",
+    maxChildAge: 18, flowSummary: "県の子育てアプリまたは市町村窓口で申請 → 協賛店で提示",
+    url: "https://www.pref.tottori.lg.jp/208364.htm",
+  },
+  {
+    id: "shimane-coccolo-passport", municipality: "島根県", title: "しまね子育て応援パスポート「こっころ」",
+    maxChildAge: 17, flowSummary: "県の案内に沿って交付申請 → 協賛店で提示",
+    url: "https://www.pref.shimane.lg.jp/education/syoushika/syoushika/parntenv/coccolo/",
+  },
+  {
+    id: "okayama-momokko-card", municipality: "岡山県", title: "ももっこカード",
+    maxChildAge: 17, flowSummary: "アプリまたは申込書で取得 → 協賛店で提示",
+    url: "https://www.pref.okayama.jp/page/detail-5377.html",
+  },
+  {
+    id: "hiroshima-ikuchan-service", municipality: "広島県", title: "イクちゃんサービス",
+    maxChildAge: 17, flowSummary: "公式サイトで対象店舗を確認 → 店舗の案内に沿って利用",
+    url: "https://www.ikuchan.or.jp/service/information/2016/01/061070.html",
+  },
+  {
+    id: "yamaguchi-childcare-passport", municipality: "山口県", title: "やまぐち子育て応援パスポート",
+    maxChildAge: 17, flowSummary: "電子申請で取得 → 協賛店で提示",
+    url: "https://www.pref.yamaguchi.lg.jp/annai/120405.html",
+  },
+  {
+    id: "tokushima-kuttuki-passport", municipality: "徳島県", title: "Go!Go!くっつき隊応援事業",
+    maxChildAge: 17, flowSummary: "公式サイトで利用方法を確認 → 協賛店で優待を利用",
+    url: "https://www.pref.tokushima.lg.jp/hagukumi/gogo-kuttuki/",
+  },
+  {
+    id: "kagawa-tokudane-support", municipality: "香川県", title: "みんなトクだね応援団",
+    maxChildAge: 17, flowSummary: "Colorful＋の画面を協賛店で提示",
+    url: "https://kagawa-colorful.com/4758/",
+  },
+  {
+    id: "ehime-nobinobi-passport", municipality: "愛媛県", title: "えひめのびのび子育て応援隊",
+    maxChildAge: 17, flowSummary: "県公式LINEの「きらきらナビ」に登録 → パスポートを提示",
+    url: "https://www.ehime-kirakira.com/nobinobi/passport/",
+  },
+  {
+    id: "kochi-odekakerunda-pass", municipality: "高知県", title: "おでかけるんだパス",
+    maxChildAge: 18, flowSummary: "公式アプリをダウンロード → 対象店舗で優待券を提示",
+    url: "https://odekake-runda.pref.kochi.lg.jp/lp/app.html",
+  },
+  {
+    id: "fukuoka-childcare-shops", municipality: "福岡県", title: "子育て応援の店",
+    maxChildAge: 17, flowSummary: "公式サイトまたはアプリで登録 → 対象店舗で提示",
+    url: "https://kosodate-mise.pref.fukuoka.lg.jp/",
+  },
+  {
+    id: "saga-childcare-shops", municipality: "佐賀県", title: "子育て応援の店",
+    maxChildAge: 17, flowSummary: "公式サイトで会員証の利用方法を確認 → 登録店で提示",
+    url: "https://saga-kosodate.jp/kosodate/ouennomise/",
+  },
+  {
+    id: "nagasaki-cocoron-passport", municipality: "長崎県", title: "ココロンパスポート",
+    maxChildAge: 17, flowSummary: "デジタル版またはカード版を申請 → 協賛店で提示",
+    url: "https://www.nagahapi.jp/kosodate/support/passport/",
+  },
+  {
+    id: "kumamoto-childcare-passport", municipality: "熊本県", title: "子育て応援パスポート",
+    maxChildAge: 17, flowSummary: "公式サイトでパスポート画像を表示 → 協賛店で提示",
+    url: "https://www.hapimon.jp/kiji00313/",
+  },
+  {
+    id: "oita-childcare-passport", municipality: "大分県", title: "おおいた子育て応援パスポート",
+    maxChildAge: 17, flowSummary: "無料登録してパスポートを取得 → 協賛店で提示",
+    url: "https://www.oita-kosodate.jp/",
+  },
+  {
+    id: "miyazaki-childcare-card", municipality: "宮崎県", title: "子育て応援カード",
+    maxChildAge: 18, flowSummary: "すくすくみやざきで登録 → デジタルカードなどを提示",
+    url: "https://www.pref.miyazaki.lg.jp/kyoikukosodate/kodomo/shien/oencard/index.html",
+  },
+  {
+    id: "kagoshima-childcare-passport", municipality: "鹿児島県", title: "かごしま子育て支援パスポート",
+    maxChildAge: 17, flowSummary: "専用サイトで登録 → パスポートを協賛店で提示",
+    url: "https://kosodate.pref.kagoshima.jp/kosodatepassport/",
+  },
+  {
+    id: "okinawa-childcare-passport", municipality: "沖縄県", title: "おきなわ子育て応援パスポート",
+    maxChildAge: 17, flowSummary: "公式サイトでパスポートを表示 → 対象店・施設で提示",
+    url: "https://www.kosodate.pref.okinawa.jp/",
+  },
+].map((entry) => ({
+  id: entry.id,
+  level: "prefecture",
+  municipality: entry.municipality,
+  category: "cost",
+  title: entry.title,
+  shortValue: "協賛店・施設で割引や子育て向けサービスを利用",
+  feeSummary: "割引・特典内容は協賛店・施設ごとに異なる",
+  flowSummary: entry.flowSummary,
+  timingText: entry.maxChildAge === 18 ? "18歳到達後最初の3月31日まで" : "18歳未満の子どもがいる家庭",
+  conditionText: `${entry.municipality}の対象家庭が利用可／店舗ごとに条件が異なる`,
+  minChildAge: 0,
+  maxChildAge: entry.maxChildAge,
+  programs: [{ title: entry.title, url: entry.url }],
+  displayOrder: 10,
+}));
 
 export const programGroups: ProgramGroup[] = [
   // ======================
@@ -1134,6 +1256,84 @@ export const programGroups: ProgramGroup[] = [
   ],
   displayOrder: 50,
 },
+  ...regionalPassportPrograms,
+  {
+    id: "osaka-private-high-school-tuition",
+    level: "prefecture",
+    municipality: "大阪府",
+    category: "cost",
+    title: "私立高校等の授業料支援",
+    shortValue: "国の制度と合わせて私立高校等の授業料負担を軽減",
+    feeSummary: "2026年度から所得制限なし／対象校や申請条件を確認",
+    flowSummary: "進学先・在学校で対象と申請方法を確認",
+    timingText: "高校等に在学中",
+    conditionText: "大阪府内在住などの要件あり／対象校・費用の範囲は公式案内を確認",
+    minChildAge: 15,
+    maxChildAge: 18,
+    programs: [{
+      title: "令和8年度以降の授業料支援制度",
+      url: "https://www.pref.osaka.lg.jp/o180160/shigaku/shigakumushouka/shigaku_mushoka_r6.html",
+    }],
+    displayOrder: 20,
+  },
+  {
+    id: "hyogo-childcare-fee-support",
+    level: "prefecture",
+    municipality: "兵庫県",
+    category: "cost",
+    title: "ひょうご保育料軽減事業",
+    shortValue: "条件に合う0〜2歳児の保育料を軽減",
+    feeSummary: "月額5,000円を超える保育料を補助（上限・所得要件あり）",
+    flowSummary: "市町の保育担当課または利用施設で申請方法を確認",
+    timingText: "0〜2歳で保育認定を受け、対象施設を利用中",
+    conditionText: "兵庫県内在住／市町民税所得割額などの要件あり",
+    minChildAge: 0,
+    maxChildAge: 2,
+    programs: [{
+      title: "ひょうご保育料軽減事業",
+      url: "https://web.pref.hyogo.lg.jp/kf11/hoikuryokeigen-hoikukodomo.html",
+    }],
+    displayOrder: 20,
+  },
+  {
+    id: "tokushima-home-childcare-coupon",
+    level: "prefecture",
+    municipality: "徳島県",
+    category: "cost",
+    title: "とくしま在宅育児応援クーポン",
+    shortValue: "在宅育児家庭が子育て支援サービスを利用できる",
+    feeSummary: "クーポン額・利用できるサービスは実施市町村によって異なる",
+    flowSummary: "お住まいの市町村の実施状況を確認 → 窓口で申請",
+    timingText: "0〜2歳の子どもを在宅で育児中",
+    conditionText: "保育所等を利用せず在宅で育児する家庭が対象／実施市町村に限る",
+    minChildAge: 0,
+    maxChildAge: 2,
+    programs: [{
+      title: "とくしま在宅育児応援クーポン事業",
+      url: "https://www.pref.tokushima.lg.jp/ippannokata/kenko/kosodateshien/5026662/",
+    }],
+    displayOrder: 20,
+  },
+  {
+    id: "kagawa-sansan-passport",
+    level: "prefecture",
+    municipality: "香川県",
+    category: "cost",
+    title: "さんさんパスポート",
+    shortValue: "子ども3人以上の家庭が加盟店の特典を利用",
+    feeSummary: "割引・特典内容は加盟店ごとに異なる",
+    flowSummary: "Colorful＋でパスポートを取得 → 加盟店で提示",
+    timingText: "子ども3人以上を養育している間",
+    conditionText: "扶養している子どもが3人以上の家庭が対象／詳細は公式案内を確認",
+    minChildAge: 0,
+    maxChildAge: 17,
+    minChildren: 3,
+    programs: [{
+      title: "さんさんパスポート",
+      url: "https://kagawa-colorful.com/4758/",
+    }],
+    displayOrder: 20,
+  },
 ];
 
 // 都道府県を選んだときに表示するデータ
@@ -1151,6 +1351,9 @@ export function getProgramsForFamily(
 ): ProgramGroup[] {
   return getProgramsByPrefecture(prefecture).filter((program) => {
     if (program.betaVisible === false) return false;
+    if (program.minChildren !== undefined && childrenAges.length < program.minChildren) {
+      return false;
+    }
     if (program.minChildAge === undefined || program.maxChildAge === undefined) {
       return true;
     }
