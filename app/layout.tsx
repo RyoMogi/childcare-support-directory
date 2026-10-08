@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'もらえる・使える支援ナビ｜全国の子育て支援を確認',
-  description: '子どもの人数と年齢から、国と全国47都道府県の利用できる可能性がある子育て支援制度をまとめて確認できます。',
+  description: '子どもの人数と年齢から、国と全国47都道府県の主な子育て支援制度をまとめて確認できます。掲載制度は順次追加・更新しています。',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -92,7 +92,7 @@ export function SearchResults({ results }: SearchResultsProps) {
       />
 
       <ResultSection
-        title="準備・学び"
+        title="相談・学び"
         description="講座や相談など、知識や準備を支える支援"
         icon={<BookOpen className="h-5 w-5 text-amber-600" />}
         programs={learningPrograms}

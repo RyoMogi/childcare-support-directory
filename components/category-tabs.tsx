@@ -33,7 +33,7 @@ const categoryOptions: {
   },
   {
     value: "learning",
-    label: "準備・学び",
+    label: "相談・学び",
     icon: <BookOpen className="h-4 w-4" />,
   },
 ];

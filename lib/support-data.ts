@@ -130,7 +130,7 @@ const regionalPassportPrograms: ProgramGroup[] = [
   {
     id: "hiroshima-ikuchan-service", municipality: "広島県", title: "イクちゃんサービス",
     maxChildAge: 17, flowSummary: "公式サイトで対象店舗を確認 → 店舗の案内に沿って利用",
-    url: "https://www.ikuchan.or.jp/service/information/2016/01/061070.html",
+    url: "https://www.ikuchan.or.jp/service/about_service/index.html",
   },
   {
     id: "yamaguchi-childcare-passport", municipality: "山口県", title: "やまぐち子育て応援パスポート",
@@ -281,7 +281,7 @@ export const programGroups: ProgramGroup[] = [
     },
     {
       title: "出生後休業支援給付金",
-      url: "https://www.mhlw.go.jp/content/11600000/001372778.pdf",
+      url: "https://www.mhlw.go.jp/content/11601000/001306729.pdf",
     },
   ],
   displayOrder: 20,
@@ -308,7 +308,7 @@ export const programGroups: ProgramGroup[] = [
     },
     {
       title: "育児時短就業給付金",
-      url: "https://www.mhlw.go.jp/content/11600000/001394846.pdf",
+      url: "https://www.mhlw.go.jp/stf/newpage_51380.html",
     },
   ],
   displayOrder: 25,
@@ -396,11 +396,11 @@ export const programGroups: ProgramGroup[] = [
   programs: [
     {
       title: "高等学校等就学支援金",
-      url: "https://www.mext.go.jp/content/20260227-mxt_shuukyo03-100002595_2.pdf",
+      url: "https://www.mext.go.jp/a_menu/shotou/mushouka/index.htm",
     },
     {
       title: "高校生等奨学給付金",
-      url: "https://www.mext.go.jp/content/20260227-mxt_shuukyo03-100002595_4.pdf",
+      url: "https://www.mext.go.jp/a_menu/shotou/mushouka/index.htm",
     },
   ],
   displayOrder: 60,
@@ -805,7 +805,7 @@ export const programGroups: ProgramGroup[] = [
     programs: [
       {
         title: "チーパス・スマイル",
-        url: "https://chi-pass-smile.pref.chiba.lg.jp/Web/chipass/WP1401.aspx",
+        url: "https://www.pref.chiba.lg.jp/kosodate/chipass-smile/index.html",
       },
     ],
     displayOrder: 10,

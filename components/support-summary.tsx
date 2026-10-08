@@ -10,6 +10,7 @@ interface SupportSummaryProps {
   timeCount?: number;
   supportCount?: number;
   learningCount?: number;
+  amountProgramTitles?: string[];
 }
 
 function formatCurrency(amount: number): string {
@@ -23,6 +24,7 @@ export function SupportSummaryCard({
   timeCount = 0,
   supportCount = 0,
   learningCount = 0,
+  amountProgramTitles = [],
 }: SupportSummaryProps) {
   const hasMoneySupport = annualTotal > 0 || monthlyTotal > 0;
 
@@ -53,8 +55,13 @@ export function SupportSummaryCard({
               <span className="text-2xl md:text-4xl ml-1">円</span>
             </p>
             <p className="text-sm md:text-base text-emerald-700 mt-3">
-              年齢のみで計算した目安です
+              入力した年齢だけで計算した参考額です。受給を保証するものではありません。
             </p>
+            {amountProgramTitles.length > 0 && (
+              <p className="mt-3 text-xs leading-relaxed text-emerald-800">
+                この参考額に含む制度：{amountProgramTitles.join("、")}
+              </p>
+            )}
           </CardContent>
         </Card>
       ) : (
@@ -125,7 +132,8 @@ export function SupportSummaryCard({
       </div>
 
       <p className="text-xs text-muted-foreground text-center">
-        ※ 年齢以外の条件は反映していません。金額・対象可否は各制度の公式サイトをご確認ください。
+        ※ 所得・就労・扶養・在住期間など、年齢以外の条件は反映していません。
+        金額と対象可否は各制度の公式サイトでご確認ください。
       </p>
     </div>
   );

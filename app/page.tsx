@@ -11,7 +11,7 @@ import {
   filterByCategory,
   type ProgramGroup,
 } from "@/lib/support-data";
-import { Baby, Coins } from "lucide-react";
+import { Baby, CircleAlert, Coins } from "lucide-react";
 
 export default function Home() {
   const [prefecture, setPrefecture] = useState("");
@@ -83,6 +83,9 @@ const handleChildAgeChange = (index: number, value: number) => {
   const timeCount = results.filter((p) => p.category === "time").length;
   const supportCount = results.filter((p) => p.category === "cost").length;
   const learningCount = results.filter((p) => p.category === "learning").length;
+  const amountProgramTitles = results
+    .filter((p) => p.calculateAnnualAmount || p.annualAmount)
+    .map((p) => p.title);
 
   return {
     annualTotal,
@@ -91,6 +94,7 @@ const handleChildAgeChange = (index: number, value: number) => {
     timeCount,
     supportCount,
     learningCount,
+    amountProgramTitles,
   };
 }, [results, childrenAges]);
 
@@ -105,7 +109,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             <div>
               <h1 className="text-lg font-bold">もらえる・使える支援ナビ</h1>
               <p className="text-xs text-muted-foreground">
-                国と対象地域の子育て支援をまとめて確認
+                国と都道府県の主な子育て支援を確認
               </p>
             </div>
           </div>
@@ -117,7 +121,7 @@ const handleChildAgeChange = (index: number, value: number) => {
           <section className="text-center mb-8">
             <div className="inline-flex items-center gap-2 text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full mb-6">
               <Coins className="h-4 w-4" />
-              <span className="text-sm font-medium">全国47都道府県の情報を公開中</span>
+              <span className="text-sm font-medium">全国47都道府県に対応</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-bold mb-4 text-balance leading-tight">
               子どもの年齢から、
@@ -125,8 +129,8 @@ const handleChildAgeChange = (index: number, value: number) => {
               <span className="text-emerald-600">使えるかもしれない</span>支援を確認
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto text-pretty">
-              対象地域に住む、子どもがいる家庭向けです。
-              お住まいの都道府県と子どもの年齢から、国・自治体の関連制度を絞り込みます。
+              子どもがいる家庭向けです。お住まいの都道府県と子どもの年齢から、
+              国・都道府県の主な制度を絞り込みます。
             </p>
           </section>
         )}
@@ -143,6 +147,19 @@ const handleChildAgeChange = (index: number, value: number) => {
           />
         </section>
 
+        <aside className="max-w-2xl mx-auto mb-8 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-left text-sm text-amber-950">
+          <div className="flex items-start gap-3">
+            <CircleAlert className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" aria-hidden="true" />
+            <div>
+              <p className="font-medium">掲載範囲について</p>
+              <p className="mt-1 leading-relaxed text-amber-900">
+                国と都道府県の主な制度を掲載しています。すべての制度を網羅するものではなく、
+                市区町村独自の制度は現在の掲載対象外です。掲載内容は順次追加・更新しています。
+              </p>
+            </div>
+          </div>
+        </aside>
+
         {searched && filteredResults && summary && (
           <div className="space-y-10">
             <section className="max-w-xl mx-auto">
@@ -153,6 +170,7 @@ const handleChildAgeChange = (index: number, value: number) => {
                 timeCount={summary.timeCount}
                 supportCount={summary.supportCount}
                 learningCount={summary.learningCount}
+                amountProgramTitles={summary.amountProgramTitles}
               />
             </section>
 
@@ -205,7 +223,7 @@ const handleChildAgeChange = (index: number, value: number) => {
             <p className="mb-2">
               ※ 掲載情報と金額は参考です。所得・就労・在住期間などの条件は、必ず公式サイトでご確認ください。
             </p>
-            <p className="mb-2">情報確認日：2026年9月21日</p>
+            <p className="mb-2">掲載データ確認基準日：2026年9月21日</p>
             <p>
               &copy; {new Date().getFullYear()} 子育て支援ナビ
             </p>
