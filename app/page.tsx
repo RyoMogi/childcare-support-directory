@@ -223,6 +223,16 @@ const handleChildAgeChange = (index: number, value: number) => {
             <p className="mb-2">
               ※ 掲載情報と金額は参考です。所得・就労・在住期間などの条件は、必ず公式サイトでご確認ください。
             </p>
+            <p className="mb-3">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeGlG0n0OuR3ssc2rCMNPThF5CZLXZc5WVIno12BLzCYB12xg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-emerald-700 underline underline-offset-4 hover:text-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+              >
+                掲載情報の修正・追加を報告する
+              </a>
+            </p>
             <p className="mb-2">掲載データ確認基準日：2026年9月21日</p>
             <p>
               &copy; {new Date().getFullYear()} 子育て支援ナビ
