@@ -233,7 +233,7 @@ const handleChildAgeChange = (index: number, value: number) => {
                 掲載情報の修正・追加を報告する
               </a>
             </p>
-            <p className="mb-2">掲載データ確認基準日：2026年9月21日</p>
+            <p className="mb-2">掲載データ確認基準日：2026年10月9日</p>
             <p>
               &copy; {new Date().getFullYear()} 子育て支援ナビ
             </p>

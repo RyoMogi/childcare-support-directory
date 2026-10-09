@@ -1,3 +1,5 @@
+import { auditedPrefecturePrograms, auditedPrefectures } from "@/lib/audited-support-data";
+
 export interface ProgramLink {
   title: string;
   url: string;
@@ -214,7 +216,7 @@ const regionalPassportPrograms: ProgramGroup[] = [
   displayOrder: 10,
 }));
 
-export const programGroups: ProgramGroup[] = [
+const legacyProgramGroups: ProgramGroup[] = [
   // ======================
   // 国
   // ======================
@@ -1513,6 +1515,27 @@ export const programGroups: ProgramGroup[] = [
     }],
     displayOrder: 20,
   },
+];
+
+const auditedPrefectureSet = new Set<string>(auditedPrefectures);
+const hydratedAuditedPrefecturePrograms = auditedPrefecturePrograms.map((program) => {
+  if (program.municipality === "東京都" && program.title === "018サポート") {
+    return {
+      ...program,
+      calculateMonthlyAmount: calculate018SupportMonthly,
+      calculateAnnualAmount: (childrenAges: number[]) =>
+        calculate018SupportMonthly(childrenAges) * 12,
+    };
+  }
+
+  return program;
+});
+
+export const programGroups: ProgramGroup[] = [
+  ...legacyProgramGroups.filter(
+    (program) => program.level === "national" || !auditedPrefectureSet.has(program.municipality)
+  ),
+  ...hydratedAuditedPrefecturePrograms,
 ];
 
 // 都道府県を選んだときに表示するデータ
