@@ -1,4 +1,4 @@
-// Generated from the audited master CSV on 2026-10-09.
+// Generated from the audited master CSV on 2026-10-11.
 // Edit the master data and regenerate this file instead of editing entries by hand.
 import type { ProgramGroup } from "@/lib/support-data";
 
@@ -16,7 +16,23 @@ export const auditedPrefectures = [
   "埼玉県",
   "千葉県",
   "東京都",
-  "神奈川県"
+  "神奈川県",
+  "新潟県",
+  "富山県",
+  "石川県",
+  "福井県",
+  "山梨県",
+  "長野県",
+  "岐阜県",
+  "静岡県",
+  "愛知県",
+  "三重県",
+  "滋賀県",
+  "京都府",
+  "大阪府",
+  "兵庫県",
+  "奈良県",
+  "和歌山県"
 ] as const;
 
 export const auditedPrefecturePrograms: ProgramGroup[] = [
@@ -4741,5 +4757,4672 @@ export const auditedPrefecturePrograms: ProgramGroup[] = [
       }
     ],
     "displayOrder": 335
+  },
+  {
+    "id": "audited-9d837309d8",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "トキっ子くらぶ",
+    "shortValue": "協賛店で割引・特典",
+    "feeSummary": "協賛店で割引・特典",
+    "flowSummary": "会員登録し会員証を提示",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "トキっ子くらぶ",
+        "url": "https://www.pref.niigata.lg.jp/sec/kodomokatei/1356829388630.html"
+      }
+    ],
+    "displayOrder": 336
+  },
+  {
+    "id": "audited-485863076d",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "こどもの医療費助成",
+    "shortValue": "保険診療の自己負担を助成。対象年齢等は市町村で異なる",
+    "feeSummary": "保険診療の自己負担を助成。対象年齢等は市町村で異なる",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "市町村が定める年齢・負担等の要件を満たす子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "こどもの医療費助成",
+        "url": "https://www.pref.niigata.lg.jp/sec/kenko/1349128944448.html"
+      }
+    ],
+    "displayOrder": 337
+  },
+  {
+    "id": "audited-da4b4e6f8c",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担から一部負担金を除いた額を助成",
+    "feeSummary": "保険診療の自己負担から一部負担金を除いた額を助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と児童等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://www.pref.niigata.lg.jp/sec/kodomokatei/1194538546576.html"
+      }
+    ],
+    "displayOrder": 338
+  },
+  {
+    "id": "audited-f7adf8351e",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "保健所等へ申請。新潟市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども（継続認定は20歳未満）",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.niigata.lg.jp/sec/kenko/1356800990202.html"
+      }
+    ],
+    "displayOrder": 339
+  },
+  {
+    "id": "audited-db34195d00",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "難病等治療研究通院費助成",
+    "shortValue": "治療のための通院費用を助成",
+    "feeSummary": "治療のための通院費用を助成",
+    "flowSummary": "県の案内に従い申請",
+    "timingText": "6歳〜19歳が目安",
+    "conditionText": "小児慢性特定疾病の認定を受け、疾患により寝たきり状態が6か月以上続く6歳以上の方等",
+    "minChildAge": 6,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "難病等治療研究通院費助成",
+        "url": "https://www.pref.niigata.lg.jp/sec/kenko/1356800990202.html"
+      }
+    ],
+    "displayOrder": 340
+  },
+  {
+    "id": "audited-f3314cde74",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "軽・中等度難聴児補聴器購入費助成",
+    "shortValue": "補聴器の新規購入・更新費用の一部を助成",
+    "feeSummary": "補聴器の新規購入・更新費用の一部を助成",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の18歳未満の難聴児。所得等の要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽・中等度難聴児補聴器購入費助成",
+        "url": "https://www.pref.niigata.lg.jp/uploaded/attachment/383986.pdf"
+      }
+    ],
+    "displayOrder": 341
+  },
+  {
+    "id": "audited-7a0a02a548",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.niigata.lg.jp/sec/kyoikuzaimu/1356789784647.html"
+      }
+    ],
+    "displayOrder": 342
+  },
+  {
+    "id": "audited-3f7d081238",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "母子・父子・寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "flowSummary": "県地域振興局等へ事前相談・申請",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子・父子・寡婦福祉資金貸付金",
+        "url": "https://www.pref.niigata.lg.jp/sec/itoigawa_kenkou/boshikafu-08.html"
+      }
+    ],
+    "displayOrder": 343
+  },
+  {
+    "id": "audited-c7d6930699",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による生活援助・保育サービス",
+    "feeSummary": "家庭生活支援員による生活援助・保育サービス",
+    "flowSummary": "居住市町村または県窓口へ相談",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "修学・疾病・就職活動等で一時的な家事・保育支援が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.niigata.lg.jp/sec/kodomokatei/"
+      }
+    ],
+    "displayOrder": 344
+  },
+  {
+    "id": "audited-0a7fd5858a",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県地域振興局へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.niigata.lg.jp/sec/kodomokatei/"
+      }
+    ],
+    "displayOrder": 345
+  },
+  {
+    "id": "audited-d83236cc9f",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学・就職準備金や家賃相当額を貸付。就業継続等で返還免除あり",
+    "feeSummary": "入学・就職準備金や家賃相当額を貸付。就業継続等で返還免除あり",
+    "flowSummary": "県社会福祉協議会等へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.niigata.lg.jp/uploaded/attachment/441730.pdf"
+      }
+    ],
+    "displayOrder": 346
+  },
+  {
+    "id": "audited-9a4be9c4da",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "learning",
+    "title": "ひとり親家庭等就業・自立支援センター",
+    "shortValue": "就業情報、職業紹介、養育費等の相談",
+    "feeSummary": "就業情報、職業紹介、養育費等の相談",
+    "flowSummary": "センターへ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "ひとり親家庭等就業・自立支援センター",
+        "url": "https://www.pref.niigata.lg.jp/sec/kodomokatei/"
+      }
+    ],
+    "displayOrder": 347
+  },
+  {
+    "id": "audited-37aff38f6f",
+    "level": "prefecture",
+    "municipality": "新潟県",
+    "category": "cost",
+    "title": "県営住宅の子育て・ひとり親世帯向け優先入居",
+    "shortValue": "募集時に優先入居の対象となる場合がある",
+    "feeSummary": "募集時に優先入居の対象となる場合がある",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県営住宅の要件を満たす子育て・ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅の子育て・ひとり親世帯向け優先入居",
+        "url": "https://www.pref.niigata.lg.jp/sec/jutaku/1196266591821.html"
+      }
+    ],
+    "displayOrder": 348
+  },
+  {
+    "id": "audited-aeaa18b74d",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cash",
+    "title": "とみいくデジタルポイント",
+    "shortValue": "子ども1人につき3万円分の電子ポイント",
+    "feeSummary": "子ども1人につき3万円分の電子ポイント",
+    "flowSummary": "案内に従いアプリ連携・申請",
+    "timingText": "1歳〜2歳が目安",
+    "conditionText": "2024年10月1日以降に1歳6か月を迎える子どもの保護者",
+    "minChildAge": 1,
+    "maxChildAge": 2,
+    "programs": [
+      {
+        "title": "とみいくデジタルポイント",
+        "url": "https://www.pref.toyama.jp/120101/kurashi/kyouiku/kosodate/shienjigyou/kosodateshienpointo.html"
+      }
+    ],
+    "displayOrder": 349
+  },
+  {
+    "id": "audited-ea407e4ebe",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cash",
+    "title": "とやまっ子すくすく電気",
+    "shortValue": "3人世帯は年最大8,400円、4人以上は年最大21,600円を支援",
+    "feeSummary": "3人世帯は年最大8,400円、4人以上は年最大21,600円を支援",
+    "flowSummary": "オンライン申請と住民票等を提出",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内で18歳未満の子ども3人以上と同居する世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "minChildren": 3,
+    "programs": [
+      {
+        "title": "とやまっ子すくすく電気",
+        "url": "https://www.pref.toyama.jp/7104/kendodukuri/jougesuidou/suidou/kj00018993.html"
+      }
+    ],
+    "displayOrder": 350
+  },
+  {
+    "id": "audited-da4844a520",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "子ども医療費助成",
+    "shortValue": "保険診療の自己負担を助成。対象年齢等は市町村で異なる",
+    "feeSummary": "保険診療の自己負担を助成。対象年齢等は市町村で異なる",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "市町村が定める年齢・負担等の要件を満たす子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成",
+        "url": "https://www.pref.toyama.jp/120101/kurashi/kyouiku/kosodate/shusanki/health-services/inspection06.html"
+      }
+    ],
+    "displayOrder": 351
+  },
+  {
+    "id": "audited-b007c1dd9f",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の本人負担分を助成",
+    "feeSummary": "保険診療の本人負担分を助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と児童等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://www.pref.toyama.jp/120102/kurashi/soudanshisetsu/madoguchi/kosodate/kj00003388.html"
+      }
+    ],
+    "displayOrder": 352
+  },
+  {
+    "id": "audited-0ef4627900",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療支援",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "県窓口へ申請。富山市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども（継続認定は20歳未満）",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療支援",
+        "url": "https://www.pref.toyama.jp/120501/kurashi/kenkou/iryou/s-iryoushien/kj00010187-001-01.html"
+      }
+    ],
+    "displayOrder": 353
+  },
+  {
+    "id": "audited-cf3d9703c3",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入費等補助",
+    "shortValue": "補聴器購入等の費用の一部を助成",
+    "feeSummary": "補聴器購入等の費用の一部を助成",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の18歳未満の難聴児。市町村要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入費等補助",
+        "url": "https://www.pref.toyama.jp/1237/kurashi/kenkou/shougaisha/soudan-c/kj00017532.html"
+      }
+    ],
+    "displayOrder": 354
+  },
+  {
+    "id": "audited-6d4712c461",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.toyama.jp/3003/kurashi/kyouiku/gakkou/shuugakushien/kj00014616.html"
+      }
+    ],
+    "displayOrder": 355
+  },
+  {
+    "id": "audited-ec10899664",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "がんばる子育て家庭支援融資",
+    "shortValue": "教育費等を融資し、23歳未満の子の教育費は利子補給で実質無利子",
+    "feeSummary": "教育費等を融資し、23歳未満の子の教育費は利子補給で実質無利子",
+    "flowSummary": "取扱金融機関へ申込",
+    "timingText": "0歳〜22歳が目安",
+    "conditionText": "就学する子を含む子ども3人以上の世帯で、居住・就業等の要件を満たす方",
+    "minChildAge": 0,
+    "maxChildAge": 22,
+    "minChildren": 3,
+    "programs": [
+      {
+        "title": "がんばる子育て家庭支援融資",
+        "url": "https://www.pref.toyama.jp/120101/kurashi/seikatsu/seikatsueisei/kj00003505.html"
+      }
+    ],
+    "displayOrder": 356
+  },
+  {
+    "id": "audited-bbffa4d679",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "住みよい家づくり資金融資（子育て世帯）",
+    "shortValue": "住宅の新築・購入・リフォームを優遇金利で融資。多子・三世代同居は実質無利子化",
+    "feeSummary": "住宅の新築・購入・リフォームを優遇金利で融資。多子・三世代同居は実質無利子化",
+    "flowSummary": "工事着手前に取扱金融機関等へ申込",
+    "timingText": "0歳〜22歳が目安",
+    "conditionText": "多子同居・三世代同居・三世代近居等の子育て世帯",
+    "minChildAge": 0,
+    "maxChildAge": 22,
+    "programs": [
+      {
+        "title": "住みよい家づくり資金融資（子育て世帯）",
+        "url": "https://www.pref.toyama.jp/1507/kurashi/seikatsu/sumai/kj00001921/kj00001921-001-01.html"
+      }
+    ],
+    "displayOrder": 357
+  },
+  {
+    "id": "audited-2f0588b046",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "市または県厚生センターへ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.toyama.jp/120102/kurashi/soudanshisetsu/madoguchi/kosodate/kj00003388.html"
+      }
+    ],
+    "displayOrder": 358
+  },
+  {
+    "id": "audited-2f567ddc42",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・介護・保育サービス",
+    "feeSummary": "家庭生活支援員による家事・介護・保育サービス",
+    "flowSummary": "県母子寡婦福祉連合会等へ相談",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "修学・疾病等で一時的に家事・保育支援が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.toyama.jp/120102/kurashi/soudanshisetsu/madoguchi/kosodate/kj00003388.html"
+      }
+    ],
+    "displayOrder": 359
+  },
+  {
+    "id": "audited-d3e4c9080c",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "居住市または県厚生センターへ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.toyama.jp/120102/kurashi/soudanshisetsu/madoguchi/kosodate/kj00003388.html"
+      }
+    ],
+    "displayOrder": 360
+  },
+  {
+    "id": "audited-37ebc1a746",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学・就職準備金や家賃実費相当を貸付。就業継続等で返還免除あり",
+    "feeSummary": "入学・就職準備金や家賃実費相当を貸付。就業継続等で返還免除あり",
+    "flowSummary": "県社会福祉協議会等へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.toyama.jp/kurashi/kenkou/fukushi/hitorioya/index.html"
+      }
+    ],
+    "displayOrder": 361
+  },
+  {
+    "id": "audited-c6181e6427",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "learning",
+    "title": "母子家庭等就業・自立支援センター",
+    "shortValue": "就業相談、職業紹介、講習・情報提供",
+    "feeSummary": "就業相談、職業紹介、講習・情報提供",
+    "flowSummary": "センターへ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子家庭等就業・自立支援センター",
+        "url": "https://www.pref.toyama.jp/120102/kurashi/soudanshisetsu/madoguchi/kosodate/kj00003388.html"
+      }
+    ],
+    "displayOrder": 362
+  },
+  {
+    "id": "audited-488e4a7572",
+    "level": "prefecture",
+    "municipality": "富山県",
+    "category": "cost",
+    "title": "県営住宅の子育て世帯向け優遇",
+    "shortValue": "収入基準緩和や募集時の優先取扱いの対象となる場合がある",
+    "feeSummary": "収入基準緩和や募集時の優先取扱いの対象となる場合がある",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たす子育て・ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅の子育て世帯向け優遇",
+        "url": "https://www.pref.toyama.jp/1507/kurashi/seikatsu/sumai/kj00007289/kj00007289-001-01.html"
+      }
+    ],
+    "displayOrder": 363
+  },
+  {
+    "id": "audited-a3a53068f5",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "プレミアム・パスポート",
+    "shortValue": "協賛店で割引・特典",
+    "feeSummary": "協賛店で割引・特典",
+    "flowSummary": "専用サイトで登録しパスポートを提示",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "プレミアム・パスポート",
+        "url": "https://i-prepass.i-oyacomi.net/prepass/"
+      }
+    ],
+    "displayOrder": 364
+  },
+  {
+    "id": "audited-f9e55763d0",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "子ども医療費助成",
+    "shortValue": "保険診療の自己負担を助成。対象年齢・負担は市町で異なる",
+    "feeSummary": "保険診療の自己負担を助成。対象年齢・負担は市町で異なる",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "市町が定める年齢・負担等の要件を満たす子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/05boshi/kodomoiryouhi.html"
+      }
+    ],
+    "displayOrder": 365
+  },
+  {
+    "id": "audited-20393ad567",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担から月額負担等を除いて助成。市町差あり",
+    "feeSummary": "保険診療の自己負担から月額負担等を除いて助成。市町差あり",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と18歳年度末までの児童等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 366
+  },
+  {
+    "id": "audited-91e8c3bd14",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "県保健福祉センター等へ申請。金沢市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども（継続認定は20歳未満）",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.ishikawa.lg.jp/kenkou/nanbyo/syou001.html"
+      }
+    ],
+    "displayOrder": 367
+  },
+  {
+    "id": "audited-9b1d967d8d",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入費助成",
+    "shortValue": "補聴器購入等の費用の一部を助成",
+    "feeSummary": "補聴器購入等の費用の一部を助成",
+    "flowSummary": "購入前に居住市町へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の軽度・中等度難聴児。市町等の要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入費助成",
+        "url": "https://www.pref.ishikawa.lg.jp/kenmin/danjo/documents/r5_siryou1.pdf"
+      }
+    ],
+    "displayOrder": 368
+  },
+  {
+    "id": "audited-770ec3e3fd",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "石川県教育費負担軽減奨学金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県教育委員会へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "石川県教育費負担軽減奨学金",
+        "url": "https://www.pref.ishikawa.lg.jp/kyoiku/seisaku/shugaku/futankeigen.html"
+      }
+    ],
+    "displayOrder": 369
+  },
+  {
+    "id": "audited-75bcb47a72",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "石川県育英資金",
+    "shortValue": "奨学金を貸与。卒業後に返還が必要",
+    "feeSummary": "奨学金を貸与。卒業後に返還が必要",
+    "flowSummary": "在学校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し学資の支弁が困難な高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "石川県育英資金",
+        "url": "https://www.pref.ishikawa.lg.jp/kyoiku/seisaku/shinsei/ikuei_index.html"
+      }
+    ],
+    "displayOrder": 370
+  },
+  {
+    "id": "audited-cef1d47707",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cash",
+    "title": "交通災害等遺児すこやか資金",
+    "shortValue": "遺児1人につき5万円を一時金として支給",
+    "feeSummary": "遺児1人につき5万円を一時金として支給",
+    "flowSummary": "県保健福祉センター等へ相談",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "交通災害等による遺児と生計を一にする父母等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "交通災害等遺児すこやか資金",
+        "url": "https://www.pref.ishikawa.lg.jp/seikatu/kobo/koutu/documents/keikaku.pdf"
+      }
+    ],
+    "displayOrder": 371
+  },
+  {
+    "id": "audited-543f5beb8c",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "県保健福祉センター等へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 372
+  },
+  {
+    "id": "audited-2049f44dde",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "time",
+    "title": "家庭生活支援員派遣事業",
+    "shortValue": "ホームヘルパー等による生活援助・保育サービス",
+    "feeSummary": "ホームヘルパー等による生活援助・保育サービス",
+    "flowSummary": "県保健福祉センターまたは実施市町へ相談",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "疾病・出張等で一時的に生活援助・保育が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "家庭生活支援員派遣事業",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 373
+  },
+  {
+    "id": "audited-db9b946de6",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "ひとり親家庭放課後児童クラブ利用支援",
+    "shortValue": "放課後児童クラブ利用料を軽減。実施・金額は市町で異なる",
+    "feeSummary": "放課後児童クラブ利用料を軽減。実施・金額は市町で異なる",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "6歳〜12歳が目安",
+    "conditionText": "就業または求職中で放課後児童クラブを利用するひとり親",
+    "minChildAge": 6,
+    "maxChildAge": 12,
+    "programs": [
+      {
+        "title": "ひとり親家庭放課後児童クラブ利用支援",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 374
+  },
+  {
+    "id": "audited-c2e4b029e9",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "県保健福祉センターまたは市へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 375
+  },
+  {
+    "id": "audited-f898ec91c0",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学準備金50万円、就職準備金20万円、住宅支援資金84万円以内を貸付。就業継続で返還免除あり",
+    "feeSummary": "入学準備金50万円、就職準備金20万円、住宅支援資金84万円以内を貸付。就業継続で返還免除あり",
+    "flowSummary": "石川県母子寡婦福祉連合会へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 376
+  },
+  {
+    "id": "audited-6e3c0daad2",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "learning",
+    "title": "母子家庭等就業・自立支援事業",
+    "shortValue": "就業・生活・養育費等の相談、講習・情報提供",
+    "feeSummary": "就業・生活・養育費等の相談、講習・情報提供",
+    "flowSummary": "県保健福祉センター等へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子家庭等就業・自立支援事業",
+        "url": "https://www.pref.ishikawa.lg.jp/kosodate/hitorioya/hitorioya.html"
+      }
+    ],
+    "displayOrder": 377
+  },
+  {
+    "id": "audited-c4226f8547",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "住まいの省エネ促進事業費補助金（子育て世帯加算）",
+    "shortValue": "基本補助に5万～10万円を加算",
+    "feeSummary": "基本補助に5万～10万円を加算",
+    "flowSummary": "工事・検査後に県へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "省エネ住宅を新築する子育て世帯・若年夫婦世帯で要件を満たす方",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "住まいの省エネ促進事業費補助金（子育て世帯加算）",
+        "url": "https://www.pref.ishikawa.lg.jp/ontai/pp/zehhojyo8.html"
+      }
+    ],
+    "displayOrder": 378
+  },
+  {
+    "id": "audited-4cbc9ea7e2",
+    "level": "prefecture",
+    "municipality": "石川県",
+    "category": "cost",
+    "title": "県営住宅・セーフティネット住宅の子育て世帯支援",
+    "shortValue": "公営住宅の優先入居等や入居を拒まない登録住宅の情報提供",
+    "feeSummary": "公営住宅の優先入居等や入居を拒まない登録住宅の情報提供",
+    "flowSummary": "県・市町の住宅窓口へ相談",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たす子育て・多子・ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅・セーフティネット住宅の子育て世帯支援",
+        "url": "https://www.pref.ishikawa.lg.jp/kenju/shisaku/safetynet.html"
+      }
+    ],
+    "displayOrder": 379
+  },
+  {
+    "id": "audited-4ea8c509d7",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "ふく育パスポート",
+    "shortValue": "協賛店で割引・特典",
+    "feeSummary": "協賛店で割引・特典",
+    "flowSummary": "無料登録しスマートフォンで提示",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内在住の子育て家庭",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ふく育パスポート",
+        "url": "https://www.fuku-iku.jp/about-passport.php"
+      }
+    ],
+    "displayOrder": 380
+  },
+  {
+    "id": "audited-4b3db1bea5",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "第2子以降の保育料・一時預かり等の無償化",
+    "shortValue": "第2子以降の保育料を無償化し、一時預かり・病児保育等も上限まで支援",
+    "feeSummary": "第2子以降の保育料を無償化し、一時預かり・病児保育等も上限まで支援",
+    "flowSummary": "居住市町または利用施設へ確認",
+    "timingText": "0歳〜8歳が目安",
+    "conditionText": "2人以上の子どもを育てる世帯。サービスごとに要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 8,
+    "minChildren": 2,
+    "programs": [
+      {
+        "title": "第2子以降の保育料・一時預かり等の無償化",
+        "url": "https://www.pref.fukui.lg.jp/doc/kodomo/fukuikuouen-project.html"
+      }
+    ],
+    "displayOrder": 381
+  },
+  {
+    "id": "audited-c701ee24a5",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cash",
+    "title": "在宅育児応援手当",
+    "shortValue": "対象児童1人につき月額1万円",
+    "feeSummary": "対象児童1人につき月額1万円",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜2歳が目安",
+    "conditionText": "第2子以降の0～2歳児を保育所等に預けず家庭で育てる世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 2,
+    "minChildren": 2,
+    "programs": [
+      {
+        "title": "在宅育児応援手当",
+        "url": "https://www.pref.fukui.lg.jp/doc/kodomo/fukuikuouen-project.html"
+      }
+    ],
+    "displayOrder": 382
+  },
+  {
+    "id": "audited-016882767c",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "こども医療費助成",
+    "shortValue": "県基準は中学3年生までの入通院を助成。市町独自拡充あり",
+    "feeSummary": "県基準は中学3年生までの入通院を助成。市町独自拡充あり",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内の子ども。対象年齢・自己負担は市町で異なる",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "こども医療費助成",
+        "url": "https://www.pref.fukui.lg.jp/doc/kodomo/medical.html"
+      }
+    ],
+    "displayOrder": 383
+  },
+  {
+    "id": "audited-579810bca9",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担を助成",
+    "feeSummary": "保険診療の自己負担を助成",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と児童等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://www.pref.fukui.lg.jp/kenko/child/cat1306/index_s.html"
+      }
+    ],
+    "displayOrder": 384
+  },
+  {
+    "id": "audited-ede31ba7d3",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "健康福祉センター等へ申請。福井市は市保健所",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども（継続認定は20歳未満）",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.fukui.lg.jp/doc/kenkou/syouman.html"
+      }
+    ],
+    "displayOrder": 385
+  },
+  {
+    "id": "audited-459cb03ce4",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入費等助成",
+    "shortValue": "補聴器購入・更新等の対象経費の3分の2を助成（基準額あり）",
+    "feeSummary": "補聴器購入・更新等の対象経費の3分の2を助成（基準額あり）",
+    "flowSummary": "購入前に居住市町へ相談・申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "身体障害者手帳対象外で所定の聴力要件を満たす18歳年度末までの子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入費等助成",
+        "url": "https://www.pref.fukui.lg.jp/doc/sityousinkou/zaigenhandobukku_d/fil/R6handbook.pdf"
+      }
+    ],
+    "displayOrder": 386
+  },
+  {
+    "id": "audited-832353e30a",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.fukui.lg.jp/doc/daishi/syougakukyuufu.html"
+      }
+    ],
+    "displayOrder": 387
+  },
+  {
+    "id": "audited-7c4b5a4e25",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "県内私立高校等の学納金支援",
+    "shortValue": "国の授業料支援に加え、県が施設整備費・入学金等を支援",
+    "feeSummary": "国の授業料支援に加え、県が施設整備費・入学金等を支援",
+    "flowSummary": "在籍校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "県認可の対象私立高校等に在籍し所得等の要件を満たす世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県内私立高校等の学納金支援",
+        "url": "https://www.pref.fukui.lg.jp/doc/daishi/syugakusien.html"
+      }
+    ],
+    "displayOrder": 388
+  },
+  {
+    "id": "audited-cf92b706ac",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "2人扶養世帯の県内大学等授業料減免",
+    "shortValue": "国制度の授業料減免上限額まで県独自に支援",
+    "feeSummary": "国制度の授業料減免上限額まで県独自に支援",
+    "flowSummary": "在学校の奨学金担当窓口へ申請",
+    "timingText": "18歳〜18歳が目安",
+    "conditionText": "国制度の第2・第3区分等に該当し、県内進学・在住・子ども2人扶養等の要件を満たす世帯",
+    "minChildAge": 18,
+    "maxChildAge": 18,
+    "minChildren": 2,
+    "programs": [
+      {
+        "title": "2人扶養世帯の県内大学等授業料減免",
+        "url": "https://www.pref.fukui.lg.jp/doc/daishi/daigakujugyouryoumusyou.html"
+      }
+    ],
+    "displayOrder": 389
+  },
+  {
+    "id": "audited-096d617023",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "time",
+    "title": "すみずみ子育てサポート",
+    "shortValue": "一時預かり、送迎、食事・買物・洗濯等の生活支援の利用料を補助",
+    "feeSummary": "一時預かり、送迎、食事・買物・洗濯等の生活支援の利用料を補助",
+    "flowSummary": "居住市町へ確認後、実施事業所へ申込",
+    "timingText": "0歳〜8歳が目安",
+    "conditionText": "原則未就学児の家庭等で、一時的に家庭で養育できない場合",
+    "minChildAge": 0,
+    "maxChildAge": 8,
+    "programs": [
+      {
+        "title": "すみずみ子育てサポート",
+        "url": "https://www.pref.fukui.lg.jp/doc/kodomo/sumizumi.html"
+      }
+    ],
+    "displayOrder": 390
+  },
+  {
+    "id": "audited-f971f87893",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "time",
+    "title": "家事・育児サポーター「ふく育さん」",
+    "shortValue": "自宅等への訪問で一時保育・家事を支援。共通利用券対象の場合あり",
+    "feeSummary": "自宅等への訪問で一時保育・家事を支援。共通利用券対象の場合あり",
+    "flowSummary": "オンライン窓口等で申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "一時預かりや家事支援が必要な子育て家庭",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "家事・育児サポーター「ふく育さん」",
+        "url": "https://j-lppf2.jp/fuku-iku-platform/fukuikusan/"
+      }
+    ],
+    "displayOrder": 391
+  },
+  {
+    "id": "audited-6718dced23",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "time",
+    "title": "子育てサポートタクシー「ふく育タクシー」",
+    "shortValue": "通院・買物・親子外出や子どもの送迎を支援。運賃等は必要",
+    "feeSummary": "通院・買物・親子外出や子どもの送迎を支援。運賃等は必要",
+    "flowSummary": "対応事業者またはオンライン窓口へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "妊婦または子育て世帯",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子育てサポートタクシー「ふく育タクシー」",
+        "url": "https://www.pref.fukui.lg.jp/doc/kodomo/fukuiku-taxi.html"
+      }
+    ],
+    "displayOrder": 392
+  },
+  {
+    "id": "audited-d9a9d88d4d",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "市町または県健康福祉センターへ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.fukui.lg.jp/doc/016407/kateifukusi/hitorisupportguide_d/fil/supportguide100.pdf"
+      }
+    ],
+    "displayOrder": 393
+  },
+  {
+    "id": "audited-573ee7de99",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "time",
+    "title": "ひとり親家庭等の子育て安心プラン",
+    "shortValue": "病児・病後児保育、放課後児童クラブ利用料等を支援",
+    "feeSummary": "病児・病後児保育、放課後児童クラブ利用料等を支援",
+    "flowSummary": "居住市町へ相談・申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "就労等により病児保育・放課後児童クラブ等を利用するひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等の子育て安心プラン",
+        "url": "https://www.pref.fukui.lg.jp/doc/016407/kateifukusi/hitorisupportguide_d/fil/supportguide100.pdf"
+      }
+    ],
+    "displayOrder": 394
+  },
+  {
+    "id": "audited-6ff37f0572",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県健康福祉センターへ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.fukui.lg.jp/doc/016407/kateifukusi/hitorisupportguide_d/fil/supportguide100.pdf"
+      }
+    ],
+    "displayOrder": 395
+  },
+  {
+    "id": "audited-d7d2e366e9",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "ひとり親家庭住宅支援資金貸付",
+    "shortValue": "家賃相当額を貸付。要件を満たして就職・転職し1年間継続すると返還免除",
+    "feeSummary": "家賃相当額を貸付。要件を満たして就職・転職し1年間継続すると返還免除",
+    "flowSummary": "市町社会福祉協議会へ申請",
+    "conditionText": "自立支援プログラムの策定を受けた児童扶養手当受給者等",
+    "programs": [
+      {
+        "title": "ひとり親家庭住宅支援資金貸付",
+        "url": "https://www.pref.fukui.lg.jp/doc/016407/kateifukusi/hitorisupportguide_d/fil/supportguide100.pdf"
+      }
+    ],
+    "displayOrder": 396
+  },
+  {
+    "id": "audited-0c5ac3efc9",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "learning",
+    "title": "ひとり親家庭就業・自立支援",
+    "shortValue": "就業・生活・養育費等の相談、技能講習・情報提供",
+    "feeSummary": "就業・生活・養育費等の相談、技能講習・情報提供",
+    "flowSummary": "県母子寡婦福祉連合会等へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "ひとり親家庭就業・自立支援",
+        "url": "https://www.pref.fukui.lg.jp/doc/016407/kateifukusi/hitorisupportguide_d/fil/supportguide100.pdf"
+      }
+    ],
+    "displayOrder": 397
+  },
+  {
+    "id": "audited-6489563271",
+    "level": "prefecture",
+    "municipality": "福井県",
+    "category": "cost",
+    "title": "県営住宅の子育て世帯向け住戸・優先入居",
+    "shortValue": "子育て世帯向け住戸や優先入居の対象となる場合がある",
+    "feeSummary": "子育て世帯向け住戸や優先入居の対象となる場合がある",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県営住宅の要件を満たす子育て・ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅の子育て世帯向け住戸・優先入居",
+        "url": "https://www.pref.fukui.lg.jp/doc/kenchikujyuutakuka/kenjyusonota/machiyakenjyubosyu.html"
+      }
+    ],
+    "displayOrder": 398
+  },
+  {
+    "id": "audited-141a6e2f18",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "やまなし子育て応援カード",
+    "shortValue": "協賛店で割引・特典",
+    "feeSummary": "協賛店で割引・特典",
+    "flowSummary": "市町村窓口で交付を受け提示",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内在住で18歳以下の子どもがいる家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "やまなし子育て応援カード",
+        "url": "https://www.pref.yamanashi.jp/kosodate/oouennkard.html"
+      }
+    ],
+    "displayOrder": 399
+  },
+  {
+    "id": "audited-37bcd0b13b",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "乳幼児・子ども医療費助成",
+    "shortValue": "保険診療の自己負担を助成。対象年齢等は市町村で異なる",
+    "feeSummary": "保険診療の自己負担を助成。対象年齢等は市町村で異なる",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "市町村が定める年齢・負担等の要件を満たす子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "乳幼児・子ども医療費助成",
+        "url": "https://www.pref.yamanashi.jp/documents/1777/r6nyuuyouzijoseizigyou.pdf"
+      }
+    ],
+    "displayOrder": 400
+  },
+  {
+    "id": "audited-8aef1b76fe",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "ひとり親家庭医療費助成",
+    "shortValue": "通院・入院の保険診療自己負担を助成",
+    "feeSummary": "通院・入院の保険診療自己負担を助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と児童等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭医療費助成",
+        "url": "https://www.pref.yamanashi.jp/kodomo-fukushi/hitorioyakatei_iryouhi.html"
+      }
+    ],
+    "displayOrder": 401
+  },
+  {
+    "id": "audited-b75a907441",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "指定医療機関の保険診療自己負担を所得等に応じて軽減",
+    "feeSummary": "指定医療機関の保険診療自己負担を所得等に応じて軽減",
+    "flowSummary": "管轄保健所へ申請",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども（継続認定は20歳未満）",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.yamanashi.jp/kenko-zsn/boshinanbyou/shoumaniryouhijosei.html"
+      }
+    ],
+    "displayOrder": 402
+  },
+  {
+    "id": "audited-951b484606",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "難聴児補聴器購入等事業",
+    "shortValue": "補聴器購入・更新等の費用の一部を助成",
+    "feeSummary": "補聴器購入・更新等の費用の一部を助成",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の軽度・中等度難聴児等。市町村要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "難聴児補聴器購入等事業",
+        "url": "https://www.pref.yamanashi.jp/documents/65278/nanchoukouhuyoukou.pdf"
+      }
+    ],
+    "displayOrder": 403
+  },
+  {
+    "id": "audited-b4334559a8",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.yamanashi.jp/shigaku-kgk/shuugaku/koukousei.html"
+      }
+    ],
+    "displayOrder": 404
+  },
+  {
+    "id": "audited-804538430b",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "母子・父子・寡婦福祉資金",
+    "shortValue": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "flowSummary": "県保健福祉事務所等へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子・父子・寡婦福祉資金",
+        "url": "https://www.pref.yamanashi.jp/kodomo-fukushi/60569681161.html"
+      }
+    ],
+    "displayOrder": 405
+  },
+  {
+    "id": "audited-df29d7a6d8",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・保育等のサポート",
+    "feeSummary": "家庭生活支援員による家事・保育等のサポート",
+    "flowSummary": "県母子・父子福祉センター等へ申請",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "疾病・就職活動等で一時的に介護・保育が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.yamanashi.jp/kodomo-fukushi/66351161290.html"
+      }
+    ],
+    "displayOrder": 406
+  },
+  {
+    "id": "audited-2a79e75e66",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県保健福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.yamanashi.jp/kodomo-fukushi/89142070647.html"
+      }
+    ],
+    "displayOrder": 407
+  },
+  {
+    "id": "audited-3d46a73948",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学・就職準備金や家賃相当額を貸付。就業継続等で返還免除あり",
+    "feeSummary": "入学・就職準備金や家賃相当額を貸付。就業継続等で返還免除あり",
+    "flowSummary": "県社会福祉協議会等へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.yamanashi.jp/kodomo-fukushi/40_026.html"
+      }
+    ],
+    "displayOrder": 408
+  },
+  {
+    "id": "audited-78d26c7ed3",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "learning",
+    "title": "母子家庭等就業・自立支援センター",
+    "shortValue": "就業相談、職業紹介、技能講座、法律相談等",
+    "feeSummary": "就業相談、職業紹介、技能講座、法律相談等",
+    "flowSummary": "センターへ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子家庭等就業・自立支援センター",
+        "url": "https://www.pref.yamanashi.jp/kodomo-fukushi/89142070647.html"
+      }
+    ],
+    "displayOrder": 409
+  },
+  {
+    "id": "audited-2e3a32efc4",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "time",
+    "title": "病児保育の広域利用",
+    "shortValue": "居住市町村外を含む病児保育施設を利用できる仕組み",
+    "feeSummary": "居住市町村外を含む病児保育施設を利用できる仕組み",
+    "flowSummary": "居住市町村または施設へ事前登録・申込",
+    "timingText": "0歳〜12歳が目安",
+    "conditionText": "県内の実施施設を利用する要件を満たす病気・回復期の子どもと保護者",
+    "minChildAge": 0,
+    "maxChildAge": 12,
+    "programs": [
+      {
+        "title": "病児保育の広域利用",
+        "url": "https://www.pref.yamanashi.jp/jinko_kiki/tokusyu/sp4.html"
+      }
+    ],
+    "displayOrder": 410
+  },
+  {
+    "id": "audited-2870eebbe7",
+    "level": "prefecture",
+    "municipality": "山梨県",
+    "category": "cost",
+    "title": "県営住宅の子育て・ひとり親世帯向け優先入居",
+    "shortValue": "対象住宅への優先入居の対象",
+    "feeSummary": "対象住宅への優先入居の対象",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県営住宅の要件を満たす18歳未満の子がいる世帯、ひとり親・多子世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "県営住宅の子育て・ひとり親世帯向け優先入居",
+        "url": "https://www.pref.yamanashi.jp/ju-taisaku/kannritanntou/documents/yusennyukyo.html"
+      }
+    ],
+    "displayOrder": 411
+  },
+  {
+    "id": "audited-bed2c4e776",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "ながの子育て家庭優待パスポート",
+    "shortValue": "協賛店で割引・特典",
+    "feeSummary": "協賛店で割引・特典",
+    "flowSummary": "LINE等で登録しパスポートを提示",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "ながの子育て家庭優待パスポート",
+        "url": "https://www.pref.nagano.lg.jp/koho/line/gaiyou.html"
+      }
+    ],
+    "displayOrder": 412
+  },
+  {
+    "id": "audited-0312dfabad",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "子ども福祉医療費給付",
+    "shortValue": "保険診療の自己負担を助成し、窓口負担を月1医療機関0～500円に軽減。市町村差あり",
+    "feeSummary": "保険診療の自己負担を助成し、窓口負担を月1医療機関0～500円に軽減。市町村差あり",
+    "flowSummary": "居住市町村へ申請し受給者証を取得",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内市町村に住む0～18歳の子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども福祉医療費給付",
+        "url": "https://www.pref.nagano.lg.jp/kenko-fukushi/kenko/fukushi/fukushi/hojokin.html"
+      }
+    ],
+    "displayOrder": 413
+  },
+  {
+    "id": "audited-4ff64f65fc",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "ひとり親家庭等福祉医療費給付",
+    "shortValue": "保険診療の自己負担を助成。負担額等は市町村で異なる",
+    "feeSummary": "保険診療の自己負担を助成。負担額等は市町村で異なる",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と子ども等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等福祉医療費給付",
+        "url": "https://www.pref.nagano.lg.jp/kenko-fukushi/kenko/fukushi/fukushi/hojokin.html"
+      }
+    ],
+    "displayOrder": 414
+  },
+  {
+    "id": "audited-0b4a6db70a",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "保健福祉事務所等へ申請。長野市・松本市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども（継続認定は20歳未満）",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.nagano.lg.jp/shippei-kansen/boshishika/syoman/iryohi.html"
+      }
+    ],
+    "displayOrder": 415
+  },
+  {
+    "id": "audited-a7a9c5dbe7",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入費等助成",
+    "shortValue": "基準額または実費の低い方の3分の2以内を助成。未実施市町村あり",
+    "feeSummary": "基準額または実費の低い方の3分の2以内を助成。未実施市町村あり",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外で専門医が必要と診断した18歳未満の難聴児",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入費等助成",
+        "url": "https://www.pref.nagano.lg.jp/shogai-shien/kenko/shogai/shogai/goannai/shiori.html"
+      }
+    ],
+    "displayOrder": 416
+  },
+  {
+    "id": "audited-7b7523bbfd",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/gakko/gakko/hi-kyuhukin.html"
+      }
+    ],
+    "displayOrder": 417
+  },
+  {
+    "id": "audited-d6f4d2275f",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "私立高等学校授業料等軽減事業",
+    "shortValue": "学校による授業料・入学金軽減に県が補助。国制度への県独自上乗せあり",
+    "feeSummary": "学校による授業料・入学金軽減に県が補助。国制度への県独自上乗せあり",
+    "flowSummary": "在籍校へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "県内の対象私立高校等に在籍し所得・多子等の要件を満たす世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "私立高等学校授業料等軽減事業",
+        "url": "https://www.pref.nagano.lg.jp/ken-manabi/20141029.html"
+      }
+    ],
+    "displayOrder": 418
+  },
+  {
+    "id": "audited-08f268a626",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "県保健福祉事務所または市町村へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.nagano.lg.jp/kodomo-katei/hitorioya/shien.html"
+      }
+    ],
+    "displayOrder": 419
+  },
+  {
+    "id": "audited-a3545e6f4d",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による生活援助・保育サービス",
+    "feeSummary": "家庭生活支援員による生活援助・保育サービス",
+    "flowSummary": "実施市町村または県ひとり親家庭等福祉連合会へ相談",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "修学・疾病等で一時的に家事・保育支援が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.nagano.lg.jp/kodomo-katei/hitorioya/shien.html"
+      }
+    ],
+    "displayOrder": 420
+  },
+  {
+    "id": "audited-baa69083c0",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県保健福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.nagano.lg.jp/kodomo-katei/hitorioya/shien.html"
+      }
+    ],
+    "displayOrder": 421
+  },
+  {
+    "id": "audited-63098b76d0",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学準備金50万円、就職準備金20万円、家賃実費を12か月以内で貸付。就業継続等で返還免除あり",
+    "feeSummary": "入学準備金50万円、就職準備金20万円、家賃実費を12か月以内で貸付。就業継続等で返還免除あり",
+    "flowSummary": "県社会福祉事業団等へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.nagano.lg.jp/kodomo-katei/kensei/soshiki/soshiki/kencho/kodomo/index.html"
+      }
+    ],
+    "displayOrder": 422
+  },
+  {
+    "id": "audited-16099b1737",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "learning",
+    "title": "ひとり親家庭の就業・生活相談",
+    "shortValue": "就業・生活・養育費等の相談、情報提供",
+    "feeSummary": "就業・生活・養育費等の相談、情報提供",
+    "flowSummary": "県ひとり親家庭等福祉連合会または県窓口へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "ひとり親家庭の就業・生活相談",
+        "url": "https://www.pref.nagano.lg.jp/kodomo-katei/hitorioya/shien.html"
+      }
+    ],
+    "displayOrder": 423
+  },
+  {
+    "id": "audited-d18b4bd425",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "県営住宅の子育て・多子・ひとり親世帯向け優先入居",
+    "shortValue": "抽選回数の優遇等により優先入居の対象",
+    "feeSummary": "抽選回数の優遇等により優先入居の対象",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜15歳が目安",
+    "conditionText": "県営住宅の要件を満たす中学卒業までの子がいる世帯、多子・ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 15,
+    "programs": [
+      {
+        "title": "県営住宅の子育て・多子・ひとり親世帯向け優先入居",
+        "url": "https://www.pref.nagano.lg.jp/jutaku/kurashi/sumai/kene/joho/yusennyukyo/index.html"
+      }
+    ],
+    "displayOrder": 424
+  },
+  {
+    "id": "audited-82da38d642",
+    "level": "prefecture",
+    "municipality": "長野県",
+    "category": "cost",
+    "title": "県営住宅家賃減免（ひとり親世帯等）",
+    "shortValue": "県営住宅家賃を3分の1または2分の1減免",
+    "feeSummary": "県営住宅家賃を3分の1または2分の1減免",
+    "flowSummary": "住宅供給公社または建設事務所へ相談",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅家賃減免（ひとり親世帯等）",
+        "url": "https://www.pref.nagano.lg.jp/jutaku/kurashi/sumai/kene/joho/yachin/genmen.html"
+      }
+    ],
+    "displayOrder": 425
+  },
+  {
+    "id": "audited-2c6b0a2956",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "ぎふっこカード・ぎふっこカードプラス",
+    "shortValue": "協賛店で割引・ポイント加算等の特典",
+    "feeSummary": "協賛店で割引・ポイント加算等の特典",
+    "flowSummary": "市町村窓口・県子育て支援課または郵送で申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる世帯。プラスは18歳未満の子どもが3人以上いる世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "ぎふっこカード・ぎふっこカードプラス",
+        "url": "https://kosodate.pref.gifu.lg.jp/?act=card_about"
+      }
+    ],
+    "displayOrder": 426
+  },
+  {
+    "id": "audited-92445ad043",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "岐阜県ぎふっこ育児サポート事業",
+    "shortValue": "出生児1人につき第1・第2子は1万円、第3子以降は2万円の電子クーポン。育児用品・育児支援サービス等に…",
+    "feeSummary": "出生児1人につき第1・第2子は1万円、第3子以降は2万円の電子クーポン。育児用品・育児支援サービス等に利用可能",
+    "flowSummary": "子どもの出生日から6か月以内に案内に従い申請",
+    "timingText": "0歳〜0歳が目安",
+    "conditionText": "2026年度に出生した子どもを養育し、県内市町村に住民登録がある保護者等",
+    "minChildAge": 0,
+    "maxChildAge": 0,
+    "programs": [
+      {
+        "title": "岐阜県ぎふっこ育児サポート事業",
+        "url": "https://www.pref.gifu.lg.jp/page/499349.html"
+      }
+    ],
+    "displayOrder": 427
+  },
+  {
+    "id": "audited-580547bef8",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "子ども医療費助成",
+    "shortValue": "保険診療の自己負担を助成。県内市町村は独自拡充を含め高校生年代まで助成",
+    "feeSummary": "保険診療の自己負担を助成。県内市町村は独自拡充を含め高校生年代まで助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内市町村に住む子ども。県補助基準と市町村独自拡充分で対象年齢等が異なる",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成",
+        "url": "https://www.pref.gifu.lg.jp/page/6238.html"
+      }
+    ],
+    "displayOrder": 428
+  },
+  {
+    "id": "audited-90412a38c6",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "母子家庭等・父子家庭医療費助成",
+    "shortValue": "保険診療の自己負担を市町村を通じて助成",
+    "feeSummary": "保険診療の自己負担を市町村を通じて助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たす18歳年度末までの子どもとひとり親等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "母子家庭等・父子家庭医療費助成",
+        "url": "https://www.pref.gifu.lg.jp/page/6238.html"
+      }
+    ],
+    "displayOrder": 429
+  },
+  {
+    "id": "audited-4046581f8b",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病と付随疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病と付随疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "保健所等へ申請。岐阜市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.gifu.lg.jp/page/13461.html"
+      }
+    ],
+    "displayOrder": 430
+  },
+  {
+    "id": "audited-43571fedbc",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "難聴児補聴器購入費等助成",
+    "shortValue": "補聴器の購入・修理等の費用の一部を助成",
+    "feeSummary": "補聴器の購入・修理等の費用の一部を助成",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の軽度・中等度難聴児。市町村の要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "難聴児補聴器購入費等助成",
+        "url": "https://www.pref.gifu.lg.jp/page/500196.html"
+      }
+    ],
+    "displayOrder": 431
+  },
+  {
+    "id": "audited-ac9bd722d0",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.gifu.lg.jp/site/edu/11744.html"
+      }
+    ],
+    "displayOrder": 432
+  },
+  {
+    "id": "audited-f869a10ee1",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "私立高等学校等の授業料・入学金軽減",
+    "shortValue": "授業料・入学金を国制度と県独自補助で軽減。学校・所得等で内容が異なる",
+    "feeSummary": "授業料・入学金を国制度と県独自補助で軽減。学校・所得等で内容が異なる",
+    "flowSummary": "在籍校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "県内の対象私立高校等に在籍し、制度ごとの要件を満たす生徒・保護者",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "私立高等学校等の授業料・入学金軽減",
+        "url": "https://www.pref.gifu.lg.jp/page/2210.html"
+      }
+    ],
+    "displayOrder": 433
+  },
+  {
+    "id": "audited-768d1b06e7",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "岐阜県子育て支援奨学金",
+    "shortValue": "修学に必要な資金を無利子で貸与。卒業後に返還が必要",
+    "feeSummary": "修学に必要な資金を無利子で貸与。卒業後に返還が必要",
+    "flowSummary": "在学校を通して募集期間内に申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "子どもが3人以上いる世帯の第3子以降等、募集要項の要件を満たす高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "minChildren": 3,
+    "programs": [
+      {
+        "title": "岐阜県子育て支援奨学金",
+        "url": "https://www.pref.gifu.lg.jp/page/213419.html"
+      }
+    ],
+    "displayOrder": 434
+  },
+  {
+    "id": "audited-8a7b0012ad",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "flowSummary": "市福祉事務所または県事務所福祉課へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.gifu.lg.jp/page/1260.html"
+      }
+    ],
+    "displayOrder": 435
+  },
+  {
+    "id": "audited-93f22259b3",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による生活援助・保育サービス",
+    "feeSummary": "家庭生活支援員による生活援助・保育サービス",
+    "flowSummary": "実施市町村へ事前登録・相談",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "修学・疾病・生活環境の急変等で一時的に家事・保育支援が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.gifu.lg.jp/page/6564.html"
+      }
+    ],
+    "displayOrder": 436
+  },
+  {
+    "id": "audited-815b5cdc34",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.gifu.lg.jp/page/6564.html"
+      }
+    ],
+    "displayOrder": 437
+  },
+  {
+    "id": "audited-d686a37b7f",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学・就職準備金や家賃相当額を貸付。就業継続等で返還免除あり",
+    "feeSummary": "入学・就職準備金や家賃相当額を貸付。就業継続等で返還免除あり",
+    "flowSummary": "県の案内に従い社会福祉協議会等へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.gifu.lg.jp/page/6564.html"
+      }
+    ],
+    "displayOrder": 438
+  },
+  {
+    "id": "audited-849e34fbe4",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "learning",
+    "title": "ひとり親家庭等就業・自立支援センター",
+    "shortValue": "就業相談、就業支援講習、養育費相談等",
+    "feeSummary": "就業相談、就業支援講習、養育費相談等",
+    "flowSummary": "センターへ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "ひとり親家庭等就業・自立支援センター",
+        "url": "https://www.pref.gifu.lg.jp/page/6564.html"
+      }
+    ],
+    "displayOrder": 439
+  },
+  {
+    "id": "audited-836f5bf790",
+    "level": "prefecture",
+    "municipality": "岐阜県",
+    "category": "cost",
+    "title": "県営住宅の子育て・多子・ひとり親世帯向け優先入居",
+    "shortValue": "優先入居枠や裁量世帯の対象となる場合がある",
+    "feeSummary": "優先入居枠や裁量世帯の対象となる場合がある",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県営住宅の要件を満たす子育て、多子、ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "県営住宅の子育て・多子・ひとり親世帯向け優先入居",
+        "url": "https://www.pref.gifu.lg.jp/uploaded/attachment/428112.pdf"
+      }
+    ],
+    "displayOrder": 440
+  },
+  {
+    "id": "audited-041a0f22ab",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "しずおか子育て優待カード",
+    "shortValue": "協賛店舗・施設で割引やサービス。アプリまたは紙カードを利用",
+    "feeSummary": "協賛店舗・施設で割引やサービス。アプリまたは紙カードを利用",
+    "flowSummary": "市町窓口でカードを受領、またはアプリで子どもの情報を登録",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "18歳未満の子どもを同伴する保護者または妊娠中の方",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "しずおか子育て優待カード",
+        "url": "https://www.fujisancco.pref.shizuoka.jp/shizuokakennotorikumi/yutaicard.html"
+      }
+    ],
+    "displayOrder": 441
+  },
+  {
+    "id": "audited-ea9e14cd48",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "こども医療費助成",
+    "shortValue": "入院1日500円、通院1回500円（月5回目から無料）を基本に自己負担を軽減。市町独自拡充あり",
+    "feeSummary": "入院1日500円、通院1回500円（月5回目から無料）を基本に自己負担を軽減。市町独自拡充あり",
+    "flowSummary": "居住市町で受給者証を申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内在住の0歳から18歳年度末までの子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "こども医療費助成",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/boshihoken/1040718/1043343.html"
+      }
+    ],
+    "displayOrder": 442
+  },
+  {
+    "id": "audited-41ba3fd473",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担分を助成",
+    "feeSummary": "保険診療の自己負担分を助成",
+    "flowSummary": "居住市町へ申請し受給者証を取得",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "所得等の要件を満たし20歳未満の子を養育するひとり親・養育者と子ども",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/hitorioya/1022268.html"
+      }
+    ],
+    "displayOrder": 443
+  },
+  {
+    "id": "audited-f50f543f81",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じた月額上限まで軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じた月額上限まで軽減",
+    "flowSummary": "健康福祉センター等へ申請",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/boshihoken/1040718/1002880/1022331.html"
+      }
+    ],
+    "displayOrder": 444
+  },
+  {
+    "id": "audited-53f31c1987",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "小児患者世帯交通費等支援金",
+    "shortValue": "付き添いに係る交通費または宿泊費の一部を支援",
+    "feeSummary": "付き添いに係る交通費または宿泊費の一部を支援",
+    "flowSummary": "県の案内に従い必要書類を提出",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "遠方の医療機関へ通院・入院する小児慢性特定疾病、指定難病、医療的ケア児を養育する県内世帯",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児患者世帯交通費等支援金",
+        "url": "https://www.pref.shizuoka.jp/kenkofukushi/shippeikansensho/nanbyo/1070555.html"
+      }
+    ],
+    "displayOrder": 445
+  },
+  {
+    "id": "audited-18d789f706",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入費等助成",
+    "shortValue": "補聴器の購入・修理等の費用の一部を助成",
+    "feeSummary": "補聴器の購入・修理等の費用の一部を助成",
+    "flowSummary": "購入前に居住市町へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の軽度・中等度難聴児。市町の要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入費等助成",
+        "url": "https://www.pref.shizuoka.jp/kenkofukushi/shogaifukushi/shintaishogai/1072463.html"
+      }
+    ],
+    "displayOrder": 446
+  },
+  {
+    "id": "audited-aced40da46",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付。国公立・私立で申請先が異なる",
+    "feeSummary": "授業料以外の教育費を返還不要で給付。国公立・私立で申請先が異なる",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/school/1002738/1054891.html"
+      }
+    ],
+    "displayOrder": 447
+  },
+  {
+    "id": "audited-7de747b446",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "市または県健康福祉センターへ事前相談",
+    "conditionText": "母子家庭・父子家庭・寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/hitorioya/1062322.html"
+      }
+    ],
+    "displayOrder": 448
+  },
+  {
+    "id": "audited-b316ee4ad6",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・保育等の支援",
+    "feeSummary": "家庭生活支援員による家事・保育等の支援",
+    "flowSummary": "居住市町等へ事前登録・相談",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "疾病・修学・生活環境の急変等で一時的に家事・保育支援が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/043/418/asunoshiawase.pdf"
+      }
+    ],
+    "displayOrder": 449
+  },
+  {
+    "id": "audited-a5967e3029",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "母子家庭・父子家庭自立支援給付金",
+    "shortValue": "受講料の一部または修業中の月額給付等。課税状況等で金額が異なる",
+    "feeSummary": "受講料の一部または修業中の月額給付等。課税状況等で金額が異なる",
+    "flowSummary": "市または県健康福祉センターへ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "母子家庭・父子家庭自立支援給付金",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/hitorioya/1040715/1022316.html"
+      }
+    ],
+    "displayOrder": 450
+  },
+  {
+    "id": "audited-bd01ffb740",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+    "shortValue": "入学・就職準備金や住宅支援資金を貸付。要件を満たす就労継続で返還免除あり",
+    "feeSummary": "入学・就職準備金や住宅支援資金を貸付。要件を満たす就労継続で返還免除あり",
+    "flowSummary": "県社会福祉協議会へ申請",
+    "conditionText": "訓練促進給付金受給者または自立支援プログラム策定者等",
+    "programs": [
+      {
+        "title": "ひとり親家庭高等職業訓練促進資金・住宅支援資金",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/hitorioya/1022287.html"
+      }
+    ],
+    "displayOrder": 451
+  },
+  {
+    "id": "audited-fe848c85b5",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "learning",
+    "title": "ひとり親サポートセンター",
+    "shortValue": "就業・生活・養育費等の相談、職業紹介、講習会等",
+    "feeSummary": "就業・生活・養育費等の相談、職業紹介、講習会等",
+    "flowSummary": "県内各支所へ電話・来所相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦、ひとり親の子等",
+    "programs": [
+      {
+        "title": "ひとり親サポートセンター",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kyoiku/hanasot/search/1062049/1062064.html"
+      }
+    ],
+    "displayOrder": 452
+  },
+  {
+    "id": "audited-3fff2e5967",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "県営住宅の子育て世帯向け優先入居",
+    "shortValue": "子育て世帯向けの優先入居対象",
+    "feeSummary": "子育て世帯向けの優先入居対象",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県営住宅の要件を満たす中高生までの子どもがいる世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅の子育て世帯向け優先入居",
+        "url": "https://www.pref.shizuoka.jp/kensei/introduction/soshiki/1002382/1040996/1016033.html"
+      }
+    ],
+    "displayOrder": 453
+  },
+  {
+    "id": "audited-1a34de9f4b",
+    "level": "prefecture",
+    "municipality": "静岡県",
+    "category": "cost",
+    "title": "養育費取決支援金",
+    "shortValue": "公正証書作成費は上限4万3千円、調停・裁判等を含む対象経費合計は上限7万6千円",
+    "feeSummary": "公正証書作成費は上限4万3千円、調停・裁判等を含む対象経費合計は上限7万6千円",
+    "flowSummary": "事前にひとり親サポートセンターへ相談し申請",
+    "conditionText": "養育費の取決めを行うひとり親家庭等",
+    "programs": [
+      {
+        "title": "養育費取決支援金",
+        "url": "https://www.pref.shizuoka.jp/kodomokyoiku/kodomokosodate/hitorioya/1072893.html"
+      }
+    ],
+    "displayOrder": 454
+  },
+  {
+    "id": "audited-6c21be8bc0",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cash",
+    "title": "愛知県子育て応援給付金",
+    "shortValue": "対象児童1人につき健診ごとに5万円。各健診後にそれぞれ申請可能",
+    "feeSummary": "対象児童1人につき健診ごとに5万円。各健診後にそれぞれ申請可能",
+    "flowSummary": "健診受診日から6か月以内に郵送等で申請",
+    "timingText": "1歳〜3歳が目安",
+    "conditionText": "1歳6か月児または3歳児健診を県内で受診し、児童扶養手当受給または住民税非課税等の要件を満たす家庭",
+    "minChildAge": 1,
+    "maxChildAge": 3,
+    "programs": [
+      {
+        "title": "愛知県子育て応援給付金",
+        "url": "https://www.pref.aichi.jp/soshiki/kosodate/ouenkyuufukin.html"
+      }
+    ],
+    "displayOrder": 455
+  },
+  {
+    "id": "audited-aba0e4b755",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "はぐみんカード",
+    "shortValue": "協賛店で割引・特典",
+    "feeSummary": "協賛店で割引・特典",
+    "flowSummary": "市町村等で交付を受け、紙またはデジタルカードを提示",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる家庭または妊娠中の方",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "はぐみんカード",
+        "url": "https://hagumin-net.pref.aichi.jp/card/user/index.html"
+      }
+    ],
+    "displayOrder": 456
+  },
+  {
+    "id": "audited-8ba545573b",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "子ども医療制度",
+    "shortValue": "保険診療の自己負担を公費で助成。県基準は通院就学前・入院中学卒業までで、市町村独自拡充あり",
+    "feeSummary": "保険診療の自己負担を公費で助成。県基準は通院就学前・入院中学卒業までで、市町村独自拡充あり",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "市町村が定める対象年齢等の要件を満たす子ども",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療制度",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/0000010975.html"
+      }
+    ],
+    "displayOrder": 457
+  },
+  {
+    "id": "audited-29fa040627",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "母子・父子家庭等医療制度",
+    "shortValue": "保険診療の自己負担を助成",
+    "feeSummary": "保険診療の自己負担を助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たす18歳年度末までの子どもとひとり親等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "母子・父子家庭等医療制度",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/0000010978.html"
+      }
+    ],
+    "displayOrder": 458
+  },
+  {
+    "id": "audited-4a7de089d7",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "保健所等へ申請。政令市・中核市等は各市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.aichi.jp/soshiki/kenkotaisaku/0000084918.html"
+      }
+    ],
+    "displayOrder": 459
+  },
+  {
+    "id": "audited-752a2d57db",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入費助成",
+    "shortValue": "補聴器購入・修理費用の一部を助成",
+    "feeSummary": "補聴器購入・修理費用の一部を助成",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳対象外の軽度・中等度難聴児。市町村の要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入費助成",
+        "url": "https://www.pref.aichi.jp/uploaded/attachment/577125.pdf"
+      }
+    ],
+    "displayOrder": 460
+  },
+  {
+    "id": "audited-1994b861a0",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付。国公立・私立で申請先が異なる",
+    "feeSummary": "授業料以外の教育費を返還不要で給付。国公立・私立で申請先が異なる",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.aichi.jp/soshiki/kotogakko/0000082860.html"
+      }
+    ],
+    "displayOrder": 461
+  },
+  {
+    "id": "audited-c577dbd5e6",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "私立高等学校等授業料・入学納付金補助",
+    "shortValue": "2026年度は授業料と入学納付金の所得制限を撤廃し、学校種別の上限まで補助",
+    "feeSummary": "2026年度は授業料と入学納付金の所得制限を撤廃し、学校種別の上限まで補助",
+    "flowSummary": "入学後に在籍校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "県内の対象私立高校等に在籍する生徒",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "私立高等学校等授業料・入学納付金補助",
+        "url": "https://www.pref.aichi.jp/soshiki/shigaku/koukoujugyouryoutou-oshirase.html"
+      }
+    ],
+    "displayOrder": 462
+  },
+  {
+    "id": "audited-f5f16f6785",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "第二子以降の3歳未満児保育料無料化・軽減支援",
+    "shortValue": "市町村が実施する保育料無料化・軽減を県が補助",
+    "feeSummary": "市町村が実施する保育料無料化・軽減を県が補助",
+    "flowSummary": "居住市町村へ確認・申請",
+    "timingText": "0歳〜2歳が目安",
+    "conditionText": "対象市町村で保育所等を利用する3歳未満の第2子以降。地域・所得等の要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 2,
+    "minChildren": 2,
+    "programs": [
+      {
+        "title": "第二子以降の3歳未満児保育料無料化・軽減支援",
+        "url": "https://www.pref.aichi.jp/soshiki/kosodate/0000005497.html"
+      }
+    ],
+    "displayOrder": 463
+  },
+  {
+    "id": "audited-cc4261c4d5",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "私立幼稚園第三子授業料等軽減補助",
+    "shortValue": "対象年度の授業料・入園料等から他制度分を控除した額を補助",
+    "feeSummary": "対象年度の授業料・入園料等から他制度分を控除した額を補助",
+    "flowSummary": "在籍園を通して申請",
+    "timingText": "3歳〜3歳が目安",
+    "conditionText": "18歳未満の子が3人以上いる世帯で、年度中に満3歳入園した第3子以降の幼児",
+    "minChildAge": 3,
+    "maxChildAge": 3,
+    "minChildren": 3,
+    "programs": [
+      {
+        "title": "私立幼稚園第三子授業料等軽減補助",
+        "url": "https://www.pref.aichi.jp/soshiki/shigaku/siyoujugyouryouhojo.html"
+      }
+    ],
+    "displayOrder": 464
+  },
+  {
+    "id": "audited-b048d4b04b",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cash",
+    "title": "愛知県遺児手当",
+    "shortValue": "県独自の手当を最長5年間支給",
+    "feeSummary": "県独自の手当を最長5年間支給",
+    "flowSummary": "市区町村役場で認定申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たし、離婚・死亡・重度障害等により父母の一方または両方がいない状態の18歳年度末までの子を養育する方",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "愛知県遺児手当",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/0000010964.html"
+      }
+    ],
+    "displayOrder": 465
+  },
+  {
+    "id": "audited-c311e12bfb",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "市または県福祉相談センターへ事前相談・面接",
+    "conditionText": "母子家庭・父子家庭・寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/0000011021.html"
+      }
+    ],
+    "displayOrder": 466
+  },
+  {
+    "id": "audited-edbfff4ccb",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による児童の保育、家事等。所得により負担あり",
+    "feeSummary": "家庭生活支援員による児童の保育、家事等。所得により負担あり",
+    "flowSummary": "実施市町村へ事前登録・申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "就職活動・疾病・公的行事・生活環境の急変等で支援が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/hitorioya-seido.html"
+      }
+    ],
+    "displayOrder": 467
+  },
+  {
+    "id": "audited-16dacbe89c",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "母子・父子家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県福祉相談センターへ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "母子・父子家庭自立支援給付金",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/"
+      }
+    ],
+    "displayOrder": 468
+  },
+  {
+    "id": "audited-e7fe57cb04",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "ひとり親家庭住宅支援資金",
+    "shortValue": "住居の借上げに必要な家賃相当額を無利子で貸付。就労継続等で返還免除あり",
+    "feeSummary": "住居の借上げに必要な家賃相当額を無利子で貸付。就労継続等で返還免除あり",
+    "flowSummary": "市町村・県福祉相談センターまたは県母子寡婦福祉連合会へ相談",
+    "conditionText": "自立支援プログラムに沿って就職・転職等に取り組むひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭住宅支援資金",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/jutakushien.html"
+      }
+    ],
+    "displayOrder": 469
+  },
+  {
+    "id": "audited-5a1d70ec07",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "learning",
+    "title": "母子家庭等就業支援センター・自立支援員相談",
+    "shortValue": "生活・子育て・就業の相談、職業紹介、技能講習等",
+    "feeSummary": "生活・子育て・就業の相談、職業紹介、技能講習等",
+    "flowSummary": "市または県福祉相談センター、就業支援センターへ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子家庭等就業支援センター・自立支援員相談",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/hitorioya-seido.html"
+      }
+    ],
+    "displayOrder": 470
+  },
+  {
+    "id": "audited-3679b24cdb",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "県営住宅の子育て・ひとり親世帯向け優先入居",
+    "shortValue": "福祉枠等により抽選番号が増えるなど優先入居の対象",
+    "feeSummary": "福祉枠等により抽選番号が増えるなど優先入居の対象",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県営住宅の要件を満たす18歳未満の子がいる世帯、母子・父子世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "県営住宅の子育て・ひとり親世帯向け優先入居",
+        "url": "https://hagumin-net.pref.aichi.jp/growing/use.html"
+      }
+    ],
+    "displayOrder": 471
+  },
+  {
+    "id": "audited-710c995a4c",
+    "level": "prefecture",
+    "municipality": "愛知県",
+    "category": "cost",
+    "title": "県営住宅家賃の減額",
+    "shortValue": "収入等に応じ県営住宅家賃を減額する場合がある",
+    "feeSummary": "収入等に応じ県営住宅家賃を減額する場合がある",
+    "flowSummary": "住宅供給公社の管理事務所へ相談",
+    "conditionText": "収入が一定基準未満の県営住宅入居世帯、低所得の福祉世帯等",
+    "programs": [
+      {
+        "title": "県営住宅家賃の減額",
+        "url": "https://www.pref.aichi.jp/soshiki/jidoukatei/hitorioya-seido.html"
+      }
+    ],
+    "displayOrder": 472
+  },
+  {
+    "id": "audited-a48f7610fd",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "子育て家庭応援クーポン",
+    "shortValue": "協賛店で割引・サービス等の特典",
+    "feeSummary": "協賛店で割引・サービス等の特典",
+    "flowSummary": "専用アプリ・ウェブ等で取得して提示",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる世帯または妊娠中の方がいる世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "子育て家庭応援クーポン",
+        "url": "https://www.pref.mie.lg.jp/D1KODOMO/000177550.htm"
+      }
+    ],
+    "displayOrder": 473
+  },
+  {
+    "id": "audited-87d8ecd600",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "子ども医療費助成",
+    "shortValue": "保険診療の自己負担を助成。県補助は所得制限なし・高校生年代まで",
+    "feeSummary": "保険診療の自己負担を助成。県補助は所得制限なし・高校生年代まで",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内市町に住む18歳年度末までの子ども。助成方法等は市町で異なる",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成",
+        "url": "https://www.pref.mie.lg.jp/IRYOS/HP/77740023394.htm"
+      }
+    ],
+    "displayOrder": 474
+  },
+  {
+    "id": "audited-c33d97d631",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "一人親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担を助成",
+    "feeSummary": "保険診療の自己負担を助成",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たす18歳年度末までの子どもとひとり親等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "一人親家庭等医療費助成",
+        "url": "https://www.pref.mie.lg.jp/IRYOS/HP/77740023394.htm"
+      }
+    ],
+    "displayOrder": 475
+  },
+  {
+    "id": "audited-987cb04b0d",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の高額な医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の高額な医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "居住地を管轄する保健所等へ申請",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.mie.lg.jp/KENKOT/HP/85039050682.htm"
+      }
+    ],
+    "displayOrder": 476
+  },
+  {
+    "id": "audited-8fe64d7464",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "聴覚障がい児補聴器購入費用助成",
+    "shortValue": "補聴器購入費の3分の1（片耳上限2万5千円、両耳上限5万円）等。所得・回数制限は2024年度から撤廃",
+    "feeSummary": "補聴器購入費の3分の1（片耳上限2万5千円、両耳上限5万円）等。所得・回数制限は2024年度から撤廃",
+    "flowSummary": "購入後3か月以内に県立子ども心身発達医療センターへ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "身体障害者手帳対象外で原則30～70デシベル未満の18歳年度末までの難聴児",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "聴覚障がい児補聴器購入費用助成",
+        "url": "https://www.pref.mie.lg.jp/D1KODOMO/000117786.htm"
+      }
+    ],
+    "displayOrder": 477
+  },
+  {
+    "id": "audited-58f5808a31",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付。国公立・私立で申請先が異なる",
+    "feeSummary": "授業料以外の教育費を返還不要で給付。国公立・私立で申請先が異なる",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.mie.lg.jp/KYOZAIMU/HP/singakusien/84767018109.htm"
+      }
+    ],
+    "displayOrder": 478
+  },
+  {
+    "id": "audited-b1d6e530d0",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "三重県高等学校等修学奨学金",
+    "shortValue": "学校種別に応じた修学資金等を貸与。卒業後に返還が必要",
+    "feeSummary": "学校種別に応じた修学資金等を貸与。卒業後に返還が必要",
+    "flowSummary": "在学校を通して募集期間内に申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "経済的理由により修学が困難で募集要項の要件を満たす高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "三重県高等学校等修学奨学金",
+        "url": "https://www.pref.mie.lg.jp/KYOZAIMU/HP/singakusien/17211018098.htm"
+      }
+    ],
+    "displayOrder": 479
+  },
+  {
+    "id": "audited-6719abc093",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等12種類の資金を無利子または低利で貸付",
+    "flowSummary": "県福祉事務所または市町へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.mie.lg.jp/D1KODOMO/000117812.htm"
+      }
+    ],
+    "displayOrder": 480
+  },
+  {
+    "id": "audited-a62623d5c7",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "time",
+    "title": "母子・父子・寡婦家庭への家庭生活支援員派遣",
+    "shortValue": "家庭生活支援員による子どもの世話や家事。所得等により有料の場合あり",
+    "feeSummary": "家庭生活支援員による子どもの世話や家事。所得等により有料の場合あり",
+    "flowSummary": "居住市町へ相談・申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "傷病等により一時的に日常生活が困難なひとり親家庭・寡婦等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "母子・父子・寡婦家庭への家庭生活支援員派遣",
+        "url": "https://www.pref.mie.lg.jp/D1KODOMO/000117889.htm"
+      }
+    ],
+    "displayOrder": 481
+  },
+  {
+    "id": "audited-cb5c376ec3",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "県福祉事務所または市町へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.mie.lg.jp/D1KODOMO/000117889.htm"
+      }
+    ],
+    "displayOrder": 482
+  },
+  {
+    "id": "audited-13d8a91135",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "learning",
+    "title": "三重県母子・父子福祉センター等の相談支援",
+    "shortValue": "就業・生活・養育費等の相談、講習、情報提供",
+    "feeSummary": "就業・生活・養育費等の相談、講習、情報提供",
+    "flowSummary": "センターまたは県福祉事務所へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "三重県母子・父子福祉センター等の相談支援",
+        "url": "https://www.pref.mie.lg.jp/D1KODOMO/000117889.htm"
+      }
+    ],
+    "displayOrder": 483
+  },
+  {
+    "id": "audited-266d86c699",
+    "level": "prefecture",
+    "municipality": "三重県",
+    "category": "cost",
+    "title": "ひとり親家庭放課後児童クラブ利用料支援",
+    "shortValue": "利用料を減免する放課後児童クラブ等を県・市町が支援",
+    "feeSummary": "利用料を減免する放課後児童クラブ等を県・市町が支援",
+    "flowSummary": "居住市町または利用クラブへ確認",
+    "timingText": "6歳〜12歳が目安",
+    "conditionText": "対象市町で放課後児童クラブを利用するひとり親家庭の児童",
+    "minChildAge": 6,
+    "maxChildAge": 12,
+    "programs": [
+      {
+        "title": "ひとり親家庭放課後児童クラブ利用料支援",
+        "url": "https://www.pref.mie.lg.jp/common/content/001248337.pdf"
+      }
+    ],
+    "displayOrder": 484
+  },
+  {
+    "id": "audited-6ec5824e9e",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "淡海子育て応援カード",
+    "shortValue": "協賛店で割引・プレゼント等のサービス",
+    "feeSummary": "協賛店で割引・プレゼント等のサービス",
+    "flowSummary": "ハグナビしが等から登録",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる家庭",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "淡海子育て応援カード",
+        "url": "https://www.hugnavi.net/cheer/"
+      }
+    ],
+    "displayOrder": 485
+  },
+  {
+    "id": "audited-a22ba8a65b",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "子ども医療費助成（福祉医療費助成）",
+    "shortValue": "保険診療の自己負担を市町を通じて助成",
+    "feeSummary": "保険診療の自己負担を市町を通じて助成",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内市町に住む乳幼児・高校生世代の子ども。市町により上乗せあり",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成（福祉医療費助成）",
+        "url": "https://www.pref.shiga.lg.jp/ee00/4359.html"
+      }
+    ],
+    "displayOrder": 486
+  },
+  {
+    "id": "audited-e6cd5d1217",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "母子・父子家庭医療費助成",
+    "shortValue": "保険診療の自己負担を市町を通じて助成",
+    "feeSummary": "保険診療の自己負担を市町を通じて助成",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と子",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "母子・父子家庭医療費助成",
+        "url": "https://www.pref.shiga.lg.jp/ee00/4359.html"
+      }
+    ],
+    "displayOrder": 487
+  },
+  {
+    "id": "audited-3c24999f26",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病と付随疾病の医療費を所得等に応じて軽減",
+    "feeSummary": "対象疾病と付随疾病の医療費を所得等に応じて軽減",
+    "flowSummary": "管轄保健所へ申請。大津市は大津市保健所",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.shiga.lg.jp/eg00/4280.html"
+      }
+    ],
+    "displayOrder": 488
+  },
+  {
+    "id": "audited-1c55ffa1e4",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児の補聴器購入費助成",
+    "shortValue": "補聴器購入費等の一部を助成する場合がある",
+    "feeSummary": "補聴器購入費等の一部を助成する場合がある",
+    "flowSummary": "購入前に居住市町へ確認・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障害者手帳の対象外で市町の要件を満たす難聴児",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児の補聴器購入費助成",
+        "url": "https://www.pref.shiga.lg.jp/ed00/4536.html"
+      }
+    ],
+    "displayOrder": 489
+  },
+  {
+    "id": "audited-fc30dd3fd2",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付。学校種・所得等で金額が異なる",
+    "feeSummary": "授業料以外の教育費を返還不要で給付。学校種・所得等で金額が異なる",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.shiga.lg.jp/ja00/5139.html"
+      }
+    ],
+    "displayOrder": 490
+  },
+  {
+    "id": "audited-701868ed3c",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "滋賀県奨学資金",
+    "shortValue": "修学資金を無利子で貸与。卒業後に返還が必要",
+    "feeSummary": "修学資金を無利子で貸与。卒業後に返還が必要",
+    "flowSummary": "在学校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "経済的理由で修学が困難な県内関係の高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "滋賀県奨学資金",
+        "url": "https://www.pref.shiga.lg.jp/edu/ma06/304467.html"
+      }
+    ],
+    "displayOrder": 491
+  },
+  {
+    "id": "audited-973017fa31",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "市または県健康福祉事務所へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.shiga.lg.jp/jd00/4965.html"
+      }
+    ],
+    "displayOrder": 492
+  },
+  {
+    "id": "audited-8da8c0b271",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・保育支援。所得等により負担あり",
+    "feeSummary": "家庭生活支援員による家事・保育支援。所得等により負担あり",
+    "flowSummary": "事前登録後、支援センター等へ申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "県内（大津市を除く）のひとり親家庭・寡婦で一時的に生活援助が必要な方",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.shiga.lg.jp/jd00/4969.html"
+      }
+    ],
+    "displayOrder": 493
+  },
+  {
+    "id": "audited-19f0c10d51",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県健康福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.shiga.lg.jp/jd00/4960.html"
+      }
+    ],
+    "displayOrder": 494
+  },
+  {
+    "id": "audited-49e21f83fc",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "learning",
+    "title": "滋賀県母子家庭等就業・自立支援センター",
+    "shortValue": "就業・生活・養育費・法律相談、講習、職業紹介",
+    "feeSummary": "就業・生活・養育費・法律相談、講習、職業紹介",
+    "flowSummary": "センターへ電話・面接等で相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "滋賀県母子家庭等就業・自立支援センター",
+        "url": "https://www.pref.shiga.lg.jp/jd00/4964.html"
+      }
+    ],
+    "displayOrder": 495
+  },
+  {
+    "id": "audited-4a8140e660",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "cost",
+    "title": "県営住宅のひとり親世帯優先入居",
+    "shortValue": "住宅困窮度等に応じた優先的な入居選考の対象",
+    "feeSummary": "住宅困窮度等に応じた優先的な入居選考の対象",
+    "flowSummary": "県営住宅募集へ申込",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県営住宅の要件を満たし18歳未満の子を扶養するひとり親世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "県営住宅のひとり親世帯優先入居",
+        "url": "https://www.pref.shiga.lg.jp/site/jourei/reiki_int/reiki_honbun/k001RG00000930.html"
+      }
+    ],
+    "displayOrder": 496
+  },
+  {
+    "id": "audited-d0d1b43cde",
+    "level": "prefecture",
+    "municipality": "滋賀県",
+    "category": "learning",
+    "title": "滋賀あんしん賃貸支援事業",
+    "shortValue": "入居受入れ可能な民間賃貸住宅と協力店の情報提供",
+    "feeSummary": "入居受入れ可能な民間賃貸住宅と協力店の情報提供",
+    "flowSummary": "登録住宅・協力店を検索して相談",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "小さい子どもがいる世帯またはひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "滋賀あんしん賃貸支援事業",
+        "url": "https://www.pref.shiga.lg.jp/rc00/753.html"
+      }
+    ],
+    "displayOrder": 497
+  },
+  {
+    "id": "audited-5a62ef3ef2",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "きょうと子育て応援パスポート",
+    "shortValue": "協賛店で割引・サービス等の特典",
+    "feeSummary": "協賛店で割引・サービス等の特典",
+    "flowSummary": "まもっぷで登録、または府・市町村窓口でカード受取",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "府内在住で18歳年度末までの子どもがいる家庭",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "きょうと子育て応援パスポート",
+        "url": "https://www.pref.kyoto.jp/kosodateouen/1183513999674.html"
+      }
+    ],
+    "displayOrder": 498
+  },
+  {
+    "id": "audited-5baf0976e6",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "京都子育て支援医療助成制度",
+    "shortValue": "保険診療の自己負担を府と市町村が助成",
+    "feeSummary": "保険診療の自己負担を府と市町村が助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜15歳が目安",
+    "conditionText": "府内市町村に住む中学校卒業までの子ども。市町村独自拡充あり",
+    "minChildAge": 0,
+    "maxChildAge": 15,
+    "programs": [
+      {
+        "title": "京都子育て支援医療助成制度",
+        "url": "https://www.pref.kyoto.jp/fukusiiryou/kosodate0109.html"
+      }
+    ],
+    "displayOrder": 499
+  },
+  {
+    "id": "audited-ed02baf8c2",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "ひとり親家庭医療費助成",
+    "shortValue": "保険診療の自己負担の一部を市町村を通じて助成",
+    "feeSummary": "保険診療の自己負担の一部を市町村を通じて助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と子",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭医療費助成",
+        "url": "https://www.pref.kyoto.jp/kateishien/ouen_16hitorioyakatei.html"
+      }
+    ],
+    "displayOrder": 500
+  },
+  {
+    "id": "audited-d6aa07acda",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "管轄保健所へ申請。京都市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.kyoto.jp/kentai/syouman/syoumaniryouhi.html"
+      }
+    ],
+    "displayOrder": 501
+  },
+  {
+    "id": "audited-f762cff52c",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または府担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "府内在住の低・中所得世帯等の高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.kyoto.jp/bunkyo/syougakukyuuhukintuujyou.html"
+      }
+    ],
+    "displayOrder": 502
+  },
+  {
+    "id": "audited-c219ac38cb",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cash",
+    "title": "ひとり親家庭奨学金・高校入学支度金",
+    "shortValue": "乳幼児年1.1万円、小学生年2.15万円、中学生年4.3万円、高校入学支度金3.5万円。類似給付で減額…",
+    "feeSummary": "乳幼児年1.1万円、小学生年2.15万円、中学生年4.3万円、高校入学支度金3.5万円。類似給付で減額の場合あり",
+    "flowSummary": "府保健所・市町村窓口へ申請",
+    "timingText": "0歳〜15歳が目安",
+    "conditionText": "京都市を除く府内のひとり親で乳幼児・小中学生を扶養する方。入学支度金は新高校1年生",
+    "minChildAge": 0,
+    "maxChildAge": 15,
+    "programs": [
+      {
+        "title": "ひとり親家庭奨学金・高校入学支度金",
+        "url": "https://www.pref.kyoto.jp/reiki/reiki_honbun/a300RG00000369.html"
+      }
+    ],
+    "displayOrder": 503
+  },
+  {
+    "id": "audited-0fdf4b03ad",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "府保健所または市福祉事務所へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.kyoto.jp/kateishien/documents/boshifushikafu_fukushikashitsuke_shiorir7_4.pdf"
+      }
+    ],
+    "displayOrder": 504
+  },
+  {
+    "id": "audited-3808b89de9",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "time",
+    "title": "ひとり親家庭日常生活支援事業",
+    "shortValue": "家庭生活支援員による生活援助・子育て支援。所得等により1時間70～300円",
+    "feeSummary": "家庭生活支援員による生活援助・子育て支援。所得等により1時間70～300円",
+    "flowSummary": "事前登録の上、府保健所等へ申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "ひとり親家庭等で傷病・修学・出張等により家事や保育が一時的に必要な方",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭日常生活支援事業",
+        "url": "https://www.pref.kyoto.jp/kateishien/ouen_16hitorioyakatei.html"
+      }
+    ],
+    "displayOrder": 505
+  },
+  {
+    "id": "audited-81e63edd50",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "府保健所または市福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.kyoto.jp/kateishien/ouen_16hitorioyakatei.html"
+      }
+    ],
+    "displayOrder": 506
+  },
+  {
+    "id": "audited-b9c898b3dc",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "learning",
+    "title": "京都府ひとり親家庭自立支援センター",
+    "shortValue": "生活・就業・養育費等の相談、講習、職業紹介",
+    "feeSummary": "生活・就業・養育費等の相談、講習、職業紹介",
+    "flowSummary": "センターへ電話・面接等で相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "京都府ひとり親家庭自立支援センター",
+        "url": "https://www.pref.kyoto.jp/kateishien/ouen_16hitorioyakatei.html"
+      }
+    ],
+    "displayOrder": 507
+  },
+  {
+    "id": "audited-de98cf7261",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "learning",
+    "title": "ひとり親家庭・子育て中の方向け短期職業訓練",
+    "shortValue": "子育てと両立しやすい短期職業訓練に優先枠を設定",
+    "feeSummary": "子育てと両立しやすい短期職業訓練に優先枠を設定",
+    "flowSummary": "福祉事務所を通じて申込",
+    "conditionText": "自立支援プログラムに基づき対象手当等を受給し再就職を希望する方",
+    "programs": [
+      {
+        "title": "ひとり親家庭・子育て中の方向け短期職業訓練",
+        "url": "https://www.pref.kyoto.jp/kyokgs/hitorioya.html"
+      }
+    ],
+    "displayOrder": 508
+  },
+  {
+    "id": "audited-f59611256b",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金の住宅・転宅資金",
+    "shortValue": "住宅の補修・増改築等は上限150万円、転宅費等も貸付対象。返済が必要",
+    "feeSummary": "住宅の補修・増改築等は上限150万円、転宅費等も貸付対象。返済が必要",
+    "flowSummary": "府保健所または市福祉事務所へ事前相談",
+    "conditionText": "要件を満たすひとり親家庭・寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金の住宅・転宅資金",
+        "url": "https://www.pref.kyoto.jp/kateishien/documents/boshifushikafu_fukushikashitsuke_shiorir7_4.pdf"
+      }
+    ],
+    "displayOrder": 509
+  },
+  {
+    "id": "audited-1a9e50881f",
+    "level": "prefecture",
+    "municipality": "京都府",
+    "category": "cost",
+    "title": "府営住宅の子育て・ひとり親世帯向け募集",
+    "shortValue": "募集区分や優先選考等により入居機会を支援",
+    "feeSummary": "募集区分や優先選考等により入居機会を支援",
+    "flowSummary": "府営住宅募集へ申込",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "府営住宅の入居要件を満たす子育て・ひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "府営住宅の子育て・ひとり親世帯向け募集",
+        "url": "https://www.pref.kyoto.jp/jutaku/kanri/index.html"
+      }
+    ],
+    "displayOrder": 510
+  },
+  {
+    "id": "audited-15253c4fb4",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "まいど子でもカード",
+    "shortValue": "関西の協賛店で割引・サービス等の特典",
+    "feeSummary": "関西の協賛店で割引・サービス等の特典",
+    "flowSummary": "公式モバイルサイトへ登録",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "府内在住で18歳未満の子どもを育てる世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "まいど子でもカード",
+        "url": "https://www.pref.osaka.lg.jp/o090135/kosodateshien/maidokodemo/index.html"
+      }
+    ],
+    "displayOrder": 511
+  },
+  {
+    "id": "audited-01375bdb5d",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "乳幼児医療費助成",
+    "shortValue": "保険診療の自己負担の一部を市町村を通じて助成",
+    "feeSummary": "保険診療の自己負担の一部を市町村を通じて助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜5歳が目安",
+    "conditionText": "府内市町村に住む乳幼児。市町村独自拡充あり",
+    "minChildAge": 0,
+    "maxChildAge": 5,
+    "programs": [
+      {
+        "title": "乳幼児医療費助成",
+        "url": "https://www.pref.osaka.lg.jp/kenkoufukushi/iryou/iryouhijosei/hitorioyakatei/index.html"
+      }
+    ],
+    "displayOrder": 512
+  },
+  {
+    "id": "audited-77438e615c",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "ひとり親家庭医療費助成",
+    "shortValue": "保険診療の自己負担の一部を助成。1医療機関1日500円以内、月上限2,500円を基本",
+    "feeSummary": "保険診療の自己負担の一部を助成。1医療機関1日500円以内、月上限2,500円を基本",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たす18歳年度末までの子と親・養育者等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭医療費助成",
+        "url": "https://www.pref.osaka.lg.jp/o090135/kokuho/hukusiiryou2/faq.html"
+      }
+    ],
+    "displayOrder": 513
+  },
+  {
+    "id": "audited-3f5c57d3bb",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "管轄保健所へ申請。政令・中核市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.osaka.lg.jp/o100040/kenkozukuri/boshi/iryou.html"
+      }
+    ],
+    "displayOrder": 514
+  },
+  {
+    "id": "audited-d17023a9ae",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "大阪府難聴児補聴器交付事業",
+    "shortValue": "補聴器の交付・修理と検査費用を支給",
+    "feeSummary": "補聴器の交付・修理と検査費用を支給",
+    "flowSummary": "居住市町村等へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "身体障がい者手帳の対象とならない中等度難聴児",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "大阪府難聴児補聴器交付事業",
+        "url": "https://www.pref.osaka.lg.jp/menkyo/o090070/0000811.html"
+      }
+    ],
+    "displayOrder": 515
+  },
+  {
+    "id": "audited-e2db1e8563",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "私立高等学校等授業料支援補助金",
+    "shortValue": "国制度と府補助を合わせ授業料を支援。対象校・上限等は年度資料で確認",
+    "feeSummary": "国制度と府補助を合わせ授業料を支援。対象校・上限等は年度資料で確認",
+    "flowSummary": "在学校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "府内在住等の要件を満たす私立高校生等。2026年度から所得制限なし",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "私立高等学校等授業料支援補助金",
+        "url": "https://www.pref.osaka.lg.jp/o180160/shigaku/shigakumushouka/"
+      }
+    ],
+    "displayOrder": 516
+  },
+  {
+    "id": "audited-f636cc4aa0",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または府担当窓口へ申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "府内在住の低・中所得世帯等の高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.osaka.lg.jp/o180160/shigaku/shigakumushouka/"
+      }
+    ],
+    "displayOrder": 517
+  },
+  {
+    "id": "audited-0c379839b3",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "福祉事務所等へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.osaka.lg.jp/o090135/kateishien/kashitsuke/kashitsukeichiran.html"
+      }
+    ],
+    "displayOrder": 518
+  },
+  {
+    "id": "audited-fe4de62c79",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・保育支援。所得等により負担あり",
+    "feeSummary": "家庭生活支援員による家事・保育支援。所得等により負担あり",
+    "flowSummary": "福祉事務所または支援センターへ事前登録・申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "修学・疾病等により一時的に家事・保育等が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.osaka.lg.jp/o090120/kateishien/boshikatei/index.html"
+      }
+    ],
+    "displayOrder": 519
+  },
+  {
+    "id": "audited-4d26868eb4",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.osaka.lg.jp/o090120/kateishien/boshikatei/shugyoshien.html"
+      }
+    ],
+    "displayOrder": 520
+  },
+  {
+    "id": "audited-9d61fdb671",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "ひとり親家庭高等職業訓練促進資金貸付金",
+    "shortValue": "入学準備金・就職準備金等を貸付。資格取得・就職継続等で返還免除あり",
+    "feeSummary": "入学準備金・就職準備金等を貸付。資格取得・就職継続等で返還免除あり",
+    "flowSummary": "府立母子・父子福祉センター等へ相談",
+    "conditionText": "高等職業訓練促進給付金を受け資格取得を目指すひとり親等",
+    "programs": [
+      {
+        "title": "ひとり親家庭高等職業訓練促進資金貸付金",
+        "url": "https://www.pref.osaka.lg.jp/o090120/kateishien/boshikatei/shugyoshien.html"
+      }
+    ],
+    "displayOrder": 521
+  },
+  {
+    "id": "audited-a5ff573648",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "learning",
+    "title": "大阪府立母子・父子福祉センター",
+    "shortValue": "生活・離婚前後・法律・養育費・就業相談、講習、職業紹介",
+    "feeSummary": "生活・離婚前後・法律・養育費・就業相談、講習、職業紹介",
+    "flowSummary": "センターへ電話・面接等で相談",
+    "conditionText": "府内（大阪市・堺市・豊中市を除く）のひとり親家庭、寡婦等",
+    "programs": [
+      {
+        "title": "大阪府立母子・父子福祉センター",
+        "url": "https://www.pref.osaka.lg.jp/o090120/kateishien/boshikatei/index.html"
+      }
+    ],
+    "displayOrder": 522
+  },
+  {
+    "id": "audited-67bf561a7c",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "大阪府養育費の履行確保等支援事業",
+    "shortValue": "公正証書等作成費用と養育費保証契約費用を支援",
+    "feeSummary": "公正証書等作成費用と養育費保証契約費用を支援",
+    "flowSummary": "住所地の町村または府窓口へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "福祉事務所を設置していない町村在住のひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "大阪府養育費の履行確保等支援事業",
+        "url": "https://www.pref.osaka.lg.jp/o090120/kateishien/boshikatei/index.html"
+      }
+    ],
+    "displayOrder": 523
+  },
+  {
+    "id": "audited-0adbf037b7",
+    "level": "prefecture",
+    "municipality": "大阪府",
+    "category": "cost",
+    "title": "府営住宅の子育て世帯向け入居支援",
+    "shortValue": "2026年度から子どもの年齢要件と収入上限を緩和。子育て向け募集・改修住戸あり",
+    "feeSummary": "2026年度から子どもの年齢要件と収入上限を緩和。子育て向け募集・改修住戸あり",
+    "flowSummary": "府営住宅募集へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "府営住宅の要件を満たし年度末年齢18歳以下の子がいる世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "府営住宅の子育て世帯向け入居支援",
+        "url": "https://www.pref.osaka.lg.jp/o130210/jutaku_kikaku/boshujigyo/index.html"
+      }
+    ],
+    "displayOrder": 524
+  },
+  {
+    "id": "audited-424f2b8d18",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "ひょうご子育て応援の店",
+    "shortValue": "協賛店で割引・サービス等の特典",
+    "feeSummary": "協賛店で割引・サービス等の特典",
+    "flowSummary": "公式サイトから会員登録しパスポートを提示",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "ひょうご子育て応援の店",
+        "url": "https://www.hyogo-kosodate.jp/"
+      }
+    ],
+    "displayOrder": 525
+  },
+  {
+    "id": "audited-7dbb0b3787",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "ひょうご保育料軽減事業",
+    "shortValue": "月額5,000円超の保育料を、第1子月1万円・第2子以降月1.5万円を基準上限として軽減。保育料の2分…",
+    "feeSummary": "月額5,000円超の保育料を、第1子月1万円・第2子以降月1.5万円を基準上限として軽減。保育料の2分の1等も上限",
+    "flowSummary": "居住市町または利用施設から案内・申請",
+    "timingText": "0歳〜2歳が目安",
+    "conditionText": "県内在住の0～2歳児で保育認定・所得等の要件を満たす世帯",
+    "minChildAge": 0,
+    "maxChildAge": 2,
+    "programs": [
+      {
+        "title": "ひょうご保育料軽減事業",
+        "url": "https://web.pref.hyogo.lg.jp/kf11/hoikuryokeigen-hoikukodomo.html"
+      }
+    ],
+    "displayOrder": 526
+  },
+  {
+    "id": "audited-82e782e38f",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "多胎児家庭の大型育児用品購入・レンタル費用補助",
+    "shortValue": "2人以上乗りベビーカー、チャイルドシート、2人乗せ自転車の購入・レンタル費の2分の1、上限2万円",
+    "feeSummary": "2人以上乗りベビーカー、チャイルドシート、2人乗せ自転車の購入・レンタル費の2分の1、上限2万円",
+    "flowSummary": "2026年6月1日～2027年3月31日に県へ申請",
+    "timingText": "0歳〜2歳が目安",
+    "conditionText": "県内在住で3歳未満の多胎児を養育する方。2026年度は妊娠中も対象に含む",
+    "minChildAge": 0,
+    "maxChildAge": 2,
+    "minChildren": 2,
+    "programs": [
+      {
+        "title": "多胎児家庭の大型育児用品購入・レンタル費用補助",
+        "url": "https://web.pref.hyogo.lg.jp/kf11/press/20260528.html"
+      }
+    ],
+    "displayOrder": 527
+  },
+  {
+    "id": "audited-ac921bc460",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "乳幼児等・こども医療費助成",
+    "shortValue": "保険診療の自己負担を市町を通じて助成",
+    "feeSummary": "保険診療の自己負担を市町を通じて助成",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜15歳が目安",
+    "conditionText": "県内市町に住む中学校卒業までの子ども。県基準と市町独自拡充で条件が異なる",
+    "minChildAge": 0,
+    "maxChildAge": 15,
+    "programs": [
+      {
+        "title": "乳幼児等・こども医療費助成",
+        "url": "https://web.pref.hyogo.lg.jp/kf07/hw06_000000004.html"
+      }
+    ],
+    "displayOrder": 528
+  },
+  {
+    "id": "audited-f608bf76fa",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担の一部を市町を通じて助成",
+    "feeSummary": "保険診療の自己負担の一部を市町を通じて助成",
+    "flowSummary": "居住市町へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と子",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://web.pref.hyogo.lg.jp/kf07/hw06_000000006.html"
+      }
+    ],
+    "displayOrder": 529
+  },
+  {
+    "id": "audited-dbec4301c3",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "県健康福祉事務所へ申請。指定市・中核市は各市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://web.pref.hyogo.lg.jp/kf16/syounishinsei.html"
+      }
+    ],
+    "displayOrder": 530
+  },
+  {
+    "id": "audited-cd0cc027ea",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://web.pref.hyogo.lg.jp/kk35/r8syogakukyuhukin1.html"
+      }
+    ],
+    "displayOrder": 531
+  },
+  {
+    "id": "audited-27b7e7bbe7",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "市または県健康福祉事務所へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://web.pref.hyogo.lg.jp/kf12/hw10_000000044.html"
+      }
+    ],
+    "displayOrder": 532
+  },
+  {
+    "id": "audited-e1658562fb",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・保育支援。所得等により負担あり",
+    "feeSummary": "家庭生活支援員による家事・保育支援。所得等により負担あり",
+    "flowSummary": "居住市町または県窓口へ事前登録・申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "修学・疾病等により一時的に家事・保育が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://web.pref.hyogo.lg.jp/kf11/documents/program2025.pdf"
+      }
+    ],
+    "displayOrder": 533
+  },
+  {
+    "id": "audited-044d8ceccc",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "自立支援教育訓練給付金・高等職業訓練促進給付金",
+    "shortValue": "講座受講費の一部や修業中の生活費等を給付",
+    "feeSummary": "講座受講費の一部や修業中の生活費等を給付",
+    "flowSummary": "市または県健康福祉事務所へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "自立支援教育訓練給付金・高等職業訓練促進給付金",
+        "url": "https://web.pref.hyogo.lg.jp/kf12/jiritsusien.html"
+      }
+    ],
+    "displayOrder": 534
+  },
+  {
+    "id": "audited-3c42e71ed7",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "ひとり親家庭住宅支援資金貸付",
+    "shortValue": "家賃実費を月額上限7万円、最長12か月無利子貸付。1年以内に就職し1年間継続就労等で返還免除",
+    "feeSummary": "家賃実費を月額上限7万円、最長12か月無利子貸付。1年以内に就職し1年間継続就労等で返還免除",
+    "flowSummary": "市または県健康福祉事務所へ相談",
+    "conditionText": "児童扶養手当受給相当で自立支援プログラムに沿って就職・転職等に取り組むひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭住宅支援資金貸付",
+        "url": "https://web.pref.hyogo.lg.jp/kf12/juutakushienshikinkashituke.html"
+      }
+    ],
+    "displayOrder": 535
+  },
+  {
+    "id": "audited-13f2997d20",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "cost",
+    "title": "県営住宅の子育て世帯向け支援",
+    "shortValue": "優先枠、収入要件緩和、敷金免除、子育て向け改修住戸、三世代近居募集等",
+    "feeSummary": "優先枠、収入要件緩和、敷金免除、子育て向け改修住戸、三世代近居募集等",
+    "flowSummary": "県営住宅の各募集へ申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "県営住宅の要件を満たす子育て・ひとり親・多子世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "県営住宅の子育て世帯向け支援",
+        "url": "https://web.pref.hyogo.lg.jp/ks28/kenjukosodate.html"
+      }
+    ],
+    "displayOrder": 536
+  },
+  {
+    "id": "audited-3b384910d7",
+    "level": "prefecture",
+    "municipality": "兵庫県",
+    "category": "learning",
+    "title": "母子・父子自立支援員等の相談支援",
+    "shortValue": "生活・就業・貸付・資格取得等の相談と制度案内",
+    "feeSummary": "生活・就業・貸付・資格取得等の相談と制度案内",
+    "flowSummary": "市または県健康福祉事務所へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子・父子自立支援員等の相談支援",
+        "url": "https://web.pref.hyogo.lg.jp/ehk06/eh02_1_000000001.html"
+      }
+    ],
+    "displayOrder": 537
+  },
+  {
+    "id": "audited-12c0c1fddc",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "なら子育て応援団",
+    "shortValue": "加盟店で割引・ポイント・プレゼント等のサービス",
+    "feeSummary": "加盟店で割引・ポイント・プレゼント等のサービス",
+    "flowSummary": "奈良スーパーアプリで子育て世帯認定を申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内在住で18歳年度末までの子どもがいる家庭",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "なら子育て応援団",
+        "url": "https://www.pref.nara.jp/20395.htm"
+      }
+    ],
+    "displayOrder": 538
+  },
+  {
+    "id": "audited-cf5a9d2d69",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "子ども医療費助成",
+    "shortValue": "保険診療の自己負担の一部を市町村を通じて助成",
+    "feeSummary": "保険診療の自己負担の一部を市町村を通じて助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内市町村に住む子ども。県補助基準と市町村独自拡充で対象年齢等が異なる",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成",
+        "url": "https://www.pref.nara.jp/43465.htm"
+      }
+    ],
+    "displayOrder": 539
+  },
+  {
+    "id": "audited-87471bc548",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "ひとり親家庭等医療費助成",
+    "shortValue": "保険診療の自己負担の一部を県・市町村で助成",
+    "feeSummary": "保険診療の自己負担の一部を県・市町村で助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と18歳年度末までの子等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭等医療費助成",
+        "url": "https://www.pref.nara.jp/secure/223390/04_1_kenkou_iryou_1-18.pdf"
+      }
+    ],
+    "displayOrder": 540
+  },
+  {
+    "id": "audited-8554794522",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "県の医療費助成等申請受付センター等へ申請",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.nara.jp/dd.aspx?moduleid=36467&pfromid=95"
+      }
+    ],
+    "displayOrder": 541
+  },
+  {
+    "id": "audited-9bab3d0d07",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "軽度・中等度難聴児補聴器購入助成",
+    "shortValue": "補助基準額の3分の2を助成。原則として県・市町村・本人が各3分の1負担",
+    "feeSummary": "補助基準額の3分の2を助成。原則として県・市町村・本人が各3分の1負担",
+    "flowSummary": "購入前に居住市町村へ申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住の18歳未満で身体障害者手帳対象外等の要件を満たす難聴児",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "軽度・中等度難聴児補聴器購入助成",
+        "url": "https://www.pref.nara.jp/32049.htm"
+      }
+    ],
+    "displayOrder": 542
+  },
+  {
+    "id": "audited-125232e18c",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "高校生等奨学給付金",
+        "url": "https://www.pref.nara.jp/60687.htm"
+      }
+    ],
+    "displayOrder": 543
+  },
+  {
+    "id": "audited-30aa5916b6",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "奈良県高等学校等奨学金",
+    "shortValue": "修学資金を貸与。卒業後に返還が必要",
+    "feeSummary": "修学資金を貸与。卒業後に返還が必要",
+    "flowSummary": "在学校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "勉学意欲があり経済的理由で修学が困難な高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "奈良県高等学校等奨学金",
+        "url": "https://www.pref.nara.jp/43465.htm"
+      }
+    ],
+    "displayOrder": 544
+  },
+  {
+    "id": "audited-fd95229ef8",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付。住宅資金は購入・改築前申請",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付。住宅資金は購入・改築前申請",
+    "flowSummary": "県福祉事務所へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.nara.jp/secure/200113/2025shiori.pdf"
+      }
+    ],
+    "displayOrder": 545
+  },
+  {
+    "id": "audited-36b046b7d2",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による生活援助・子育て支援",
+    "feeSummary": "家庭生活支援員による生活援助・子育て支援",
+    "flowSummary": "県福祉事務所または実施窓口へ事前登録・申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "疾病・修学等により一時的に家事・保育が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.nara.jp/secure/29246/plan2.pdf"
+      }
+    ],
+    "displayOrder": 546
+  },
+  {
+    "id": "audited-089a46e077",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "ひとり親家庭自立支援給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "県福祉事務所または市窓口へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "ひとり親家庭自立支援給付金",
+        "url": "https://www.pref.nara.jp/secure/200113/2025shiori.pdf"
+      }
+    ],
+    "displayOrder": 547
+  },
+  {
+    "id": "audited-b0627811bc",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "県営住宅のひとり親世帯向け優先入居",
+    "shortValue": "福祉世帯向けの別枠募集等により入居機会を支援",
+    "feeSummary": "福祉世帯向けの別枠募集等により入居機会を支援",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "県営住宅の要件を満たすひとり親世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "県営住宅のひとり親世帯向け優先入居",
+        "url": "https://www.pref.nara.jp/secure/257253/R3-1_3.pdf"
+      }
+    ],
+    "displayOrder": 548
+  },
+  {
+    "id": "audited-a77587f834",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金の住宅・転宅資金",
+    "shortValue": "住宅の建設・購入・補修・改築等は上限150万円または特例200万円等。返済が必要",
+    "feeSummary": "住宅の建設・購入・補修・改築等は上限150万円または特例200万円等。返済が必要",
+    "flowSummary": "購入・改築前に県福祉事務所へ相談・申請",
+    "conditionText": "要件を満たすひとり親家庭・寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金の住宅・転宅資金",
+        "url": "https://www.pref.nara.jp/secure/200113/2025shiori.pdf"
+      }
+    ],
+    "displayOrder": 549
+  },
+  {
+    "id": "audited-0e06b5bf43",
+    "level": "prefecture",
+    "municipality": "奈良県",
+    "category": "learning",
+    "title": "母子・父子自立支援員等の相談支援",
+    "shortValue": "生活・就業・貸付・資格取得等の相談と制度案内",
+    "feeSummary": "生活・就業・貸付・資格取得等の相談と制度案内",
+    "flowSummary": "県福祉事務所または市窓口へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子・父子自立支援員等の相談支援",
+        "url": "https://www.pref.nara.jp/secure/200113/2025shiori.pdf"
+      }
+    ],
+    "displayOrder": 550
+  },
+  {
+    "id": "audited-4f04af4638",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "わかやま子育て支援パスポート",
+    "shortValue": "協賛店で割引・プレゼント等の優待サービス",
+    "feeSummary": "協賛店で割引・プレゼント等の優待サービス",
+    "flowSummary": "公式ポータルサイトから申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住で18歳未満の子どもがいる世帯",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "わかやま子育て支援パスポート",
+        "url": "https://wakayama-kosodate.com/pass"
+      }
+    ],
+    "displayOrder": 551
+  },
+  {
+    "id": "audited-c64473aaa4",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "紀州っ子いっぱいサポート（保育料・副食費）",
+    "shortValue": "0～2歳の第2子の一部と第3子以降の保育料、3歳～就学前の副食費等を市町村と連携して軽減・無償化",
+    "feeSummary": "0～2歳の第2子の一部と第3子以降の保育料、3歳～就学前の副食費等を市町村と連携して軽減・無償化",
+    "flowSummary": "居住市町村または利用施設へ申請・確認",
+    "timingText": "0歳〜5歳が目安",
+    "conditionText": "県内の対象施設等を利用する就学前の第2子以降。所得・施設・市町村要件あり",
+    "minChildAge": 0,
+    "maxChildAge": 5,
+    "minChildren": 2,
+    "programs": [
+      {
+        "title": "紀州っ子いっぱいサポート（保育料・副食費）",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/040200/d00202861.html"
+      }
+    ],
+    "displayOrder": 552
+  },
+  {
+    "id": "audited-ba77b72df1",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "紀州っ子いっぱいサポート（育児支援利用料）",
+    "shortValue": "一時預かり、ファミリーサポート、病児保育、子育て短期支援等の利用料を助成",
+    "feeSummary": "一時預かり、ファミリーサポート、病児保育、子育て短期支援等の利用料を助成",
+    "flowSummary": "居住市町村へ確認・申請",
+    "timingText": "0歳〜12歳が目安",
+    "conditionText": "小学校以下の子どもを3人以上養育し、市町村の要件を満たす世帯",
+    "minChildAge": 0,
+    "maxChildAge": 12,
+    "minChildren": 3,
+    "programs": [
+      {
+        "title": "紀州っ子いっぱいサポート（育児支援利用料）",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/040200/d00202861.html"
+      }
+    ],
+    "displayOrder": 553
+  },
+  {
+    "id": "audited-77715ee9ab",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "子ども医療費助成",
+    "shortValue": "保険診療の自己負担を市町村を通じて助成",
+    "feeSummary": "保険診療の自己負担を市町村を通じて助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県内市町村に住む子ども。対象年齢・自己負担等は市町村で異なる",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "子ども医療費助成",
+        "url": "https://www.pref.wakayama.lg.jp/faq/category/faq_ajjcatg_000002.html"
+      }
+    ],
+    "displayOrder": 554
+  },
+  {
+    "id": "audited-09a929abf7",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "ひとり親家庭医療費助成",
+    "shortValue": "保険診療の自己負担の一部を助成",
+    "feeSummary": "保険診療の自己負担の一部を助成",
+    "flowSummary": "居住市町村へ申請",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "所得等の要件を満たすひとり親家庭の親と子",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "ひとり親家庭医療費助成",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/040200/d00217499_d/fil/no3siryou.pdf"
+      }
+    ],
+    "displayOrder": 555
+  },
+  {
+    "id": "audited-f22dd764f7",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "小児慢性特定疾病医療費助成",
+    "shortValue": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "feeSummary": "対象疾病の医療費自己負担を所得等に応じて軽減",
+    "flowSummary": "管轄保健所へ申請。和歌山市は市窓口",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "認定基準を満たす18歳未満の子ども。継続認定は20歳未満",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "小児慢性特定疾病医療費助成",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/041200/h_boshi/shoman/shomantop.html"
+      }
+    ],
+    "displayOrder": 556
+  },
+  {
+    "id": "audited-f65428cea5",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "難聴児補聴器購入費補助",
+    "shortValue": "課税世帯は県・市町村が各3分の1、非課税世帯は各2分の1を助成。購入・更新・修理が対象",
+    "feeSummary": "課税世帯は県・市町村が各3分の1、非課税世帯は各2分の1を助成。購入・更新・修理が対象",
+    "flowSummary": "購入前に居住市町村へ相談・申請",
+    "timingText": "0歳〜17歳が目安",
+    "conditionText": "県内在住の18歳未満で身体障害者手帳対象外等の要件を満たす難聴児",
+    "minChildAge": 0,
+    "maxChildAge": 17,
+    "programs": [
+      {
+        "title": "難聴児補聴器購入費補助",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/040400/d00209908.html"
+      }
+    ],
+    "displayOrder": 557
+  },
+  {
+    "id": "audited-b5dd0c0748",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "和歌山県高校生等奨学給付金",
+    "shortValue": "授業料以外の教育費を返還不要で給付",
+    "feeSummary": "授業料以外の教育費を返還不要で給付",
+    "flowSummary": "在学校または県担当窓口へ毎年度申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "保護者が県内在住し所得等の要件を満たす高校生等の世帯",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "和歌山県高校生等奨学給付金",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/500600/d00153447.html"
+      }
+    ],
+    "displayOrder": 558
+  },
+  {
+    "id": "audited-5cdebbb016",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "和歌山県修学奨励金",
+    "shortValue": "修学資金を貸与。卒業後に返還が必要",
+    "feeSummary": "修学資金を貸与。卒業後に返還が必要",
+    "flowSummary": "在学校を通して申請",
+    "timingText": "15歳〜18歳が目安",
+    "conditionText": "経済的理由で修学が困難な高校生等",
+    "minChildAge": 15,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "和歌山県修学奨励金",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/500600/"
+      }
+    ],
+    "displayOrder": 559
+  },
+  {
+    "id": "audited-09afd65893",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "和歌山県大学生等進学支援金",
+    "shortValue": "年60万円を最大4回貸与。卒業後の県内居住・就業等で返還免除の場合あり",
+    "feeSummary": "年60万円を最大4回貸与。卒業後の県内居住・就業等で返還免除の場合あり",
+    "flowSummary": "募集期間内に県へ申請・選考",
+    "timingText": "18歳〜22歳が目安",
+    "conditionText": "進学意欲・学力があり所得等の要件を満たす大学進学者",
+    "minChildAge": 18,
+    "maxChildAge": 22,
+    "programs": [
+      {
+        "title": "和歌山県大学生等進学支援金",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/500600/"
+      }
+    ],
+    "displayOrder": 560
+  },
+  {
+    "id": "audited-ad2b47fe8b",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金貸付金",
+    "shortValue": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "feeSummary": "修学・生活・住宅・転宅等の資金を無利子または低利で貸付",
+    "flowSummary": "県振興局等へ事前相談",
+    "conditionText": "20歳未満の子を扶養するひとり親、寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金貸付金",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/031400/d00217620.html"
+      }
+    ],
+    "displayOrder": 561
+  },
+  {
+    "id": "audited-844491f5d6",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "time",
+    "title": "ひとり親家庭等日常生活支援事業",
+    "shortValue": "家庭生活支援員による家事・保育サービス",
+    "feeSummary": "家庭生活支援員による家事・保育サービス",
+    "flowSummary": "居住市町村または県窓口へ事前登録・申込",
+    "timingText": "0歳〜19歳が目安",
+    "conditionText": "疾病・修学等により一時的に家事・保育が必要なひとり親家庭等",
+    "minChildAge": 0,
+    "maxChildAge": 19,
+    "programs": [
+      {
+        "title": "ひとり親家庭等日常生活支援事業",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/040200/d00217499_d/fil/no3siryou.pdf"
+      }
+    ],
+    "displayOrder": 562
+  },
+  {
+    "id": "audited-7f912777ae",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "自立支援教育訓練給付金・高等職業訓練促進給付金",
+    "shortValue": "受講費用の一部や修業中の生活費等を給付",
+    "feeSummary": "受講費用の一部や修業中の生活費等を給付",
+    "flowSummary": "県振興局または市窓口へ受講前に相談",
+    "conditionText": "教育訓練・資格取得等の要件を満たすひとり親",
+    "programs": [
+      {
+        "title": "自立支援教育訓練給付金・高等職業訓練促進給付金",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/031400/d00217633.html"
+      }
+    ],
+    "displayOrder": 563
+  },
+  {
+    "id": "audited-fde7ad63b0",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "県営住宅のひとり親・子育て世帯向け優先取扱い",
+    "shortValue": "募集で優先抽選等の対象となる場合がある",
+    "feeSummary": "募集で優先抽選等の対象となる場合がある",
+    "flowSummary": "県営住宅の募集へ申込",
+    "timingText": "0歳〜18歳が目安",
+    "conditionText": "県営住宅の要件を満たすひとり親・子育て世帯等",
+    "minChildAge": 0,
+    "maxChildAge": 18,
+    "programs": [
+      {
+        "title": "県営住宅のひとり親・子育て世帯向け優先取扱い",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/080800/kenei/annai/annai2.html"
+      }
+    ],
+    "displayOrder": 564
+  },
+  {
+    "id": "audited-19a2fc6d3d",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "cost",
+    "title": "母子父子寡婦福祉資金の住宅・転宅資金",
+    "shortValue": "住宅の建設・購入・補修・改築・増築や転宅費用を貸付。返済が必要",
+    "feeSummary": "住宅の建設・購入・補修・改築・増築や転宅費用を貸付。返済が必要",
+    "flowSummary": "県振興局等へ事前相談・申請",
+    "conditionText": "要件を満たすひとり親家庭・寡婦等",
+    "programs": [
+      {
+        "title": "母子父子寡婦福祉資金の住宅・転宅資金",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/031400/d00217620.html"
+      }
+    ],
+    "displayOrder": 565
+  },
+  {
+    "id": "audited-7ee1fb58be",
+    "level": "prefecture",
+    "municipality": "和歌山県",
+    "category": "learning",
+    "title": "母子家庭等就業・自立支援センター等",
+    "shortValue": "生活・就業・資格取得・養育費等の相談と就業支援",
+    "feeSummary": "生活・就業・資格取得・養育費等の相談と就業支援",
+    "flowSummary": "センターまたは県振興局へ相談",
+    "conditionText": "ひとり親家庭の母・父、寡婦等",
+    "programs": [
+      {
+        "title": "母子家庭等就業・自立支援センター等",
+        "url": "https://www.pref.wakayama.lg.jp/prefg/040200/d00217499_d/fil/no3siryou.pdf"
+      }
+    ],
+    "displayOrder": 566
   }
 ];
